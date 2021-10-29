@@ -1,0 +1,21 @@
+{
+  "name": "bot-adhkar-telegram",
+  "version": "1.0.0",
+  "description": "bot-adhkar-telegram [ quran, adhkar, video, photo, question, sticker ]",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rn0x",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "exec-sh": "^0.4.0",
+    "figlet": "^1.5.2",
+    "fs-extra": "^10.0.0",
+    "input": "^1.0.1",
+    "moment-timezone": "^0.5.33",
+    "telegraf": "^4.4.2"
+  }
+}
