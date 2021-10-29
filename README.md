@@ -77,28 +77,21 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 
 <p align="center">
-  <b>Hi</b><br>
+  <b>Photo</b><br>
   <br><br>
-  <img src="/git/hi.jpg" alt="hi" width="444" height="777">
+  <img src="/github/1.jpg" alt="1">
   <br><br>
-  <b>1</b><br>
+  <img src="/github/2.jpg" alt="2">
   <br><br>
-  <img src="/git/1.jpg" alt="1" width="444" height="777">
+  <img src="/github/3.jpg" alt="3">
   <br><br>
-  <b>2</b><br>
+  <img src="/github/4.jpg" alt="4">
   <br><br>
-  <img src="/git/2.jpg" alt="2" width="444" height="777">
+  <img src="/github/5.jpg" alt="5">
   <br><br>
-  <b>3</b><br>
+  <img src="/github/6.jpg" alt="6">
   <br><br>
-  <img src="/git/3.jpg" alt="3" width="444" height="777">
+  <img src="/github/7.jpg" alt="7">
   <br><br>
-  <b>4</b><br>
-  <br><br>
-  <img src="/git/4.jpg" alt="4" width="444" height="777">
-  <br><br>
-  <b>أشتراك</b><br>
-  <br><br>
-  <img src="/git/s.jpg" alt="أشتراك" width="444" height="777">
 </p>
 
