@@ -97,7 +97,7 @@ export const menu = {
       let but_1 = Markup.button.callback(question[list].answer.asr, question[list].answer.id);
       let but_2 = Markup.button.callback(question[list].answer1.asr, question[list].answer1.id);
       let but_3 = Markup.button.callback(question[list].answer2.asr, question[list].answer2.id);
-      let but = [[[but_1], [but_2], [but_3]],[[but_2], [but_1], [but_3]],[[but_3], [but_1], [but_2]],[but_2, [but_3], [but_1]],[[but_1], [but_3], [but_2]]]
+      let but = [[[but_1], [but_2], [but_3]],[[but_2], [but_1], [but_3]],[[but_3], [but_1], [but_2]],[[but_2], [but_3], [but_1]],[[but_1], [but_3], [but_2]]]
       let random = but[Math.floor(Math.random() * but.length)]
       let button = Markup.inlineKeyboard(random);
 
