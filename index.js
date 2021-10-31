@@ -448,7 +448,7 @@ client.action('question', async (ctx) => {
     let button = Markup.inlineKeyboard([random]);
 
     await ctx.reply(question[list].question, button)
-    .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)) , 15000))
+    .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)) , 120000))
     .catch((error) => console.log(error));
 
     client.action(question[list].answer.id, async (ctx) => {
