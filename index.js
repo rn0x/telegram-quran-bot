@@ -251,7 +251,8 @@ client.on("message",async (ctx) => {
     let from = ctx.chat.id;
     let pushname = ctx.from.username ? ctx.from.username : ctx.from.first_name;
     let Menufrom = getMenu({ from: from });
-
+    let user = fs.readJsonSync('./db/user.json');
+    
     menu_number[Menufrom].menu_name.exec({
 
         from: from,
@@ -263,7 +264,13 @@ client.on("message",async (ctx) => {
         client: client,
          
     }); 
-    
+      
+    if (!user.includes(from)) {
+
+        user.push(from)
+        fs.writeJsonSync('./db/user.json', user)
+        console.log(`Add Id ${from}`)
+    }    
 
 });
 
