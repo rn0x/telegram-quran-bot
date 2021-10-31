@@ -461,6 +461,7 @@ client.action('question', async (ctx) => {
     client.action(question[list].answer.id, async (ctx) => {
 
         await ctx.reply("إجابة صحيحة ✔️")
+        .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)) , 10000))
         .catch((error) => console.log(error));
 
     });
