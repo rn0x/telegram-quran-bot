@@ -450,12 +450,12 @@ client.action('question', async (ctx) => {
     let but_1 = Markup.button.callback(question[list].answer.asr, question[list].answer.id);
     let but_2 = Markup.button.callback(question[list].answer1.asr, question[list].answer1.id);
     let but_3 = Markup.button.callback(question[list].answer2.asr, question[list].answer2.id);
-    let but = [[but_1, but_2, but_3],[but_2, but_1, but_3],[but_3, but_1, but_2],[but_2, but_3, but_1],[but_1, but_3, but_2]]
+    let but_4 = [Markup.button.callback('التالي', 'question'),Markup.button.callback('رجوع', 'start')];
+    let but = [[[but_1], [but_2], [but_3], but_4 ],[[but_2], [but_1], [but_3], but_4],[[but_3], [but_1], [but_2], but_4],[but_2, [but_3], [but_1], but_4],[[but_1], [but_3], [but_2], but_4]]
     let random = but[Math.floor(Math.random() * but.length)]
-    let button = Markup.inlineKeyboard([random]);
+    let button = Markup.inlineKeyboard(random);
 
     await ctx.reply(question[list].question, button)
-    .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)) , 120000))
     .catch((error) => console.log(error));
 
     client.action(question[list].answer.id, async (ctx) => {
@@ -482,6 +482,7 @@ client.action('question', async (ctx) => {
 
     });
 
+    await ctx.deleteMessage().catch((err) => console.log(err));
 
 });
 
