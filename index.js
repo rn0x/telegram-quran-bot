@@ -120,20 +120,6 @@ client.on("my_chat_member", async (ctx) => {
         }
     }
 
-    else if (ctx.chat.type === 'channel' && ctx.update.my_chat_member.new_chat_member.status === 'kicked'){
-
-        let from = ctx.chat.id
-        let user = fs.readJsonSync('./db/user.json');
-
-        if (user.includes(from)) {
-
-            let del = user.indexOf(from);
-            user.splice(del, 1)
-            fs.writeJsonSync('./db/user.json', user)
-            console.log(`Remove Id ${from}`)
-        }
-    }
-
     else if (ctx.chat.type === 'supergroup' && ctx.update.my_chat_member.new_chat_member.status === 'member'){
 
         let from = ctx.chat.id
@@ -169,26 +155,7 @@ client.on("my_chat_member", async (ctx) => {
             console.log(`Add Id ${from}`)
         }
     }
-
-    else if (ctx.chat.type === 'channel' && ctx.update.my_chat_member.new_chat_member.status === 'administrator'){
-
-        let from = ctx.chat.id
-        let pushname = ctx.chat.username ? ctx.chat.username : ctx.chat.first_name ? ctx.chat.first_name : ctx.chat.title ;
-        let user = fs.readJsonSync('./db/user.json');
-        let msg = ctx.chat.username ? `مرحباً بك @${pushname} لقد تم تفعيل خدمة إرسال الأذكار بشكل تلقائي \n\n لعرض مزيد من الخدمات أرسل كلمة /start`: `مرحباً بك ${pushname} لقد تم تفعيل خدمة إرسال الأذكار بشكل تلقائي \n\n لعرض مزيد من الخدمات أرسل كلمة /start`;
-
-        if (!user.includes(from)) {
-
-            user.push(from)
-            fs.writeJsonSync('./db/user.json', user)
-            await ctx.reply(msg)
-            .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)) , 60000))
-            .catch((err) => console.log(err));
-            console.log(`Add Id ${from}`)
-        }
-    }
     
-
 });
 
 client.on("new_chat_members", async (ctx) => {
