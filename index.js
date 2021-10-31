@@ -170,7 +170,7 @@ client.on("my_chat_member", async (ctx) => {
         }
     }
 
-    else if (ctx.chat.type === 'channel' && ctx.update.my_chat_member.new_chat_member.status === 'member'){
+    else if (ctx.chat.type === 'channel' && ctx.update.my_chat_member.new_chat_member.status === 'administrator'){
 
         let from = ctx.chat.id
         let pushname = ctx.chat.username ? ctx.chat.username : ctx.chat.first_name ? ctx.chat.first_name : ctx.chat.title ;
