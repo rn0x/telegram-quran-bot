@@ -302,9 +302,7 @@ client.on("message", async (ctx) => {
         for (let lop of admin) {
 
             await ctx.forwardMessage(lop)
-            .then((data) => {
-                console.log(data);
-            }).catch((error) => console.log(error));
+            .catch((error) => console.log(error));
 
         }
 
