@@ -279,6 +279,7 @@ client.on("message", async (ctx) => {
     let user = fs.readJsonSync('./db/user.json');
     let type = ctx.chat.type
     let admin = fs.readJsonSync('./db/admin.json');
+    let Menu = fs.readJsonSync('./db/Menu.json');
     let body_no = ["hi", "Hi", "#", "خدمة", "*", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0",]
     let info = {
 
@@ -304,7 +305,12 @@ client.on("message", async (ctx) => {
 
     });
 
-    if (!Object.keys(user).includes(from.toString())) {
+    if (!Object.keys(Menu).includes(from.toString())) {
+
+        MenuNmber(from, 0);
+    }
+
+    else if (!Object.keys(user).includes(from.toString())) {
         fs.writeJsonSync('./db/user.json', Object.assign({}, user, info), { spaces: '\t' });
         console.log(`Add Id ${from}`)
     }
