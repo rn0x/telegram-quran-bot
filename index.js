@@ -273,18 +273,30 @@ client.on("message", async (ctx) => {
     let message_id = ctx.message.message_id;
     let body = ctx.message.text ? ctx.message.text : ctx.message.caption;
     let from = ctx.chat.id;
-    let pushname = ctx.from.username ? ctx.from.username : ctx.from.first_name;
+    let username = ctx.from.username ? ctx.from.username : null;
+    let name = ctx.from.first_name ? ctx.from.first_name : ctx.from.last_name ? ctx.from.last_name : ctx.from.title ? ctx.from.title : null;
     let Menufrom = await getMenu(from);
     let user = fs.readJsonSync('./db/user.json');
     let type = ctx.chat.type
     let admin = fs.readJsonSync('./db/admin.json');
     let body_no = ["hi", "Hi", "#", "خدمة", "*", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0",]
+    let info = {
+
+        [from]: {
+
+            "id": from,
+            "Username": username,
+            "Name": name,
+            "Type": type
+        }
+
+    }
 
     menu_number[Menufrom].menu_name.exec({
 
         from: from,
         body: body,
-        pushname: pushname,
+        pushname: name,
         id: message_id,
         Markup: Markup,
         ctx: ctx,
