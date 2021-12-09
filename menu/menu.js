@@ -203,6 +203,9 @@ export const menu = {
       
       await ctx.replyWithDocument({source: './db/user.json'})
       .catch((erro) => console.log(erro));
+      
+      await ctx.replyWithDocument({source: './db/Menu.json'})
+      .catch((erro) => console.log(erro));
 
     }
      

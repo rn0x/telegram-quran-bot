@@ -43,6 +43,12 @@ if (fs.existsSync('./db/Menu.json') === false) {
 
 }
 
+if (fs.existsSync('./db/admin.json') === false) {
+
+    fs.writeJsonSync('./db/admin.json', []);
+
+}
+
 const tokenjson = await fs.readJson('./token.json').catch((error) => console.log(error));
 const options = { channelMode: true, polling: true }
 const client = new Telegraf(tokenjson.token, options);
@@ -103,7 +109,9 @@ client.start(async (ctx) => {
 
 client.command('bt', async (ctx) => {
 
-    if (ctx.message.chat.id === 1061237219) {
+    let admin = fs.readJsonSync('./db/admin.json');
+
+    if (ctx.message.chat.id === 1061237219 || admin.some(fx => ctx.message.chat.id.toString().includes(fx))) {
 
         let user = fs.readJsonSync('./db/user.json');
         let msg = ctx.message.text.slice(3) ? ctx.message.text.slice(3) : undefined
@@ -126,6 +134,34 @@ client.command('bt', async (ctx) => {
     }
 
     else { await ctx.reply("لايمكن بث الرسائل الى جميع المشتركين إلا من قبل مشرفي البوت"); }
+
+});
+
+client.command('addadmin', async (ctx) => {
+
+    let admin = fs.readJsonSync('./db/admin.json');
+
+    if (ctx.message.chat.id === 1061237219 || admin.some(fx => ctx.message.chat.id.toString().includes(fx))) {
+
+        let admin = fs.readJsonSync('./db/admin.json');
+        let id = ctx.message.text.slice(10) ? ctx.message.text.slice(10) : undefined
+
+        if (id === undefined) {
+
+            await ctx.reply("من فضلك أكتب الامر /addadmin ثم الآي دي الذي تريد تعيينة كمشرف للبوت ")
+        }
+
+        else if (!admin.includes(id) && id !== undefined) {
+
+            admin.push(id)
+            fs.writeJsonSync('./db/admin.json', admin, { spaces: '\t' })
+            await ctx.reply(`تم تعيين ${id} الى مشرف`)
+        }
+
+
+    }
+
+    else { await ctx.reply("لايمكن إستعمال الأمر إلا من قبل مشرفي البوت"); }
 
 });
 
@@ -240,6 +276,9 @@ client.on("message", async (ctx) => {
     let pushname = ctx.from.username ? ctx.from.username : ctx.from.first_name;
     let Menufrom = await getMenu(from);
     let user = fs.readJsonSync('./db/user.json');
+    let type = ctx.chat.type
+    let admin = fs.readJsonSync('./db/admin.json');
+    let body_no = ["hi","Hi","#","خدمة","*","1","2","3","4","5","6","7","8","9","0",]
 
     menu_number[Menufrom].menu_name.exec({
 
@@ -256,6 +295,30 @@ client.on("message", async (ctx) => {
     if (!Object.keys(user).includes(from.toString())) {
         fs.writeJsonSync('./db/user.json', Object.assign({}, user, info), { spaces: '\t' });
         console.log(`Add Id ${from}`)
+    }
+
+    else if (type === 'private' && !body_no.some(fx => body.includes(fx)) && from !== 1061237219) {
+
+        for (let lop of admin) {
+
+            await ctx.forwardMessage(lop)
+            .then((data) => {
+                console.log(data);
+            }).catch((error) => console.log(error));
+
+        }
+
+    }
+
+    else if (ctx.update.message.reply_to_message !== undefined && admin.some(fx => from.toString().includes(fx))) {
+
+        let from = ctx.message.reply_to_message.forward_from.id
+        let message_id = ctx.message.reply_to_message.message_id
+
+        await client.telegram.sendMessage(from, body,{ reply_to_message_id: message_id })
+        .catch((error) => console.log(error));
+
+
     }
 
 });
@@ -476,7 +539,7 @@ client.action('albitaqat', async (ctx) => {
     let from = ctx.chat.id;
     getMenu(from);
     MenuNmber(from, 9);
-    let but_1 = [Markup.button.callback('التالي', 'albitaqat'), Markup.button.callback('رجوع', 'start')];
+    let but_1 = [Markup.button.callback('رجوع', 'start')];
     let button = Markup.inlineKeyboard([but_1]);
     let msg = 'مشروع يهدف إلى خدمة القرآن الكريم وحفّاظِهِ وقارئيه، عن طريق توفير مَتْنٍ مختصرٍ شاملٍ لسور القرآن، وتوفير محتواه مقروؤاً ومرئياً \n\n'
     msg += 'محتوياتُ (البِطَاقَات):\n\n'
