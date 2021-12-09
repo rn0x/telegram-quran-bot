@@ -25,19 +25,19 @@ if (fs.existsSync('./token.json') === false) {
 
 }
 
-else if (fs.existsSync('./db') === false) {
+if (fs.existsSync('./db') === false) {
 
     fs.mkdirSync('./db', { recursive: true });
 
 }
 
-else if (fs.existsSync('./db/user.json') === false) {
+if (fs.existsSync('./db/user.json') === false) {
 
     fs.writeJsonSync('./db/user.json', {});
 
 }
 
-else if (fs.existsSync('./db/Menu.json') === false) {
+if (fs.existsSync('./db/Menu.json') === false) {
 
     fs.writeJsonSync('./db/Menu.json', {});
 
@@ -53,8 +53,8 @@ client.start(async (ctx) => {
 
 
     let from = ctx.chat.id
-    await getMenu(from);
     MenuNmber(from,0)
+    await getMenu(from);
     let but_1 = [Markup.button.callback('قرآن كريم 📖', 'quran'), Markup.button.callback('أذكار 📿', 'adhkar')];
     let but_2 = [Markup.button.callback('فيديو 🎥', 'video'), Markup.button.callback('صور 🖼️', 'photo'), Markup.button.callback('ملصق 🪧', 'sticker')];
     let but_3 = [Markup.button.callback('سؤال ⁉️', 'question'), Markup.button.callback('محاضرات 🌾', 'Lectures'), Markup.button.callback('بطاقات 🎴', 'albitaqat')];
@@ -181,8 +181,6 @@ client.on("my_chat_member", async (ctx) => {
 
 client.on("new_chat_members", async (ctx) => {
 
-    console.log(ctx);
-
     let me = ctx.botInfo
     let admin = await ctx.getChatAdministrators().catch((error) => console.log(error));
     let members = ctx.update.message.new_chat_members[0];
@@ -209,7 +207,6 @@ client.on("new_chat_members", async (ctx) => {
 
 client.on("left_chat_member", async (ctx) => {
 
-    console.log(ctx);
     if (ctx.message.left_chat_member.is_bot === false) {
 
         let me = ctx.botInfo
