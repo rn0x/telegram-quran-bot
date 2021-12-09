@@ -1,4 +1,4 @@
-import { db_menu } from '../lib/db_menu.js';
+import MenuNmber from '../lib/MenuNmber.js';
 import { video } from './video.js';
 import { photo } from './photo.js';
 import { sticker } from './sticker.js';
@@ -10,19 +10,47 @@ export const menu = {
 
     if ( body === 'خدمة' || body === 'خدمه' || body === '#'){
 
-      let but_1 = [Markup.button.callback('قرآن كريم 📖', 'quran'),Markup.button.callback('أذكار 📿', 'adhkar')];
-      let but_2 = [Markup.button.callback('فيديو 🎥', 'video'),Markup.button.callback('صور 🖼️', 'photo'),Markup.button.callback('ملصق 🪧', 'sticker')];
-      let but_3 = [Markup.button.callback('سؤال ⁉️', 'question')];
-      let button = Markup.inlineKeyboard([but_1, but_2, but_3]);
+      MenuNmber(from,0)
 
-      let mesg = `مرحباً بك  @${pushname} 👋 \n`
-      mesg += 'من فضلك قم بكتابة (رقم) الخدمة ✉️ \n\n\n'
+      let but_1 = [Markup.button.callback('قرآن كريم 📖', 'quran'), Markup.button.callback('أذكار 📿', 'adhkar')];
+      let but_2 = [Markup.button.callback('فيديو 🎥', 'video'), Markup.button.callback('صور 🖼️', 'photo'), Markup.button.callback('ملصق 🪧', 'sticker')];
+      let but_3 = [Markup.button.callback('سؤال ⁉️', 'question'), Markup.button.callback('محاضرات 🌾', 'Lectures'), Markup.button.callback('بطاقات 🎴', 'albitaqat')];
+      let button = Markup.inlineKeyboard([but_1, but_2, but_3]);
+      let user = fs.readJsonSync('./db/user.json');
+      let channel = []
+      let supergroup = []
+
+      for (let lop of Object.keys(user)) {
+
+        if (user[lop].Type === 'channel') {
+
+          channel.push(lop)
+
+        }
+
+        else if (user[lop].Type === 'supergroup') {
+
+          supergroup.push(lop)
+
+        }
+
+      }
+      let mesg = ` مرحباً بك ${pushname} 👋  \n\n`
+      mesg += 'من فضلك قم بإرسال رقم الخدمة ✉️ \n\n\n'
       mesg += '1- قائمة القرآن الكريم 📖 \n'
       mesg += '2- قائمة الأذكار 📿 \n'
-      mesg += '3- فيديو عشوائي 🎥 \n'
+      mesg += '3- فيديوهات قرآن عشوائية 🎥 \n'
       mesg += '4- صورة عشوائية 🖼️ \n'
       mesg += '5- ملصق عشوائي 🪧 \n'
-      mesg += '6- سؤال عشوائي ⁉️ \n\n\n'
+      mesg += '6- سؤال عشوائي ⁉️ \n'
+      mesg += '7- محاضرات عشوائية 🌾 \n'
+      mesg += '8- بطاقات القرآن 🎴 \n\n\n\n'
+      mesg += 'إحصائيات البوت \n'
+      mesg += `عدد المحادثات : ${Object.keys(user).length}\n`
+      mesg += `عدد المجموعات : ${supergroup.length}\n`
+      mesg += `عدد القنوات : ${channel.length}\n\n`
+      mesg += 'بمجرد إضافة البوت لقروبك سيبدأ بنشر الرسائل بشكل تلقائي ⚠️\n\n'
+      mesg += 'يمكنك متابعة البوت على واتساب عبر الرقم 966502054247 🤖'
 
       await ctx.reply(mesg, button).catch((erro) => console.log(erro));
 
@@ -30,22 +58,29 @@ export const menu = {
 
     else if (body === '1'){
 
-      db_menu[from].menu_name = 1;
+      MenuNmber(from,1);
 
+      let but_1 = [Markup.button.callback('أدريس أبكر', 'idris'),Markup.button.callback('ماهر المعيقلي', 'mahar')];
+      let but_2 = [Markup.button.callback('عبد الله الموسى', 'almosa'),Markup.button.callback('علي جابر', 'alli')];
+      let but_3 = [Markup.button.callback('عبدالرحمن السديس', 'Alsudais'),Markup.button.callback('خالد الجليل', 'Galilee')];
+      let but_4 = [Markup.button.callback('رجوع', 'start')]
+      let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4]);
       let quran_menu = 'قم بإختيار القارئ 🔊 \n\n'
       quran_menu += '1- أدريس أبكر \n'
       quran_menu += '2- ماهر المعيقلي \n'
       quran_menu += '3- عبدالله الموسى \n'
-      quran_menu += '4- علي جابر \n\n\n'
+      quran_menu += '4- علي جابر \n'
+      quran_menu += '5- عبدالرحمن السديس \n'
+      quran_menu += '6- خالد الجليل \n\n\n'
       quran_menu += '【 للرجوع للقائمة الرئيسية أرسل #️ 】'
       
-      await ctx.reply(quran_menu).catch((erro) => console.log(erro));
+      await ctx.reply(quran_menu, button).catch((erro) => console.log(erro));
 
     }
 
     else if (body === '2'){
 
-      db_menu[from].menu_name = 6;
+      MenuNmber(from,6);
 
       let adhkar_menu = '1- أذكار الصباح ☀️ \n'
       adhkar_menu += '2- أذكار المساء 🌑 \n'
@@ -128,6 +163,46 @@ export const menu = {
         .catch((error) => console.log(error));
 
       });
+
+    }
+
+    else if (body === '7'){
+      
+      let LecturesJson = fs.readJsonSync('./menu/Lectures.json');
+      let listlectures = LecturesJson[Math.floor(Math.random() * LecturesJson.length)]
+      let msg = `✽\n\n${listlectures.Lectures}\n\n`
+      msg += `*الشيخ:* ${listlectures.Author} 🔊`
+      await ctx.replyWithVideo({url: listlectures.FilePath}, {caption : msg })
+      .catch((erro) => console.log(erro));
+
+    }
+
+    else if (body === '8'){
+
+      MenuNmber(from,9);
+
+      let msg = 'مشروع يهدف إلى خدمة القرآن الكريم وحفّاظِهِ وقارئيه، عن طريق توفير مَتْنٍ مختصرٍ شاملٍ لسور القرآن، وتوفير محتواه مقروؤاً ومرئياً \n\n'
+      msg += 'محتوياتُ (البِطَاقَات):\n\n'
+      msg += 'وضعتُ ثمانيةَ (8) عناصرَ موحَّدَةً في كلِّ بطاقةِ تعريفٍ بالسورةِ، وجعلتُهَا مرتبةً ومُرَقَّمَةً، وكتبتُها بعباراتٍ واضحةٍ، وجُمَلٍ مختصرةٍ، وأسلوبٍ ميسرٍ ليسهُلَ حفظُهَا.\n\n'
+      msg += '1- آيَـــــــــــــــاتُـــــها \n'
+      msg += '2- مَعــــــنَـى اسْـــــــمِها \n'
+      msg += '3- سَبَبُ تَسْمِيَتِها \n'
+      msg += '4- أَسْـــــمَاؤُهـا \n'
+      msg += '5- مَقْصِدُها العَامُّ \n'
+      msg += '6- سَبَبُ نُزُولِهَا \n'
+      msg += '7- فَضْــــــلُها \n'
+      msg += '8- مُنَــاسَــبَاتُــها \n\n'
+      msg += '⚠️ لإرسال البطاقة صورة وصوت قم بإرسال رقم السورة او إسم السورة \n\n\n'
+      msg += '【 للرجوع للقائمة الرئيسية أرسل #️ 】'
+     
+      await ctx.reply(msg).catch((erro) => console.log(erro));
+
+    }
+
+    else if (body === 'dbjson'){
+      
+      await ctx.replyWithDocument({source: './db/user.json'})
+      .catch((erro) => console.log(erro));
 
     }
      

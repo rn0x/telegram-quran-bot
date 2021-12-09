@@ -1,15 +1,15 @@
 import pkg from "telegraf";
 import fs from 'fs-extra';
 import moment from 'moment-timezone';
-import execSh  from 'exec-sh';
 import figlet from 'figlet';
 import input from "input";
 import { menu_number } from './lib/menu_number.js';
-import { db_menu } from './lib/db_menu.js';
 import { video } from './menu/video.js';
 import { photo } from './menu/photo.js';
 import { sticker } from './menu/sticker.js';
 import broadcast from './lib/broadcast.js';
+import getMenu from './lib/getMenu.js';
+import MenuNmber from './lib/MenuNmber.js';
 
 const { Telegraf, Markup, Extra } = pkg;
 
@@ -18,167 +18,190 @@ console.log("                  Start " + moment.tz("Asia/Riyadh").format('LT'))
 console.log("               Telegram @BinAttia ")
 
 
-if (fs.existsSync('./token.json') === false ){
+if (fs.existsSync('./token.json') === false) {
 
     let token = await input.text("Please enter your token: ");
-    fs.writeJsonSync('./token.json', {token: token});
-  
+    fs.writeJsonSync('./token.json', { token: token });
+
 }
 
-else if (fs.existsSync('./db') === false ){
+else if (fs.existsSync('./db') === false) {
 
     fs.mkdirSync('./db', { recursive: true });
-    fs.writeJsonSync('./db/user.json', []);
-  
+
+}
+
+else if (fs.existsSync('./db/user.json') === false) {
+
+    fs.writeJsonSync('./db/user.json', {});
+
+}
+
+else if (fs.existsSync('./db/Menu.json') === false) {
+
+    fs.writeJsonSync('./db/Menu.json', {});
+
 }
 
 const tokenjson = await fs.readJson('./token.json').catch((error) => console.log(error));
-const options = { channelMode: true, polling: true}
+const options = { channelMode: true, polling: true }
 const client = new Telegraf(tokenjson.token, options);
 
 
-      
+
 client.start(async (ctx) => {
 
-    
-    let from = ctx.chat.id
-    getMenu({ from: from });
-    let but_1 = [Markup.button.callback('قرآن كريم 📖', 'quran'),Markup.button.callback('أذكار 📿', 'adhkar')];
-    let but_2 = [Markup.button.callback('فيديو 🎥', 'video'),Markup.button.callback('صور 🖼️', 'photo'),Markup.button.callback('ملصق 🪧', 'sticker')];
-    let but_3 = [Markup.button.callback('سؤال ⁉️', 'question')];
-    let button = Markup.inlineKeyboard([but_1, but_2, but_3]);
-    let pushname = ctx.from.username ? ctx.from.username : ctx.from.first_name;
 
-    let mesg = `مرحباً بك  @${pushname} 👋 \n`
-    mesg += 'من فضلك قم بكتابة (رقم) الخدمة ✉️ \n\n\n'
+    let from = ctx.chat.id
+    await getMenu(from);
+    MenuNmber(from,0)
+    let but_1 = [Markup.button.callback('قرآن كريم 📖', 'quran'), Markup.button.callback('أذكار 📿', 'adhkar')];
+    let but_2 = [Markup.button.callback('فيديو 🎥', 'video'), Markup.button.callback('صور 🖼️', 'photo'), Markup.button.callback('ملصق 🪧', 'sticker')];
+    let but_3 = [Markup.button.callback('سؤال ⁉️', 'question'), Markup.button.callback('محاضرات 🌾', 'Lectures'), Markup.button.callback('بطاقات 🎴', 'albitaqat')];
+    let button = Markup.inlineKeyboard([but_1, but_2, but_3]);
+    let pushname = ctx.chat.first_name ? ctx.chat.first_name : ctx.chat.last_name ? ctx.chat.last_name : ctx.chat.title ? ctx.chat.title : '';
+    let user = fs.readJsonSync('./db/user.json');
+    let channel = []
+    let supergroup = []
+
+    for (let lop of Object.keys(user)) {
+
+        if (user[lop].Type === 'channel') {
+
+            channel.push(lop)
+
+        }
+
+        else if (user[lop].Type === 'supergroup') {
+
+            supergroup.push(lop)
+
+        }
+
+    }
+
+    let mesg = ` مرحباً بك ${pushname} 👋  \n\n`
+    mesg += 'من فضلك قم بإرسال رقم الخدمة ✉️ \n\n\n'
     mesg += '1- قائمة القرآن الكريم 📖 \n'
     mesg += '2- قائمة الأذكار 📿 \n'
-    mesg += '3- فيديو عشوائي 🎥 \n'
+    mesg += '3- فيديوهات قرآن عشوائية 🎥 \n'
     mesg += '4- صورة عشوائية 🖼️ \n'
     mesg += '5- ملصق عشوائي 🪧 \n'
-    mesg += '6- سؤال عشوائي ⁉️ \n\n\n'
-    
+    mesg += '6- سؤال عشوائي ⁉️ \n'
+    mesg += '7- محاضرات عشوائية 🌾 \n'
+    mesg += '8- بطاقات القرآن 🎴 \n\n\n\n'
+    mesg += 'إحصائيات البوت \n'
+    mesg += `عدد المحادثات : ${Object.keys(user).length}\n`
+    mesg += `عدد المجموعات : ${supergroup.length}\n`
+    mesg += `عدد القنوات : ${channel.length}\n\n`
+    mesg += 'بمجرد إضافة البوت لقروبك سيبدأ بنشر الرسائل بشكل تلقائي ⚠️\n\n'
+    mesg += 'يمكنك متابعة البوت على واتساب عبر الرقم 966502054247 🤖'
+
     await ctx.reply(mesg, button).catch((erro) => console.log(erro));
 
 });
 
 client.command('bt', async (ctx) => {
 
-    if (ctx.message.chat.id === 1061237219){
+    if (ctx.message.chat.id === 1061237219) {
 
         let user = fs.readJsonSync('./db/user.json');
         let msg = ctx.message.text.slice(3) ? ctx.message.text.slice(3) : undefined
 
-        if (msg === undefined){
+        if (msg === undefined) {
 
             await ctx.reply("من فضلك أكتب الامر /bt ثم الرسالة التي تريد نشرها ")
         }
 
-        else if (msg !== undefined){
+        else if (msg !== undefined) {
 
-            for (let lop of user) {
+            for (let lop of Object.keys(user)) {
 
                 await client.telegram.sendMessage(lop, msg)
-                .catch((err) => console.log(err));
+                    .catch((err) => console.log(err));
             }
         }
-        
-        
+
+
     }
-  
+
     else { await ctx.reply("لايمكن بث الرسائل الى جميع المشتركين إلا من قبل مشرفي البوت"); }
-  
+
 });
 
 client.on("my_chat_member", async (ctx) => {
 
-    if (ctx.chat.type === 'supergroup' && ctx.update.my_chat_member.new_chat_member.status === 'left'){
+    let from = ctx.chat.id;
+    let username = ctx.chat.username ? ctx.chat.username : null;
+    let name = ctx.chat.first_name ? ctx.chat.first_name : ctx.chat.last_name ? ctx.chat.last_name : ctx.chat.title ? ctx.chat.title : null;
+    let type = ctx.chat.type
+    let user = fs.readJsonSync('./db/user.json');
+    let info = {
 
-        let from = ctx.chat.id
-        let user = fs.readJsonSync('./db/user.json');
+        [from]: {
 
-        if (user.includes(from)) {
+            "id": from,
+            "Username": username,
+            "Name": name,
+            "Type": type
+        }
 
-            let del = user.indexOf(from);
-            user.splice(del, 1)
-            fs.writeJsonSync('./db/user.json', user)
+    }
+
+    if (ctx.update.my_chat_member.new_chat_member.status === 'left' || ctx.update.my_chat_member.new_chat_member.status === 'kicked') {
+
+        if (Object.keys(user).includes(from.toString())) {
+
+            delete user[from]
+            fs.writeJsonSync('./db/user.json', user, { spaces: '\t' })
             console.log(`Remove Id ${from}`)
         }
     }
 
-    else if (ctx.chat.type === 'private' && ctx.update.my_chat_member.new_chat_member.status === 'kicked'){
+    else if (ctx.update.my_chat_member.new_chat_member.status === 'member' || ctx.update.my_chat_member.new_chat_member.status === 'administrator') {
 
-        let from = ctx.chat.id
-        let user = fs.readJsonSync('./db/user.json');
+        let msg = ctx.chat.username ? `مرحباً بك @${username} لقد تم تفعيل خدمة إرسال الأذكار بشكل تلقائي` : `مرحباً بك ${name} لقد تم تفعيل خدمة إرسال الأذكار بشكل تلقائي`;
 
-        if (user.includes(from)) {
+        if (!Object.keys(user).includes(from.toString())) {
+            MenuNmber(from,0)
+            fs.writeJsonSync('./db/user.json', Object.assign({}, user, info), { spaces: '\t' });
+            ctx.update.my_chat_member.new_chat_member.can_post_messages === true || type === 'private' ? await ctx.reply(msg)
+                .then(async (data) => {
 
-            let del = user.indexOf(from);
-            user.splice(del, 1)
-            fs.writeJsonSync('./db/user.json', user)
-            console.log(`Remove Id ${from}`)
-        }
-    }
-
-    else if (ctx.chat.type === 'supergroup' && ctx.update.my_chat_member.new_chat_member.status === 'member'){
-
-        let from = ctx.chat.id
-        let pushname = ctx.chat.username ? ctx.chat.username : ctx.chat.first_name ? ctx.chat.first_name : ctx.chat.title ;
-        let user = fs.readJsonSync('./db/user.json');
-        let msg = ctx.chat.username ? `مرحباً بك @${pushname} لقد تم تفعيل خدمة إرسال الأذكار بشكل تلقائي \n\n لعرض مزيد من الخدمات أرسل كلمة /start`: `مرحباً بك ${pushname} لقد تم تفعيل خدمة إرسال الأذكار بشكل تلقائي \n\n لعرض مزيد من الخدمات أرسل كلمة /start`;
-
-        if (!user.includes(from)) {
-
-            user.push(from)
-            fs.writeJsonSync('./db/user.json', user)
-            await ctx.reply(msg)
-            .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)) , 60000))
-            .catch((err) => console.log(err));
+                    ctx.update.my_chat_member.new_chat_member.can_delete_messages === true ? setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 20000) : ''
+                })
+                .catch((err) => console.log(err)) : ''
             console.log(`Add Id ${from}`)
         }
+
     }
 
-    else if (ctx.chat.type === 'private' && ctx.update.my_chat_member.new_chat_member.status === 'member'){
 
-        let from = ctx.chat.id
-        let pushname = ctx.chat.username ? ctx.chat.username : ctx.chat.first_name ? ctx.chat.first_name : ctx.chat.title ;
-        let user = fs.readJsonSync('./db/user.json');
-        let msg = ctx.chat.username ? `مرحباً بك @${pushname} لقد تم تفعيل خدمة إرسال الأذكار بشكل تلقائي \n\n لعرض مزيد من الخدمات أرسل كلمة /start`: `مرحباً بك ${pushname} لقد تم تفعيل خدمة إرسال الأذكار بشكل تلقائي \n\n لعرض مزيد من الخدمات أرسل كلمة /start`;
-
-        if (!user.includes(from)) {
-
-            user.push(from)
-            fs.writeJsonSync('./db/user.json', user)
-            await ctx.reply(msg)
-            .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)) , 60000))
-            .catch((err) => console.log(err));
-            console.log(`Add Id ${from}`)
-        }
-    }
-    
 });
 
 client.on("new_chat_members", async (ctx) => {
 
+    console.log(ctx);
+
     let me = ctx.botInfo
     let admin = await ctx.getChatAdministrators().catch((error) => console.log(error));
     let members = ctx.update.message.new_chat_members[0];
-    let u_f_i = members.username ? members.username : members.first_name ? members.first_name : members.id ? members.id : '';        
+    let u_f_i = members.username ? members.username : members.first_name ? members.first_name : members.id ? members.id : '';
 
-    for (let lop of admin){
+    for (let lop of admin) {
 
-        if (lop.user.id === me.id){
-            
+        if (lop.user.id === me.id) {
+
             let url = await ctx.exportChatInviteLink()
             let but_1 = [Markup.button.url('رابط المجموعة', url)]
             let button = Markup.inlineKeyboard([but_1]);
             let msg = members.username ? `مرحباً بك @${u_f_i} 👋` : `مرحباً بك ${u_f_i} 👋`;
- 
+
             await ctx.deleteMessage().catch(async (err) => console.log(err));
             await ctx.reply(msg, button)
-            .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)) , 60000))
-            .catch((error) => console.log(error));
-            
+                .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 60000))
+                .catch((error) => console.log(error));
+
         }
     }
 
@@ -186,40 +209,41 @@ client.on("new_chat_members", async (ctx) => {
 
 client.on("left_chat_member", async (ctx) => {
 
-    if (ctx.message.left_chat_member.is_bot === false){
+    console.log(ctx);
+    if (ctx.message.left_chat_member.is_bot === false) {
 
         let me = ctx.botInfo
         let admin = await ctx.getChatAdministrators().catch((error) => console.log(error));
         let members = ctx.message.left_chat_member;
         let u_f_i = members.username ? members.username : members.first_name ? members.first_name : members.id ? members.id : '';
 
-       for (let lop of admin){
+        for (let lop of admin) {
 
-            if (lop.user.id === me.id){
+            if (lop.user.id === me.id) {
 
                 let msg = members.username ? `مع السلامة @${u_f_i} 👋` : `مع السلامة ${u_f_i} 👋`;
 
                 await ctx.deleteMessage().catch(async (err) => console.log(err));
                 await ctx.reply(msg)
-                .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)) , 60000))
-                .catch((error) => console.log(error));
+                    .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 60000))
+                    .catch((error) => console.log(error));
 
             }
         }
     }
-    
+
 
 });
 
-client.on("message",async (ctx) => {
+client.on("message", async (ctx) => {
 
     let message_id = ctx.message.message_id;
     let body = ctx.message.text ? ctx.message.text : ctx.message.caption;
     let from = ctx.chat.id;
     let pushname = ctx.from.username ? ctx.from.username : ctx.from.first_name;
-    let Menufrom = getMenu({ from: from });
+    let Menufrom = await getMenu(from);
     let user = fs.readJsonSync('./db/user.json');
-    
+
     menu_number[Menufrom].menu_name.exec({
 
         from: from,
@@ -227,38 +251,38 @@ client.on("message",async (ctx) => {
         pushname: pushname,
         id: message_id,
         Markup: Markup,
-        ctx: ctx, 
+        ctx: ctx,
         client: client,
-         
-    }); 
-      
-    if (!user.includes(from)) {
 
-        user.push(from)
-        fs.writeJsonSync('./db/user.json', user)
+    });
+
+    if (!Object.keys(user).includes(from.toString())) {
+        fs.writeJsonSync('./db/user.json', Object.assign({}, user, info), { spaces: '\t' });
         console.log(`Add Id ${from}`)
-    }    
+    }
 
 });
 
+
 client.action('quran', async (ctx) => {
 
-    let but_1 = [Markup.button.callback('أدريس أبكر', 'idris'),Markup.button.callback('ماهر المعيقلي', 'mahar')];
-    let but_2 = [Markup.button.callback('عبد الله الموسى', 'almosa'),Markup.button.callback('علي جابر', 'alli')];
-    let but_3 = [Markup.button.callback('رجوع', 'start')]
-    let button = Markup.inlineKeyboard([but_1, but_2, but_3]);
+    let but_1 = [Markup.button.callback('أدريس أبكر', 'idris'), Markup.button.callback('ماهر المعيقلي', 'mahar')];
+    let but_2 = [Markup.button.callback('عبد الله الموسى', 'almosa'), Markup.button.callback('علي جابر', 'alli')];
+    let but_3 = [Markup.button.callback('عبدالرحمن السديس', 'Alsudais'), Markup.button.callback('خالد الجليل', 'Galilee')];
+    let but_4 = [Markup.button.callback('رجوع', 'start')]
+    let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4]);
     let from = ctx.chat.id
-    getMenu({ from: from });
-
-    db_menu[from].menu_name = 1;
-
+    await getMenu(from);
+    MenuNmber(from,1);
     let quran_menu = 'قم بإختيار القارئ 🔊 \n\n'
     quran_menu += '1- أدريس أبكر \n'
     quran_menu += '2- ماهر المعيقلي \n'
     quran_menu += '3- عبدالله الموسى \n'
-    quran_menu += '4- علي جابر \n\n\n'
+    quran_menu += '4- علي جابر \n'
+    quran_menu += '5- عبدالرحمن السديس \n'
+    quran_menu += '6- خالد الجليل \n\n\n'
     quran_menu += '【 للرجوع للقائمة الرئيسية أرسل #️ 】'
-  
+
     await ctx.reply(quran_menu, button).catch((err) => console.log(err));
     await ctx.deleteMessage().catch((err) => console.log(err));
 
@@ -267,10 +291,9 @@ client.action('quran', async (ctx) => {
 client.action('idris', async (ctx) => {
 
     let from = ctx.chat.id
-    getMenu({ from: from });
-
-    db_menu[from].menu_name = 2;
-    let quran_idr = fs.readFileSync('./media/text/quran_1.txt',{encoding:'utf8', flag:'r'})
+    await getMenu(from);
+    MenuNmber(from,2);
+    let quran_idr = fs.readFileSync('./media/text/quran_1.txt', { encoding: 'utf8', flag: 'r' })
     let home = '【 للرجوع للقائمة الرئيسية أرسل #️ 】\n'
     home += '【 للرجوع للخلف أرسل * 】'
     await ctx.reply(`${quran_idr}\n ${home}`).catch((err) => console.log(err));
@@ -281,11 +304,9 @@ client.action('idris', async (ctx) => {
 client.action('mahar', async (ctx) => {
 
     let from = ctx.chat.id
-    getMenu({ from: from });
-
-    db_menu[from].menu_name = 3;
-
-    let quran_idr = fs.readFileSync('./media/text/quran_2.txt',{encoding:'utf8', flag:'r'})
+    await getMenu(from);
+    MenuNmber(from,3);
+    let quran_idr = fs.readFileSync('./media/text/quran_2.txt', { encoding: 'utf8', flag: 'r' })
     let home = '【 للرجوع للقائمة الرئيسية أرسل #️ 】\n'
     home += '【 للرجوع للخلف أرسل * 】'
     await ctx.reply(`${quran_idr}\n ${home}`).catch((err) => console.log(err));
@@ -296,11 +317,9 @@ client.action('mahar', async (ctx) => {
 client.action('alli', async (ctx) => {
 
     let from = ctx.chat.id
-    getMenu({ from: from });
-
-    db_menu[from].menu_name = 5;
-
-    let quran_idr = fs.readFileSync('./media/text/quran_4.txt',{encoding:'utf8', flag:'r'})
+    await getMenu(from);
+    MenuNmber(from,5);
+    let quran_idr = fs.readFileSync('./media/text/quran_4.txt', { encoding: 'utf8', flag: 'r' })
     let home = '【 للرجوع للقائمة الرئيسية أرسل #️ 】\n'
     home += '【 للرجوع للخلف أرسل * 】'
     await ctx.reply(`${quran_idr}\n ${home}`).catch((err) => console.log(err));
@@ -311,11 +330,35 @@ client.action('alli', async (ctx) => {
 client.action('almosa', async (ctx) => {
 
     let from = ctx.chat.id
-    getMenu({ from: from });
+    await getMenu(from);
+    MenuNmber(from,4);
+    let quran_idr = fs.readFileSync('./media/text/quran_3.txt', { encoding: 'utf8', flag: 'r' })
+    let home = '【 للرجوع للقائمة الرئيسية أرسل #️ 】\n'
+    home += '【 للرجوع للخلف أرسل * 】'
+    await ctx.reply(`${quran_idr}\n ${home}`).catch((err) => console.log(err));
+    await ctx.deleteMessage().catch((err) => console.log(err));
 
-    db_menu[from].menu_name = 4;
+});
 
-    let quran_idr = fs.readFileSync('./media/text/quran_3.txt',{encoding:'utf8', flag:'r'})
+client.action('Alsudais', async (ctx) => {
+
+    let from = ctx.chat.id
+    await getMenu(from);
+    MenuNmber(from,7);
+    let quran_idr = fs.readFileSync('./media/text/quran_5.txt', { encoding: 'utf8', flag: 'r' })
+    let home = '【 للرجوع للقائمة الرئيسية أرسل #️ 】\n'
+    home += '【 للرجوع للخلف أرسل * 】'
+    await ctx.reply(`${quran_idr}\n ${home}`).catch((err) => console.log(err));
+    await ctx.deleteMessage().catch((err) => console.log(err));
+
+});
+
+client.action('Galilee', async (ctx) => {
+
+    let from = ctx.chat.id
+    await getMenu(from);
+    MenuNmber(from,8);
+    let quran_idr = fs.readFileSync('./media/text/quran_6.txt', { encoding: 'utf8', flag: 'r' })
     let home = '【 للرجوع للقائمة الرئيسية أرسل #️ 】\n'
     home += '【 للرجوع للخلف أرسل * 】'
     await ctx.reply(`${quran_idr}\n ${home}`).catch((err) => console.log(err));
@@ -326,25 +369,49 @@ client.action('almosa', async (ctx) => {
 client.action('start', async (ctx) => {
 
     let from = ctx.chat.id
-    getMenu({ from: from });
-
-    db_menu[from].menu_name = 0;
-
-    let but_1 = [Markup.button.callback('قرآن كريم 📖', 'quran'),Markup.button.callback('أذكار 📿', 'adhkar')];
-    let but_2 = [Markup.button.callback('فيديو 🎥', 'video'),Markup.button.callback('صور 🖼️', 'photo'),Markup.button.callback('ملصق 🪧', 'sticker')];
-    let but_3 = [Markup.button.callback('سؤال ⁉️', 'question')];
+    await getMenu(from);
+    MenuNmber(from,0);
+    let but_1 = [Markup.button.callback('قرآن كريم 📖', 'quran'), Markup.button.callback('أذكار 📿', 'adhkar')];
+    let but_2 = [Markup.button.callback('فيديو 🎥', 'video'), Markup.button.callback('صور 🖼️', 'photo'), Markup.button.callback('ملصق 🪧', 'sticker')];
+    let but_3 = [Markup.button.callback('سؤال ⁉️', 'question'), Markup.button.callback('محاضرات 🌾', 'Lectures'), Markup.button.callback('بطاقات 🎴', 'albitaqat')];
     let button = Markup.inlineKeyboard([but_1, but_2, but_3]);
-    let pushname = ctx.from.username ? ctx.from.username : ctx.from.first_name;
+    let pushname = ctx.chat.first_name ? ctx.chat.first_name : ctx.chat.last_name ? ctx.chat.last_name : ctx.chat.title ? ctx.chat.title : '';
+    let user = fs.readJsonSync('./db/user.json');
+    let channel = []
+    let supergroup = []
 
-    let mesg = `مرحباً بك  @${pushname} 👋 \n`
-    mesg += 'من فضلك قم بكتابة (رقم) الخدمة ✉️ \n\n\n'
+    for (let lop of Object.keys(user)) {
+
+        if (user[lop].Type === 'channel') {
+
+            channel.push(lop)
+
+        }
+
+        else if (user[lop].Type === 'supergroup') {
+
+            supergroup.push(lop)
+
+        }
+
+    }
+    let mesg = ` مرحباً بك ${pushname} 👋  \n\n`
+    mesg += 'من فضلك قم بإرسال رقم الخدمة ✉️ \n\n\n'
     mesg += '1- قائمة القرآن الكريم 📖 \n'
     mesg += '2- قائمة الأذكار 📿 \n'
-    mesg += '3- فيديو عشوائي 🎥 \n'
+    mesg += '3- فيديوهات قرآن عشوائية 🎥 \n'
     mesg += '4- صورة عشوائية 🖼️ \n'
     mesg += '5- ملصق عشوائي 🪧 \n'
-    mesg += '6- سؤال عشوائي ⁉️ \n\n\n'
-    
+    mesg += '6- سؤال عشوائي ⁉️ \n'
+    mesg += '7- محاضرات عشوائية 🌾 \n'
+    mesg += '8- بطاقات القرآن 🎴 \n\n\n\n'
+    mesg += 'إحصائيات البوت \n'
+    mesg += `عدد المحادثات : ${Object.keys(user).length}\n`
+    mesg += `عدد المجموعات : ${supergroup.length}\n`
+    mesg += `عدد القنوات : ${channel.length}\n\n`
+    mesg += 'بمجرد إضافة البوت لقروبك سيبدأ بنشر الرسائل بشكل تلقائي ⚠️\n\n'
+    mesg += 'يمكنك متابعة البوت على واتساب عبر الرقم 966502054247 🤖'
+
     await ctx.reply(mesg, button).catch((err) => console.log(err));
     await ctx.deleteMessage().catch((err) => console.log(err));
 
@@ -353,10 +420,8 @@ client.action('start', async (ctx) => {
 client.action('adhkar', async (ctx) => {
 
     let from = ctx.chat.id
-    getMenu({ from: from });
-
-    db_menu[from].menu_name = 6;
-
+    await getMenu(from);
+    MenuNmber(from,6);
     let adhkar_menu = '1- أذكار الصباح ☀️ \n'
     adhkar_menu += '2- أذكار المساء 🌑 \n'
     adhkar_menu += '3- أذكار النوم 😴 \n'
@@ -370,7 +435,7 @@ client.action('adhkar', async (ctx) => {
     adhkar_menu += '11- أذكار الطعام 🥣 \n'
     adhkar_menu += '12- دُعَاءُ خَتْمِ القُرْآنِ الكَريمِ 📖 \n\n\n'
     adhkar_menu += '【 للرجوع للقائمة الرئيسية أرسل #️ 】'
- 
+
     await ctx.reply(adhkar_menu).catch((err) => console.log(err));
     await ctx.deleteMessage().catch((err) => console.log(err));
 
@@ -378,33 +443,72 @@ client.action('adhkar', async (ctx) => {
 
 client.action('photo', async (ctx) => {
 
-    let but_1 = [Markup.button.callback('التالي', 'photo'),Markup.button.callback('رجوع', 'start')];
+    let but_1 = [Markup.button.callback('التالي', 'photo'), Markup.button.callback('رجوع', 'start')];
     let button = Markup.inlineKeyboard([but_1]);
     let listphoto = photo[Math.floor(Math.random() * photo.length)]
-    await ctx.replyWithPhoto({url: listphoto}, button)
-    .catch((err) => console.log(err));
+    await ctx.replyWithPhoto({ url: listphoto }, button)
+        .catch((err) => console.log(err));
     await ctx.deleteMessage().catch((err) => console.log(err));
 
 });
 
 client.action('video', async (ctx) => {
 
-    let but_1 = [Markup.button.callback('التالي', 'video'),Markup.button.callback('رجوع', 'start')];
+    let but_1 = [Markup.button.callback('التالي', 'video'), Markup.button.callback('رجوع', 'start')];
     let button = Markup.inlineKeyboard([but_1]);
     let listvideo = video[Math.floor(Math.random() * video.length)]
-    await ctx.replyWithVideo({url: listvideo}, button)
-    .catch((erro) => console.log(erro));
+    await ctx.replyWithVideo({ url: listvideo }, button)
+        .catch((erro) => console.log(erro));
     await ctx.deleteMessage().catch((err) => console.log(err));
 
 });
 
 client.action('sticker', async (ctx) => {
 
-    let but_1 = [Markup.button.callback('التالي', 'sticker'),Markup.button.callback('رجوع', 'start')];
+    let but_1 = [Markup.button.callback('التالي', 'sticker'), Markup.button.callback('رجوع', 'start')];
     let button = Markup.inlineKeyboard([but_1]);
     let liststicker = sticker[Math.floor(Math.random() * sticker.length)]
-    await ctx.replyWithSticker({url: liststicker}, button)
-    .catch((erro) => console.log(erro));
+    await ctx.replyWithSticker({ url: liststicker }, button)
+        .catch((erro) => console.log(erro));
+    await ctx.deleteMessage().catch((err) => console.log(err));
+
+});
+
+client.action('albitaqat', async (ctx) => {
+
+    let from = ctx.chat.id;
+    getMenu(from);
+    MenuNmber(from, 9);
+    let but_1 = [Markup.button.callback('التالي', 'albitaqat'), Markup.button.callback('رجوع', 'start')];
+    let button = Markup.inlineKeyboard([but_1]);
+    let msg = 'مشروع يهدف إلى خدمة القرآن الكريم وحفّاظِهِ وقارئيه، عن طريق توفير مَتْنٍ مختصرٍ شاملٍ لسور القرآن، وتوفير محتواه مقروؤاً ومرئياً \n\n'
+    msg += 'محتوياتُ (البِطَاقَات):\n\n'
+    msg += 'وضعتُ ثمانيةَ (8) عناصرَ موحَّدَةً في كلِّ بطاقةِ تعريفٍ بالسورةِ، وجعلتُهَا مرتبةً ومُرَقَّمَةً، وكتبتُها بعباراتٍ واضحةٍ، وجُمَلٍ مختصرةٍ، وأسلوبٍ ميسرٍ ليسهُلَ حفظُهَا.\n\n'
+    msg += '1- آيَـــــــــــــــاتُـــــها \n'
+    msg += '2- مَعــــــنَـى اسْـــــــمِها \n'
+    msg += '3- سَبَبُ تَسْمِيَتِها \n'
+    msg += '4- أَسْـــــمَاؤُهـا \n'
+    msg += '5- مَقْصِدُها العَامُّ \n'
+    msg += '6- سَبَبُ نُزُولِهَا \n'
+    msg += '7- فَضْــــــلُها \n'
+    msg += '8- مُنَــاسَــبَاتُــها \n\n'
+    msg += '⚠️ لإرسال البطاقة صورة وصوت قم بإرسال رقم السورة او إسم السورة \n\n\n'
+    msg += '【 للرجوع للقائمة الرئيسية أرسل #️ 】'
+
+    await ctx.reply(msg, button).catch((erro) => console.log(erro));
+    await ctx.deleteMessage().catch((err) => console.log(err));
+
+});
+
+client.action('Lectures', async (ctx) => {
+
+    let but_1 = [[Markup.button.callback('التالي', 'Lectures'), Markup.button.callback('رجوع', 'start')]];
+    let LecturesJson = fs.readJsonSync('./menu/Lectures.json');
+    let listlectures = LecturesJson[Math.floor(Math.random() * LecturesJson.length)]
+    let msg = `✽\n\n${listlectures.Lectures}\n\n`
+    msg += `*الشيخ:* ${listlectures.Author} 🔊`
+    await ctx.replyWithVideo({ url: listlectures.FilePath }, { caption: msg, reply_markup: { inline_keyboard: but_1 } })
+        .catch((erro) => console.log(erro));
     await ctx.deleteMessage().catch((err) => console.log(err));
 
 });
@@ -417,35 +521,35 @@ client.action('question', async (ctx) => {
     let but_1 = Markup.button.callback(question[list].answer.asr, question[list].answer.id);
     let but_2 = Markup.button.callback(question[list].answer1.asr, question[list].answer1.id);
     let but_3 = Markup.button.callback(question[list].answer2.asr, question[list].answer2.id);
-    let but_4 = [Markup.button.callback('التالي', 'question'),Markup.button.callback('رجوع', 'start')];
-    let but = [[[but_1], [but_2], [but_3], but_4 ],[[but_2], [but_1], [but_3], but_4],[[but_3], [but_1], [but_2], but_4],[[but_2], [but_3], [but_1], but_4],[[but_1], [but_3], [but_2], but_4]]
+    let but_4 = [Markup.button.callback('التالي', 'question'), Markup.button.callback('رجوع', 'start')];
+    let but = [[[but_1], [but_2], [but_3], but_4], [[but_2], [but_1], [but_3], but_4], [[but_3], [but_1], [but_2], but_4], [[but_2], [but_3], [but_1], but_4], [[but_1], [but_3], [but_2], but_4]]
     let random = but[Math.floor(Math.random() * but.length)]
     let button = Markup.inlineKeyboard(random);
 
     await ctx.reply(question[list].question, button)
-    .catch((error) => console.log(error));
+        .catch((error) => console.log(error));
 
     client.action(question[list].answer.id, async (ctx) => {
 
         await ctx.reply("إجابة صحيحة ✔️")
-        .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)) , 10000))
-        .catch((error) => console.log(error));
+            .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 10000))
+            .catch((error) => console.log(error));
 
     });
 
     client.action(question[list].answer1.id, async (ctx) => {
 
         await ctx.reply("إجابة خاطئة ❌")
-        .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)) , 10000))
-        .catch((error) => console.log(error));
+            .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 10000))
+            .catch((error) => console.log(error));
 
     });
 
     client.action(question[list].answer2.id, async (ctx) => {
 
         await ctx.reply("إجابة خاطئة ❌")
-        .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)) , 10000))
-        .catch((error) => console.log(error));
+            .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 10000))
+            .catch((error) => console.log(error));
 
     });
 
@@ -455,20 +559,11 @@ client.action('question', async (ctx) => {
 
 client.catch(async (err) => {
 
-    console.log(err.toString())
-    execSh("npm start", { cwd: "./" });
+    console.log(err.toString());
 
 });
 
-function getMenu({ from }) {
-    if (db_menu[from]) {
-      return db_menu[from].menu_name;
-    } else {
-      db_menu[from] = { menu_name: 0,};
-      return db_menu[from].menu_name;
-    }
-}
 
-broadcast({client: client, Markup: Markup,});
+broadcast({ client: client, Markup: Markup });
 
 client.launch();
