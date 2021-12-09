@@ -59,7 +59,7 @@ client.start(async (ctx) => {
 
 
     let from = ctx.chat.id
-    MenuNmber(from,0)
+    MenuNmber(from, 0)
     await getMenu(from);
     let but_1 = [Markup.button.callback('قرآن كريم 📖', 'quran'), Markup.button.callback('أذكار 📿', 'adhkar')];
     let but_2 = [Markup.button.callback('فيديو 🎥', 'video'), Markup.button.callback('صور 🖼️', 'photo'), Markup.button.callback('ملصق 🪧', 'sticker')];
@@ -199,7 +199,7 @@ client.on("my_chat_member", async (ctx) => {
         let msg = ctx.chat.username ? `مرحباً بك @${username} لقد تم تفعيل خدمة إرسال الأذكار بشكل تلقائي` : `مرحباً بك ${name} لقد تم تفعيل خدمة إرسال الأذكار بشكل تلقائي`;
 
         if (!Object.keys(user).includes(from.toString())) {
-            MenuNmber(from,0)
+            MenuNmber(from, 0)
             fs.writeJsonSync('./db/user.json', Object.assign({}, user, info), { spaces: '\t' });
             ctx.update.my_chat_member.new_chat_member.can_post_messages === true || type === 'private' ? await ctx.reply(msg)
                 .then(async (data) => {
@@ -258,8 +258,8 @@ client.on("left_chat_member", async (ctx) => {
 
                 await ctx.deleteMessage().catch(async (err) => console.log(err));
                 await ctx.reply(msg)
-                    .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 60000))
-                    .catch((error) => console.log(error));
+                .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 60000))
+                .catch((error) => console.log(error));
 
             }
         }
@@ -278,7 +278,7 @@ client.on("message", async (ctx) => {
     let user = fs.readJsonSync('./db/user.json');
     let type = ctx.chat.type
     let admin = fs.readJsonSync('./db/admin.json');
-    let body_no = ["hi","Hi","#","خدمة","*","1","2","3","4","5","6","7","8","9","0",]
+    let body_no = ["hi", "Hi", "#", "خدمة", "*", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0",]
 
     menu_number[Menufrom].menu_name.exec({
 
@@ -302,7 +302,7 @@ client.on("message", async (ctx) => {
         for (let lop of admin) {
 
             await ctx.forwardMessage(lop)
-            .catch((error) => console.log(error));
+                .catch((error) => console.log(error));
 
         }
 
@@ -313,8 +313,8 @@ client.on("message", async (ctx) => {
         let from = ctx.message.reply_to_message.forward_from.id
         let message_id = ctx.message.reply_to_message.message_id
 
-        await client.telegram.sendMessage(from, body,{ reply_to_message_id: message_id })
-        .catch((error) => console.log(error));
+        await client.telegram.sendMessage(from, body, { reply_to_message_id: message_id })
+            .catch((error) => console.log(error));
 
 
     }
@@ -331,7 +331,7 @@ client.action('quran', async (ctx) => {
     let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4]);
     let from = ctx.chat.id
     await getMenu(from);
-    MenuNmber(from,1);
+    MenuNmber(from, 1);
     let quran_menu = 'قم بإختيار القارئ 🔊 \n\n'
     quran_menu += '1- أدريس أبكر \n'
     quran_menu += '2- ماهر المعيقلي \n'
@@ -350,7 +350,7 @@ client.action('idris', async (ctx) => {
 
     let from = ctx.chat.id
     await getMenu(from);
-    MenuNmber(from,2);
+    MenuNmber(from, 2);
     let quran_idr = fs.readFileSync('./media/text/quran_1.txt', { encoding: 'utf8', flag: 'r' })
     let home = '【 للرجوع للقائمة الرئيسية أرسل #️ 】\n'
     home += '【 للرجوع للخلف أرسل * 】'
@@ -363,7 +363,7 @@ client.action('mahar', async (ctx) => {
 
     let from = ctx.chat.id
     await getMenu(from);
-    MenuNmber(from,3);
+    MenuNmber(from, 3);
     let quran_idr = fs.readFileSync('./media/text/quran_2.txt', { encoding: 'utf8', flag: 'r' })
     let home = '【 للرجوع للقائمة الرئيسية أرسل #️ 】\n'
     home += '【 للرجوع للخلف أرسل * 】'
@@ -376,7 +376,7 @@ client.action('alli', async (ctx) => {
 
     let from = ctx.chat.id
     await getMenu(from);
-    MenuNmber(from,5);
+    MenuNmber(from, 5);
     let quran_idr = fs.readFileSync('./media/text/quran_4.txt', { encoding: 'utf8', flag: 'r' })
     let home = '【 للرجوع للقائمة الرئيسية أرسل #️ 】\n'
     home += '【 للرجوع للخلف أرسل * 】'
@@ -389,7 +389,7 @@ client.action('almosa', async (ctx) => {
 
     let from = ctx.chat.id
     await getMenu(from);
-    MenuNmber(from,4);
+    MenuNmber(from, 4);
     let quran_idr = fs.readFileSync('./media/text/quran_3.txt', { encoding: 'utf8', flag: 'r' })
     let home = '【 للرجوع للقائمة الرئيسية أرسل #️ 】\n'
     home += '【 للرجوع للخلف أرسل * 】'
@@ -402,7 +402,7 @@ client.action('Alsudais', async (ctx) => {
 
     let from = ctx.chat.id
     await getMenu(from);
-    MenuNmber(from,7);
+    MenuNmber(from, 7);
     let quran_idr = fs.readFileSync('./media/text/quran_5.txt', { encoding: 'utf8', flag: 'r' })
     let home = '【 للرجوع للقائمة الرئيسية أرسل #️ 】\n'
     home += '【 للرجوع للخلف أرسل * 】'
@@ -415,7 +415,7 @@ client.action('Galilee', async (ctx) => {
 
     let from = ctx.chat.id
     await getMenu(from);
-    MenuNmber(from,8);
+    MenuNmber(from, 8);
     let quran_idr = fs.readFileSync('./media/text/quran_6.txt', { encoding: 'utf8', flag: 'r' })
     let home = '【 للرجوع للقائمة الرئيسية أرسل #️ 】\n'
     home += '【 للرجوع للخلف أرسل * 】'
@@ -428,7 +428,7 @@ client.action('start', async (ctx) => {
 
     let from = ctx.chat.id
     await getMenu(from);
-    MenuNmber(from,0);
+    MenuNmber(from, 0);
     let but_1 = [Markup.button.callback('قرآن كريم 📖', 'quran'), Markup.button.callback('أذكار 📿', 'adhkar')];
     let but_2 = [Markup.button.callback('فيديو 🎥', 'video'), Markup.button.callback('صور 🖼️', 'photo'), Markup.button.callback('ملصق 🪧', 'sticker')];
     let but_3 = [Markup.button.callback('سؤال ⁉️', 'question'), Markup.button.callback('محاضرات 🌾', 'Lectures'), Markup.button.callback('بطاقات 🎴', 'albitaqat')];
@@ -479,7 +479,7 @@ client.action('adhkar', async (ctx) => {
 
     let from = ctx.chat.id
     await getMenu(from);
-    MenuNmber(from,6);
+    MenuNmber(from, 6);
     let adhkar_menu = '1- أذكار الصباح ☀️ \n'
     adhkar_menu += '2- أذكار المساء 🌑 \n'
     adhkar_menu += '3- أذكار النوم 😴 \n'
