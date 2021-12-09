@@ -314,19 +314,22 @@ client.on("message", async (ctx) => {
         for (let lop of admin) {
 
             await ctx.forwardMessage(lop)
-                .catch((error) => console.log(error));
+            .catch((error) => console.log(error));
 
         }
 
     }
 
-    else if (ctx.update.message.reply_to_message !== undefined && admin.some(fx => from.toString().includes(fx))) {
+    else if (ctx.message.reply_to_message !== undefined && admin.some(fx => from.toString().includes(fx))) {
 
-        let from = ctx.message.reply_to_message.forward_from.id
-        let message_id = ctx.message.reply_to_message.message_id
+        let from = await ctx.message.reply_to_message.forward_from.id
+        let message_id = await ctx.message.reply_to_message.message_id
+        let text = await ctx.message.text
 
-        await client.telegram.sendMessage(from, body, { reply_to_message_id: message_id })
-            .catch((error) => console.log(error));
+        await client.telegram.sendMessage(from, text, { reply_to_message_id: message_id })
+        .catch(async(er) => {
+            await client.telegram.sendMessage(er.on.payload.chat_id, er.on.payload.text)
+        });
 
 
     }
