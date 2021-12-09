@@ -304,7 +304,7 @@ client.on("message", async (ctx) => {
 
     });
 
-    if (!Object.keys(user).includes(from)) {
+    if (!Object.keys(user).includes(from.toString())) {
         fs.writeJsonSync('./db/user.json', Object.assign({}, user, info), { spaces: '\t' });
         console.log(`Add Id ${from}`)
     }
