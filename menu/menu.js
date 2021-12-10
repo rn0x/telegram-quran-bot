@@ -171,7 +171,7 @@ export const menu = {
       let LecturesJson = fs.readJsonSync('./menu/Lectures.json');
       let listlectures = LecturesJson[Math.floor(Math.random() * LecturesJson.length)]
       let msg = `✽\n\n${listlectures.Lectures}\n\n`
-      msg += `*الشيخ:* ${listlectures.Author} 🔊`
+      msg += `الشيخ: ${listlectures.Author} 🔊`
       await ctx.replyWithVideo({url: listlectures.FilePath}, {caption : msg })
       .catch((erro) => console.log(erro));
 
