@@ -585,7 +585,7 @@ client.action('Lectures', async (ctx) => {
     let LecturesJson = fs.readJsonSync('./menu/Lectures.json');
     let listlectures = LecturesJson[Math.floor(Math.random() * LecturesJson.length)]
     let msg = `✽\n\n${listlectures.Lectures}\n\n`
-    msg += `*الشيخ:* ${listlectures.Author} 🔊`
+    msg += `الشيخ: ${listlectures.Author} 🔊`
     await ctx.replyWithVideo({ url: listlectures.FilePath }, { caption: msg, reply_markup: { inline_keyboard: but_1 } })
         .catch((erro) => console.log(erro));
     await ctx.deleteMessage().catch((err) => console.log(err));
