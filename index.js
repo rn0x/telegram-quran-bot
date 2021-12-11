@@ -270,11 +270,11 @@ client.on("left_chat_member", async (ctx) => {
 
 client.on("message", async (ctx) => {
 
+    let Menu = fs.readJsonSync('./db/Menu.json');
     if (!Object.keys(Menu).includes(ctx.chat.id.toString())) {
 
         MenuNmber(ctx.chat.id, 0);
     }
-    
     let message_id = ctx.message.message_id;
     let body = ctx.message.text ? ctx.message.text : ctx.message.caption;
     let from = ctx.chat.id;
@@ -284,7 +284,6 @@ client.on("message", async (ctx) => {
     let user = fs.readJsonSync('./db/user.json');
     let type = ctx.chat.type
     let admin = fs.readJsonSync('./db/admin.json');
-    let Menu = fs.readJsonSync('./db/Menu.json');
     let body_no = ["hi", "Hi", "#", "خدمة", "*", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0",]
     let info = {
 
