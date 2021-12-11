@@ -326,7 +326,7 @@ client.on("message", async (ctx) => {
 
     }
 
-    else if (ctx.message.reply_to_message !== undefined && admin.some(fx => from.toString().includes(fx))) {
+    else if (ctx.message.reply_to_message.forward_from !== undefined && admin.some(fx => from.toString().includes(fx))) {
 
         let from = await ctx.message.reply_to_message.forward_from.id
         let message_id = await ctx.message.reply_to_message.message_id
@@ -638,7 +638,7 @@ client.action('question', async (ctx) => {
 
 client.catch(async (err) => {
 
-    console.log(err.toString());
+    console.log(err);
 
 });
 
