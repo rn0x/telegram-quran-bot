@@ -270,6 +270,11 @@ client.on("left_chat_member", async (ctx) => {
 
 client.on("message", async (ctx) => {
 
+    if (!Object.keys(Menu).includes(ctx.chat.id.toString())) {
+
+        MenuNmber(ctx.chat.id, 0);
+    }
+    
     let message_id = ctx.message.message_id;
     let body = ctx.message.text ? ctx.message.text : ctx.message.caption;
     let from = ctx.chat.id;
@@ -305,12 +310,7 @@ client.on("message", async (ctx) => {
 
     });
 
-    if (!Object.keys(Menu).includes(from.toString())) {
-
-        MenuNmber(from, 0);
-    }
-
-    else if (!Object.keys(user).includes(from.toString())) {
+    if (!Object.keys(user).includes(from.toString())) {
         fs.writeJsonSync('./db/user.json', Object.assign({}, user, info), { spaces: '\t' });
         console.log(`Add Id ${from}`)
     }
