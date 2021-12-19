@@ -226,13 +226,13 @@ client.on("new_chat_members", async (ctx) => {
 
         if (lop.user.id === me.id) {
 
-            let url = await ctx.exportChatInviteLink()
-            let but_1 = [Markup.button.url('رابط المجموعة', url)]
-            let button = Markup.inlineKeyboard([but_1]);
+            // let url = await ctx.exportChatInviteLink()
+            // let but_1 = [Markup.button.url('رابط المجموعة', url)]
+            // let button = Markup.inlineKeyboard([but_1]);
             let msg = members.username ? `مرحباً بك @${u_f_i} 👋` : `مرحباً بك ${u_f_i} 👋`;
 
             await ctx.deleteMessage().catch(async (err) => console.log(err));
-            await ctx.reply(msg, button)
+            await ctx.reply(msg)
                 .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 60000))
                 .catch((error) => console.log(error));
 
@@ -258,8 +258,8 @@ client.on("left_chat_member", async (ctx) => {
 
                 await ctx.deleteMessage().catch(async (err) => console.log(err));
                 await ctx.reply(msg)
-                .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 60000))
-                .catch((error) => console.log(error));
+                    .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 60000))
+                    .catch((error) => console.log(error));
 
             }
         }
@@ -319,7 +319,7 @@ client.on("message", async (ctx) => {
         for (let lop of admin) {
 
             await ctx.forwardMessage(lop)
-            .catch((error) => console.log(error));
+                .catch((error) => console.log(error));
 
         }
 
@@ -332,9 +332,9 @@ client.on("message", async (ctx) => {
         let text = await ctx.message.text
 
         await client.telegram.sendMessage(from, text, { reply_to_message_id: message_id })
-        .catch(async(er) => {
-            await client.telegram.sendMessage(er.on.payload.chat_id, er.on.payload.text)
-        });
+            .catch(async (er) => {
+                await client.telegram.sendMessage(er.on.payload.chat_id, er.on.payload.text)
+            });
 
 
     }
