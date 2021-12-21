@@ -276,7 +276,7 @@ client.on("message", async (ctx) => {
         MenuNmber(ctx.chat.id, 0);
     }
     let message_id = ctx.message.message_id;
-    let body = ctx.message.text ? ctx.message.text : ctx.message.caption;
+    let body = ctx.message.text ? ctx.message.text : ctx.message.caption ? ctx.message.caption : ''
     let from = ctx.chat.id;
     let username = ctx.from.username ? ctx.from.username : null;
     let name = ctx.from.first_name ? ctx.from.first_name : ctx.from.last_name ? ctx.from.last_name : ctx.from.title ? ctx.from.title : null;
