@@ -55,7 +55,7 @@ const client = new Telegraf(tokenjson.token, options);
 
 
 
-client.start(async (ctx) => {
+client.start(async(ctx) => {
 
 
     let from = ctx.chat.id
@@ -76,9 +76,7 @@ client.start(async (ctx) => {
 
             channel.push(lop)
 
-        }
-
-        else if (user[lop].Type === 'supergroup') {
+        } else if (user[lop].Type === 'supergroup') {
 
             supergroup.push(lop)
 
@@ -107,7 +105,7 @@ client.start(async (ctx) => {
 
 });
 
-client.command('bt', async (ctx) => {
+client.command('bt', async(ctx) => {
 
     let admin = fs.readJsonSync('./db/admin.json');
 
@@ -119,9 +117,7 @@ client.command('bt', async (ctx) => {
         if (msg === undefined) {
 
             await ctx.reply("من فضلك أكتب الامر /bt ثم الرسالة التي تريد نشرها ")
-        }
-
-        else if (msg !== undefined) {
+        } else if (msg !== undefined) {
 
             for (let lop of Object.keys(user)) {
 
@@ -131,13 +127,11 @@ client.command('bt', async (ctx) => {
         }
 
 
-    }
-
-    else { await ctx.reply("لايمكن بث الرسائل الى جميع المشتركين إلا من قبل مشرفي البوت"); }
+    } else { await ctx.reply("لايمكن بث الرسائل الى جميع المشتركين إلا من قبل مشرفي البوت"); }
 
 });
 
-client.command('addadmin', async (ctx) => {
+client.command('addadmin', async(ctx) => {
 
     let admin = fs.readJsonSync('./db/admin.json');
 
@@ -149,9 +143,7 @@ client.command('addadmin', async (ctx) => {
         if (id === undefined) {
 
             await ctx.reply("من فضلك أكتب الامر /addadmin ثم الآي دي الذي تريد تعيينة كمشرف للبوت ")
-        }
-
-        else if (!admin.includes(id) && id !== undefined) {
+        } else if (!admin.includes(id) && id !== undefined) {
 
             admin.push(id)
             fs.writeJsonSync('./db/admin.json', admin, { spaces: '\t' })
@@ -159,13 +151,11 @@ client.command('addadmin', async (ctx) => {
         }
 
 
-    }
-
-    else { await ctx.reply("لايمكن إستعمال الأمر إلا من قبل مشرفي البوت"); }
+    } else { await ctx.reply("لايمكن إستعمال الأمر إلا من قبل مشرفي البوت"); }
 
 });
 
-client.on("my_chat_member", async (ctx) => {
+client.on("my_chat_member", async(ctx) => {
 
     let from = ctx.chat.id;
     let username = ctx.chat.username ? ctx.chat.username : null;
@@ -192,9 +182,7 @@ client.on("my_chat_member", async (ctx) => {
             fs.writeJsonSync('./db/user.json', user, { spaces: '\t' })
             console.log(`Remove Id ${from}`)
         }
-    }
-
-    else if (ctx.update.my_chat_member.new_chat_member.status === 'member' || ctx.update.my_chat_member.new_chat_member.status === 'administrator') {
+    } else if (ctx.update.my_chat_member.new_chat_member.status === 'member' || ctx.update.my_chat_member.new_chat_member.status === 'administrator') {
 
         let msg = ctx.chat.username ? `مرحباً بك @${username} لقد تم تفعيل خدمة إرسال الأذكار بشكل تلقائي` : `مرحباً بك ${name} لقد تم تفعيل خدمة إرسال الأذكار بشكل تلقائي`;
 
@@ -202,9 +190,9 @@ client.on("my_chat_member", async (ctx) => {
             MenuNmber(from, 0)
             fs.writeJsonSync('./db/user.json', Object.assign({}, user, info), { spaces: '\t' });
             ctx.update.my_chat_member.new_chat_member.can_post_messages === true || type === 'private' ? await ctx.reply(msg)
-                .then(async (data) => {
+                .then(async(data) => {
 
-                    ctx.update.my_chat_member.new_chat_member.can_delete_messages === true ? setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 20000) : ''
+                    ctx.update.my_chat_member.new_chat_member.can_delete_messages === true ? setTimeout(async() => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 20000) : ''
                 })
                 .catch((err) => console.log(err)) : ''
             console.log(`Add Id ${from}`)
@@ -215,7 +203,7 @@ client.on("my_chat_member", async (ctx) => {
 
 });
 
-client.on("new_chat_members", async (ctx) => {
+client.on("new_chat_members", async(ctx) => {
 
     let me = ctx.botInfo
     let admin = await ctx.getChatAdministrators().catch((error) => console.log(error));
@@ -226,22 +214,26 @@ client.on("new_chat_members", async (ctx) => {
 
         if (lop.user.id === me.id) {
 
+            console.log(ctx.message.chat);
+
             // let url = await ctx.exportChatInviteLink()
             // let but_1 = [Markup.button.url('رابط المجموعة', url)]
             // let button = Markup.inlineKeyboard([but_1]);
-            let msg = members.username ? `مرحباً بك @${u_f_i} 👋` : `مرحباً بك ${u_f_i} 👋`;
+            let msg = members.username ? `مرحباً بك @${u_f_i} 👋\nفي مجموعة ${ctx.message.chat.title}` : `مرحباً بك ${u_f_i} 👋\nفي مجموعة ${ctx.message.chat.title}`;
 
-            await ctx.deleteMessage().catch(async (err) => console.log(err));
-            await ctx.reply(msg)
-                .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 60000))
-                .catch((error) => console.log(error));
+            lop.can_delete_messages === true ? await ctx.deleteMessage().catch(async(err) => console.log(err)) : '';
+            lop.can_delete_messages === true ? await ctx.reply(msg)
+                .then(async(data) => {
+
+                    setTimeout(async() => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 20000)
+                }) : ''
 
         }
     }
 
 });
 
-client.on("left_chat_member", async (ctx) => {
+client.on("left_chat_member", async(ctx) => {
 
     if (ctx.message.left_chat_member.is_bot === false) {
 
@@ -256,10 +248,12 @@ client.on("left_chat_member", async (ctx) => {
 
                 let msg = members.username ? `مع السلامة @${u_f_i} 👋` : `مع السلامة ${u_f_i} 👋`;
 
-                await ctx.deleteMessage().catch(async (err) => console.log(err));
-                await ctx.reply(msg)
-                    .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 60000))
-                    .catch((error) => console.log(error));
+                lop.can_delete_messages === true ? await ctx.deleteMessage().catch(async(err) => console.log(err)) : '';
+                lop.can_delete_messages === true ? await ctx.reply(msg)
+                    .then(async(data) => {
+
+                        setTimeout(async() => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 20000)
+                    }) : ''
 
             }
         }
@@ -268,13 +262,14 @@ client.on("left_chat_member", async (ctx) => {
 
 });
 
-client.on("message", async (ctx) => {
+client.on("message", async(ctx) => {
 
     let Menu = fs.readJsonSync('./db/Menu.json');
     if (!Object.keys(Menu).includes(ctx.chat.id.toString())) {
 
         MenuNmber(ctx.chat.id, 0);
     }
+
     let message_id = ctx.message.message_id;
     let body = ctx.message.text ? ctx.message.text : ctx.message.caption ? ctx.message.caption : ''
     let from = ctx.chat.id;
@@ -284,7 +279,7 @@ client.on("message", async (ctx) => {
     let user = fs.readJsonSync('./db/user.json');
     let type = ctx.chat.type
     let admin = fs.readJsonSync('./db/admin.json');
-    let body_no = ["hi", "Hi", "#", "خدمة", "*", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0",]
+    let body_no = ["hi", "Hi", "#", "خدمة", "*", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", ]
     let info = {
 
         [from]: {
@@ -312,9 +307,7 @@ client.on("message", async (ctx) => {
     if (!Object.keys(user).includes(from.toString())) {
         fs.writeJsonSync('./db/user.json', Object.assign({}, user, info), { spaces: '\t' });
         console.log(`Add Id ${from}`)
-    }
-
-    else if (type === 'private' && !body_no.some(fx => body.includes(fx)) && from !== 1061237219) {
+    } else if (type === 'private' && !body_no.some(fx => body.includes(fx)) && from !== 1061237219) {
 
         for (let lop of admin) {
 
@@ -323,16 +316,14 @@ client.on("message", async (ctx) => {
 
         }
 
-    }
-
-    else if (ctx.message.reply_to_message && ctx.message.reply_to_message.forward_from !== undefined && admin.some(fx => from.toString().includes(fx))) {
+    } else if (ctx.message.reply_to_message && ctx.message.reply_to_message.forward_from !== undefined && admin.some(fx => from.toString().includes(fx))) {
 
         let from = await ctx.message.reply_to_message.forward_from.id
         let message_id = await ctx.message.reply_to_message.message_id
         let text = await ctx.message.text
 
         await client.telegram.sendMessage(from, text, { reply_to_message_id: message_id })
-            .catch(async (er) => {
+            .catch(async(er) => {
                 await client.telegram.sendMessage(er.on.payload.chat_id, er.on.payload.text)
             });
 
@@ -342,7 +333,7 @@ client.on("message", async (ctx) => {
 });
 
 
-client.action('quran', async (ctx) => {
+client.action('quran', async(ctx) => {
 
     let but_1 = [Markup.button.callback('أدريس أبكر', 'idris'), Markup.button.callback('ماهر المعيقلي', 'mahar')];
     let but_2 = [Markup.button.callback('عبد الله الموسى', 'almosa'), Markup.button.callback('علي جابر', 'alli')];
@@ -366,7 +357,7 @@ client.action('quran', async (ctx) => {
 
 });
 
-client.action('idris', async (ctx) => {
+client.action('idris', async(ctx) => {
 
     let from = ctx.chat.id
     await getMenu(from);
@@ -379,7 +370,7 @@ client.action('idris', async (ctx) => {
 
 });
 
-client.action('mahar', async (ctx) => {
+client.action('mahar', async(ctx) => {
 
     let from = ctx.chat.id
     await getMenu(from);
@@ -392,7 +383,7 @@ client.action('mahar', async (ctx) => {
 
 });
 
-client.action('alli', async (ctx) => {
+client.action('alli', async(ctx) => {
 
     let from = ctx.chat.id
     await getMenu(from);
@@ -405,7 +396,7 @@ client.action('alli', async (ctx) => {
 
 });
 
-client.action('almosa', async (ctx) => {
+client.action('almosa', async(ctx) => {
 
     let from = ctx.chat.id
     await getMenu(from);
@@ -418,7 +409,7 @@ client.action('almosa', async (ctx) => {
 
 });
 
-client.action('Alsudais', async (ctx) => {
+client.action('Alsudais', async(ctx) => {
 
     let from = ctx.chat.id
     await getMenu(from);
@@ -431,7 +422,7 @@ client.action('Alsudais', async (ctx) => {
 
 });
 
-client.action('Galilee', async (ctx) => {
+client.action('Galilee', async(ctx) => {
 
     let from = ctx.chat.id
     await getMenu(from);
@@ -444,7 +435,7 @@ client.action('Galilee', async (ctx) => {
 
 });
 
-client.action('start', async (ctx) => {
+client.action('start', async(ctx) => {
 
     let from = ctx.chat.id
     await getMenu(from);
@@ -464,9 +455,7 @@ client.action('start', async (ctx) => {
 
             channel.push(lop)
 
-        }
-
-        else if (user[lop].Type === 'supergroup') {
+        } else if (user[lop].Type === 'supergroup') {
 
             supergroup.push(lop)
 
@@ -495,7 +484,7 @@ client.action('start', async (ctx) => {
 
 });
 
-client.action('adhkar', async (ctx) => {
+client.action('adhkar', async(ctx) => {
 
     let from = ctx.chat.id
     await getMenu(from);
@@ -519,7 +508,7 @@ client.action('adhkar', async (ctx) => {
 
 });
 
-client.action('photo', async (ctx) => {
+client.action('photo', async(ctx) => {
 
     let but_1 = [Markup.button.callback('التالي', 'photo'), Markup.button.callback('رجوع', 'start')];
     let button = Markup.inlineKeyboard([but_1]);
@@ -530,7 +519,7 @@ client.action('photo', async (ctx) => {
 
 });
 
-client.action('video', async (ctx) => {
+client.action('video', async(ctx) => {
 
     let but_1 = [Markup.button.callback('التالي', 'video'), Markup.button.callback('رجوع', 'start')];
     let button = Markup.inlineKeyboard([but_1]);
@@ -541,7 +530,7 @@ client.action('video', async (ctx) => {
 
 });
 
-client.action('sticker', async (ctx) => {
+client.action('sticker', async(ctx) => {
 
     let but_1 = [Markup.button.callback('التالي', 'sticker'), Markup.button.callback('رجوع', 'start')];
     let button = Markup.inlineKeyboard([but_1]);
@@ -552,7 +541,7 @@ client.action('sticker', async (ctx) => {
 
 });
 
-client.action('albitaqat', async (ctx) => {
+client.action('albitaqat', async(ctx) => {
 
     let from = ctx.chat.id;
     getMenu(from);
@@ -578,9 +567,11 @@ client.action('albitaqat', async (ctx) => {
 
 });
 
-client.action('Lectures', async (ctx) => {
+client.action('Lectures', async(ctx) => {
 
-    let but_1 = [[Markup.button.callback('التالي', 'Lectures'), Markup.button.callback('رجوع', 'start')]];
+    let but_1 = [
+        [Markup.button.callback('التالي', 'Lectures'), Markup.button.callback('رجوع', 'start')]
+    ];
     let LecturesJson = fs.readJsonSync('./menu/Lectures.json');
     let listlectures = LecturesJson[Math.floor(Math.random() * LecturesJson.length)]
     let msg = `✽\n\n${listlectures.Lectures}\n\n`
@@ -591,7 +582,7 @@ client.action('Lectures', async (ctx) => {
 
 });
 
-client.action('question', async (ctx) => {
+client.action('question', async(ctx) => {
 
     let question = await fs.readJson('./question.json').catch((error) => console.log(error));
     let number = Array.from(question.keys())
@@ -600,33 +591,59 @@ client.action('question', async (ctx) => {
     let but_2 = Markup.button.callback(question[list].answer1.asr, question[list].answer1.id);
     let but_3 = Markup.button.callback(question[list].answer2.asr, question[list].answer2.id);
     let but_4 = [Markup.button.callback('التالي', 'question'), Markup.button.callback('رجوع', 'start')];
-    let but = [[[but_1], [but_2], [but_3], but_4], [[but_2], [but_1], [but_3], but_4], [[but_3], [but_1], [but_2], but_4], [[but_2], [but_3], [but_1], but_4], [[but_1], [but_3], [but_2], but_4]]
+    let but = [
+        [
+            [but_1],
+            [but_2],
+            [but_3], but_4
+        ],
+        [
+            [but_2],
+            [but_1],
+            [but_3], but_4
+        ],
+        [
+            [but_3],
+            [but_1],
+            [but_2], but_4
+        ],
+        [
+            [but_2],
+            [but_3],
+            [but_1], but_4
+        ],
+        [
+            [but_1],
+            [but_3],
+            [but_2], but_4
+        ]
+    ]
     let random = but[Math.floor(Math.random() * but.length)]
     let button = Markup.inlineKeyboard(random);
 
     await ctx.reply(question[list].question, button)
         .catch((error) => console.log(error));
 
-    client.action(question[list].answer.id, async (ctx) => {
+    client.action(question[list].answer.id, async(ctx) => {
 
         await ctx.reply("إجابة صحيحة ✔️")
-            .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 10000))
+            .then(async(data) => setTimeout(async() => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 10000))
             .catch((error) => console.log(error));
 
     });
 
-    client.action(question[list].answer1.id, async (ctx) => {
+    client.action(question[list].answer1.id, async(ctx) => {
 
         await ctx.reply("إجابة خاطئة ❌")
-            .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 10000))
+            .then(async(data) => setTimeout(async() => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 10000))
             .catch((error) => console.log(error));
 
     });
 
-    client.action(question[list].answer2.id, async (ctx) => {
+    client.action(question[list].answer2.id, async(ctx) => {
 
         await ctx.reply("إجابة خاطئة ❌")
-            .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 10000))
+            .then(async(data) => setTimeout(async() => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 10000))
             .catch((error) => console.log(error));
 
     });
@@ -635,7 +652,7 @@ client.action('question', async (ctx) => {
 
 });
 
-client.catch(async (err) => {
+client.catch(async(err) => {
 
     console.log(err);
 
