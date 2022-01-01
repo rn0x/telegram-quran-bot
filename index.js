@@ -214,8 +214,6 @@ client.on("new_chat_members", async(ctx) => {
 
         if (lop.user.id === me.id) {
 
-            console.log(ctx.message.chat);
-
             // let url = await ctx.exportChatInviteLink()
             // let but_1 = [Markup.button.url('رابط المجموعة', url)]
             // let button = Markup.inlineKeyboard([but_1]);
