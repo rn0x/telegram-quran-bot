@@ -324,7 +324,7 @@ client.on("message", async(ctx) => {
         let message_id = await ctx.message.reply_to_message.message_id
         let text = await ctx.message.text
 
-        await client.telegram.sendMessage(text, { reply_to_message_id: message_id })
+        await client.telegram.sendMessage(from, text, { reply_to_message_id: message_id })
             .catch(async(er) => {
                 await client.telegram.sendMessage(er.on.payload.chat_id, er.on.payload.text)
             });
