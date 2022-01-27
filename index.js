@@ -10,6 +10,7 @@ import { sticker } from './menu/sticker.js';
 import broadcast from './lib/broadcast.js';
 import getMenu from './lib/getMenu.js';
 import MenuNmber from './lib/MenuNmber.js';
+import Hi from './menu/Hi.js';
 
 const { Telegraf, Markup, Extra } = pkg;
 
@@ -61,7 +62,7 @@ client.start(async(ctx) => {
     let from = ctx.chat.id
     MenuNmber(from, 0)
     await getMenu(from);
-    let but_1 = [Markup.button.callback('قرآن كريم 📖', 'quran'), Markup.button.callback('أذكار 📿', 'adhkar')];
+    let but_1 = [Markup.button.callback('قرآن كريم 📖', 'quran'), Markup.button.callback('أذكار 📿', 'adhkar'), Markup.button.callback('حصن المسلم 🏰', 'hisn_almuslim')];
     let but_2 = [Markup.button.callback('فيديو 🎥', 'video'), Markup.button.callback('صور 🖼️', 'photo'), Markup.button.callback('ملصق 🪧', 'sticker')];
     let but_3 = [Markup.button.callback('سؤال ⁉️', 'question'), Markup.button.callback('محاضرات 🌾', 'Lectures'), Markup.button.callback('بطاقات 🎴', 'albitaqat')];
     let button = Markup.inlineKeyboard([but_1, but_2, but_3]);
@@ -93,7 +94,8 @@ client.start(async(ctx) => {
     mesg += '5- ملصق عشوائي 🪧 \n'
     mesg += '6- سؤال عشوائي ⁉️ \n'
     mesg += '7- محاضرات عشوائية 🌾 \n'
-    mesg += '8- بطاقات القرآن 🎴 \n\n\n\n'
+    mesg += '8- بطاقات القرآن 🎴 \n'
+    mesg += '9- حصن المسلم 🏰 \n\n\n\n'
     mesg += 'إحصائيات البوت \n'
     mesg += `عدد المحادثات : ${Object.keys(user).length}\n`
     mesg += `عدد المجموعات : ${supergroup.length}\n`
@@ -302,6 +304,8 @@ client.on("message", async(ctx) => {
 
     });
 
+    Hi({body: body, ctx: ctx, name: name, from: from, Markup: Markup});
+
     if (!Object.keys(user).includes(from.toString())) {
         fs.writeJsonSync('./db/user.json', Object.assign({}, user, info), { spaces: '\t' });
         console.log(`Add Id ${from}`)
@@ -320,7 +324,7 @@ client.on("message", async(ctx) => {
         let message_id = await ctx.message.reply_to_message.message_id
         let text = await ctx.message.text
 
-        await client.telegram.sendMessage(from, text, { reply_to_message_id: message_id })
+        await client.telegram.sendMessage(text, { reply_to_message_id: message_id })
             .catch(async(er) => {
                 await client.telegram.sendMessage(er.on.payload.chat_id, er.on.payload.text)
             });
@@ -438,7 +442,7 @@ client.action('start', async(ctx) => {
     let from = ctx.chat.id
     await getMenu(from);
     MenuNmber(from, 0);
-    let but_1 = [Markup.button.callback('قرآن كريم 📖', 'quran'), Markup.button.callback('أذكار 📿', 'adhkar')];
+    let but_1 = [Markup.button.callback('قرآن كريم 📖', 'quran'), Markup.button.callback('أذكار 📿', 'adhkar'), Markup.button.callback('حصن المسلم 🏰', 'hisn_almuslim')];
     let but_2 = [Markup.button.callback('فيديو 🎥', 'video'), Markup.button.callback('صور 🖼️', 'photo'), Markup.button.callback('ملصق 🪧', 'sticker')];
     let but_3 = [Markup.button.callback('سؤال ⁉️', 'question'), Markup.button.callback('محاضرات 🌾', 'Lectures'), Markup.button.callback('بطاقات 🎴', 'albitaqat')];
     let button = Markup.inlineKeyboard([but_1, but_2, but_3]);
@@ -469,7 +473,8 @@ client.action('start', async(ctx) => {
     mesg += '5- ملصق عشوائي 🪧 \n'
     mesg += '6- سؤال عشوائي ⁉️ \n'
     mesg += '7- محاضرات عشوائية 🌾 \n'
-    mesg += '8- بطاقات القرآن 🎴 \n\n\n\n'
+    mesg += '8- بطاقات القرآن 🎴 \n'
+    mesg += '9- حصن المسلم 🏰 \n\n\n\n'
     mesg += 'إحصائيات البوت \n'
     mesg += `عدد المحادثات : ${Object.keys(user).length}\n`
     mesg += `عدد المجموعات : ${supergroup.length}\n`
@@ -559,6 +564,30 @@ client.action('albitaqat', async(ctx) => {
     msg += '8- مُنَــاسَــبَاتُــها \n\n'
     msg += '⚠️ لإرسال البطاقة صورة وصوت قم بإرسال رقم السورة او إسم السورة \n\n\n'
     msg += '【 للرجوع للقائمة الرئيسية أرسل #️ 】'
+
+    await ctx.reply(msg, button).catch((erro) => console.log(erro));
+    await ctx.deleteMessage().catch((err) => console.log(err));
+
+});
+client.action('hisn_almuslim', async(ctx) => {
+
+    let from = ctx.chat.id;
+    getMenu(from);
+    MenuNmber(from, 10);
+    let but_1 = [Markup.button.callback('رجوع', 'start')];
+    let button = Markup.inlineKeyboard([but_1]);
+    let hisn_almuslim_json = fs.readJsonSync('./menu/hisn_almuslim.json')
+    let key = Object.keys(hisn_almuslim_json);
+    let msg = 'من فضلك قم بإرسال رقم الدعاء او الذكر من القائمة التالية ✉️\n\n'
+    let number = 1
+    
+    for (let lop of key) {
+    
+      msg += `${number ++}- ${lop}\n`
+        
+    }
+    
+    msg += ' '
 
     await ctx.reply(msg, button).catch((erro) => console.log(erro));
     await ctx.deleteMessage().catch((err) => console.log(err));
