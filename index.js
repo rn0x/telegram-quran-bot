@@ -304,7 +304,7 @@ client.on("message", async(ctx) => {
 
     });
 
-    Hi({body: body, ctx: ctx, name: name, from: from, Markup: Markup});
+    Hi({body: body, ctx: ctx, pushname: name, from: from, Markup: Markup});
 
     if (!Object.keys(user).includes(from.toString())) {
         fs.writeJsonSync('./db/user.json', Object.assign({}, user, info), { spaces: '\t' });
