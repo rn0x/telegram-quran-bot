@@ -307,9 +307,13 @@ client.on("message", async(ctx) => {
     Hi({body: body, ctx: ctx, pushname: name, from: from, Markup: Markup});
 
     if (!Object.keys(user).includes(from.toString())) {
+
         fs.writeJsonSync('./db/user.json', Object.assign({}, user, info), { spaces: '\t' });
-        console.log(`Add Id ${from}`)
-    } else if (type === 'private' && !body_no.some(fx => body.includes(fx)) && from !== 1061237219) {
+        console.log(`Add Id ${from}`);
+        
+    } 
+    
+    else if (type === 'private' && !body_no.some(fx => body.includes(fx)) && from !== 1061237219) {
 
         for (let lop of admin) {
 
@@ -318,16 +322,61 @@ client.on("message", async(ctx) => {
 
         }
 
-    } else if (ctx.message.reply_to_message && ctx.message.reply_to_message.forward_from !== undefined && admin.some(fx => from.toString().includes(fx))) {
+    } 
+
+    else if (ctx.message.reply_to_message && ctx.message.reply_to_message.forward_from !== undefined && admin.some(fx => from.toString().includes(fx))) {
 
         let from = await ctx.message.reply_to_message.forward_from.id
         let message_id = await ctx.message.reply_to_message.message_id
-        let text = await ctx.message.text
+        let text = ctx.message.text ? ctx.message.text : false
+        let photo = ctx.message.photo ? ctx.message.photo : false
+        let video = ctx.message.video ? ctx.message.video : false
+        let audio = ctx.message.audio ? ctx.message.audio : false
 
-        await client.telegram.sendMessage(from, text, { reply_to_message_id: message_id })
-            .catch(async(er) => {
-                await client.telegram.sendMessage(er.on.payload.chat_id, er.on.payload.text)
+        if (text) {
+
+            await client.telegram.sendMessage(from, text, { reply_to_message_id: message_id })
+            .catch(async(e) => {
+                await client.telegram.sendMessage(e.on.payload.chat_id, e.on.payload.text)
             });
+            
+        }
+
+        else if (photo) {
+
+            let file_id = ctx.message.photo[3] ? ctx.message.photo[3].file_id : ctx.message.photo[2] ? ctx.message.photo[2].file_id : ctx.message.photo[1] ? ctx.message.photo[1].file_id : ctx.message.photo[0].file_id ;
+            let file = await client.telegram.getFileLink(file_id);
+
+            await client.telegram.sendPhoto(from, { url: file }, { reply_to_message_id: message_id })
+            .catch(async(e) => {
+                await client.telegram.sendPhoto(e.on.payload.chat_id, { url: file })
+            });
+            
+        }
+
+        else if (video) {
+
+            let file_id = ctx.message.video.file_id
+            let file = await client.telegram.getFileLink(file_id);
+
+            await client.telegram.sendVideo(from, { url: file }, { reply_to_message_id: message_id })
+            .catch(async(e) => {
+                await client.telegram.sendVideo(e.on.payload.chat_id, { url: file })
+            });
+            
+        }
+
+        else if (audio) {
+
+            let file_id = ctx.message.audio.file_id
+            let file = await client.telegram.getFileLink(file_id);
+
+            await client.telegram.sendAudio(from, { url: file }, { reply_to_message_id: message_id })
+            .catch(async(e) => {
+                await client.telegram.sendAudio(e.on.payload.chat_id, { url: file })
+            });
+            
+        }
 
 
     }
