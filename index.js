@@ -279,7 +279,7 @@ client.on("message", async(ctx) => {
     let user = fs.readJsonSync('./db/user.json');
     let type = ctx.chat.type
     let admin = fs.readJsonSync('./db/admin.json');
-    let body_no = ["hi", "Hi", "#", "خدمة", "*", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", ]
+    let body_x = ["hi", "Hi", "#", "خدمة", "*", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", ]
     let info = {
 
         [from]: {
@@ -313,7 +313,7 @@ client.on("message", async(ctx) => {
         
     } 
     
-    else if (type === 'private' && !body_no.some(fx => body.includes(fx)) && from !== 1061237219) {
+    else if (type === 'private' && body_x.some(e => body.includes(e)) === false && admin.some(id => from.toString() !== id)) {
 
         for (let lop of admin) {
 
