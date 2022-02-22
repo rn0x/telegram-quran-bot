@@ -56,7 +56,7 @@ const client = new Telegraf(tokenjson.token, options);
 
 
 
-client.start(async(ctx) => {
+client.start(async (ctx) => {
 
 
     let from = ctx.chat.id
@@ -107,7 +107,7 @@ client.start(async(ctx) => {
 
 });
 
-client.command('bt', async(ctx) => {
+client.command('bt', async (ctx) => {
 
     let admin = fs.readJsonSync('./db/admin.json');
 
@@ -124,7 +124,7 @@ client.command('bt', async(ctx) => {
             for (let lop of Object.keys(user)) {
 
                 await client.telegram.sendMessage(lop, msg)
-                    .catch((err) => console.log(err));
+                    .catch((error) => console.log(error));
             }
         }
 
@@ -133,7 +133,7 @@ client.command('bt', async(ctx) => {
 
 });
 
-client.command('addadmin', async(ctx) => {
+client.command('addadmin', async (ctx) => {
 
     let admin = fs.readJsonSync('./db/admin.json');
 
@@ -157,7 +157,7 @@ client.command('addadmin', async(ctx) => {
 
 });
 
-client.on("my_chat_member", async(ctx) => {
+client.on("my_chat_member", async (ctx) => {
 
     let from = ctx.chat.id;
     let username = ctx.chat.username ? ctx.chat.username : null;
@@ -192,9 +192,9 @@ client.on("my_chat_member", async(ctx) => {
             MenuNmber(from, 0)
             fs.writeJsonSync('./db/user.json', Object.assign({}, user, info), { spaces: '\t' });
             ctx.update.my_chat_member.new_chat_member.can_post_messages === true || type === 'private' ? await ctx.reply(msg)
-                .then(async(data) => {
+                .then(async (data) => {
 
-                    ctx.update.my_chat_member.new_chat_member.can_delete_messages === true ? setTimeout(async() => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 20000) : ''
+                    ctx.update.my_chat_member.new_chat_member.can_delete_messages === true ? setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 20000) : ''
                 })
                 .catch((err) => console.log(err)) : ''
             console.log(`Add Id ${from}`)
@@ -205,7 +205,7 @@ client.on("my_chat_member", async(ctx) => {
 
 });
 
-client.on("new_chat_members", async(ctx) => {
+client.on("new_chat_members", async (ctx) => {
 
     let me = ctx.botInfo
     let admin = await ctx.getChatAdministrators().catch((error) => console.log(error));
@@ -221,11 +221,11 @@ client.on("new_chat_members", async(ctx) => {
             // let button = Markup.inlineKeyboard([but_1]);
             let msg = members.username ? `مرحباً بك @${u_f_i} 👋\nفي مجموعة ${ctx.message.chat.title}` : `مرحباً بك ${u_f_i} 👋\nفي مجموعة ${ctx.message.chat.title}`;
 
-            lop.can_delete_messages === true ? await ctx.deleteMessage().catch(async(err) => console.log(err)) : '';
+            lop.can_delete_messages === true ? await ctx.deleteMessage().catch(async (err) => console.log(err)) : '';
             lop.can_delete_messages === true ? await ctx.reply(msg)
-                .then(async(data) => {
+                .then(async (data) => {
 
-                    setTimeout(async() => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 20000)
+                    setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 20000)
                 }) : ''
 
         }
@@ -233,7 +233,7 @@ client.on("new_chat_members", async(ctx) => {
 
 });
 
-client.on("left_chat_member", async(ctx) => {
+client.on("left_chat_member", async (ctx) => {
 
     if (ctx.message.left_chat_member.is_bot === false) {
 
@@ -248,11 +248,11 @@ client.on("left_chat_member", async(ctx) => {
 
                 let msg = members.username ? `مع السلامة @${u_f_i} 👋` : `مع السلامة ${u_f_i} 👋`;
 
-                lop.can_delete_messages === true ? await ctx.deleteMessage().catch(async(err) => console.log(err)) : '';
+                lop.can_delete_messages === true ? await ctx.deleteMessage().catch(async (err) => console.log(err)) : '';
                 lop.can_delete_messages === true ? await ctx.reply(msg)
-                    .then(async(data) => {
+                    .then(async (data) => {
 
-                        setTimeout(async() => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 20000)
+                        setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 20000)
                     }) : ''
 
             }
@@ -262,7 +262,7 @@ client.on("left_chat_member", async(ctx) => {
 
 });
 
-client.on("message", async(ctx) => {
+client.on("message", async (ctx) => {
 
     let Menu = fs.readJsonSync('./db/Menu.json');
     if (!Object.keys(Menu).includes(ctx.chat.id.toString())) {
@@ -279,7 +279,7 @@ client.on("message", async(ctx) => {
     let user = fs.readJsonSync('./db/user.json');
     let type = ctx.chat.type
     let admin = fs.readJsonSync('./db/admin.json');
-    let body_x = ["hi", "Hi", "#", "خدمة", "*", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", ]
+    let body_x = ["hi", "Hi", "#", "خدمة", "*", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0",]
     let info = {
 
         [from]: {
@@ -304,15 +304,15 @@ client.on("message", async(ctx) => {
 
     });
 
-    Hi({body: body, ctx: ctx, pushname: name, from: from, Markup: Markup});
+    Hi({ body: body, ctx: ctx, pushname: name, from: from, Markup: Markup });
 
     if (!Object.keys(user).includes(from.toString())) {
 
         fs.writeJsonSync('./db/user.json', Object.assign({}, user, info), { spaces: '\t' });
         console.log(`Add Id ${from}`);
-        
-    } 
-    
+
+    }
+
     else if (type === 'private' && body_x.some(e => body.includes(e)) === false && admin.some(id => from.toString() !== id)) {
 
         for (let lop of admin) {
@@ -322,7 +322,7 @@ client.on("message", async(ctx) => {
 
         }
 
-    } 
+    }
 
     else if (ctx.message.reply_to_message && ctx.message.reply_to_message.forward_from !== undefined && admin.some(fx => from.toString().includes(fx))) {
 
@@ -336,22 +336,22 @@ client.on("message", async(ctx) => {
         if (text) {
 
             await client.telegram.sendMessage(from, text, { reply_to_message_id: message_id })
-            .catch(async(e) => {
-                await client.telegram.sendMessage(e.on.payload.chat_id, e.on.payload.text)
-            });
-            
+                .catch(async (e) => {
+                    await client.telegram.sendMessage(e.on.payload.chat_id, e.on.payload.text)
+                });
+
         }
 
         else if (photo) {
 
-            let file_id = ctx.message.photo[3] ? ctx.message.photo[3].file_id : ctx.message.photo[2] ? ctx.message.photo[2].file_id : ctx.message.photo[1] ? ctx.message.photo[1].file_id : ctx.message.photo[0].file_id ;
+            let file_id = ctx.message.photo[3] ? ctx.message.photo[3].file_id : ctx.message.photo[2] ? ctx.message.photo[2].file_id : ctx.message.photo[1] ? ctx.message.photo[1].file_id : ctx.message.photo[0].file_id;
             let file = await client.telegram.getFileLink(file_id);
 
             await client.telegram.sendPhoto(from, { url: file }, { reply_to_message_id: message_id })
-            .catch(async(e) => {
-                await client.telegram.sendPhoto(e.on.payload.chat_id, { url: file })
-            });
-            
+                .catch(async (e) => {
+                    await client.telegram.sendPhoto(e.on.payload.chat_id, { url: file })
+                });
+
         }
 
         else if (video) {
@@ -360,10 +360,10 @@ client.on("message", async(ctx) => {
             let file = await client.telegram.getFileLink(file_id);
 
             await client.telegram.sendVideo(from, { url: file }, { reply_to_message_id: message_id })
-            .catch(async(e) => {
-                await client.telegram.sendVideo(e.on.payload.chat_id, { url: file })
-            });
-            
+                .catch(async (e) => {
+                    await client.telegram.sendVideo(e.on.payload.chat_id, { url: file })
+                });
+
         }
 
         else if (audio) {
@@ -372,10 +372,10 @@ client.on("message", async(ctx) => {
             let file = await client.telegram.getFileLink(file_id);
 
             await client.telegram.sendAudio(from, { url: file }, { reply_to_message_id: message_id })
-            .catch(async(e) => {
-                await client.telegram.sendAudio(e.on.payload.chat_id, { url: file })
-            });
-            
+                .catch(async (e) => {
+                    await client.telegram.sendAudio(e.on.payload.chat_id, { url: file })
+                });
+
         }
 
 
@@ -384,7 +384,7 @@ client.on("message", async(ctx) => {
 });
 
 
-client.action('quran', async(ctx) => {
+client.action('quran', async (ctx) => {
 
     let but_1 = [Markup.button.callback('أدريس أبكر', 'idris'), Markup.button.callback('ماهر المعيقلي', 'mahar')];
     let but_2 = [Markup.button.callback('عبد الله الموسى', 'almosa'), Markup.button.callback('علي جابر', 'alli')];
@@ -408,7 +408,7 @@ client.action('quran', async(ctx) => {
 
 });
 
-client.action('idris', async(ctx) => {
+client.action('idris', async (ctx) => {
 
     let from = ctx.chat.id
     await getMenu(from);
@@ -421,7 +421,7 @@ client.action('idris', async(ctx) => {
 
 });
 
-client.action('mahar', async(ctx) => {
+client.action('mahar', async (ctx) => {
 
     let from = ctx.chat.id
     await getMenu(from);
@@ -434,7 +434,7 @@ client.action('mahar', async(ctx) => {
 
 });
 
-client.action('alli', async(ctx) => {
+client.action('alli', async (ctx) => {
 
     let from = ctx.chat.id
     await getMenu(from);
@@ -447,7 +447,7 @@ client.action('alli', async(ctx) => {
 
 });
 
-client.action('almosa', async(ctx) => {
+client.action('almosa', async (ctx) => {
 
     let from = ctx.chat.id
     await getMenu(from);
@@ -460,7 +460,7 @@ client.action('almosa', async(ctx) => {
 
 });
 
-client.action('Alsudais', async(ctx) => {
+client.action('Alsudais', async (ctx) => {
 
     let from = ctx.chat.id
     await getMenu(from);
@@ -473,7 +473,7 @@ client.action('Alsudais', async(ctx) => {
 
 });
 
-client.action('Galilee', async(ctx) => {
+client.action('Galilee', async (ctx) => {
 
     let from = ctx.chat.id
     await getMenu(from);
@@ -486,7 +486,7 @@ client.action('Galilee', async(ctx) => {
 
 });
 
-client.action('start', async(ctx) => {
+client.action('start', async (ctx) => {
 
     let from = ctx.chat.id
     await getMenu(from);
@@ -536,7 +536,7 @@ client.action('start', async(ctx) => {
 
 });
 
-client.action('adhkar', async(ctx) => {
+client.action('adhkar', async (ctx) => {
 
     let from = ctx.chat.id
     await getMenu(from);
@@ -560,7 +560,7 @@ client.action('adhkar', async(ctx) => {
 
 });
 
-client.action('photo', async(ctx) => {
+client.action('photo', async (ctx) => {
 
     let but_1 = [Markup.button.callback('التالي', 'photo'), Markup.button.callback('رجوع', 'start')];
     let button = Markup.inlineKeyboard([but_1]);
@@ -571,7 +571,7 @@ client.action('photo', async(ctx) => {
 
 });
 
-client.action('video', async(ctx) => {
+client.action('video', async (ctx) => {
 
     let but_1 = [Markup.button.callback('التالي', 'video'), Markup.button.callback('رجوع', 'start')];
     let button = Markup.inlineKeyboard([but_1]);
@@ -582,7 +582,7 @@ client.action('video', async(ctx) => {
 
 });
 
-client.action('sticker', async(ctx) => {
+client.action('sticker', async (ctx) => {
 
     let but_1 = [Markup.button.callback('التالي', 'sticker'), Markup.button.callback('رجوع', 'start')];
     let button = Markup.inlineKeyboard([but_1]);
@@ -593,7 +593,7 @@ client.action('sticker', async(ctx) => {
 
 });
 
-client.action('albitaqat', async(ctx) => {
+client.action('albitaqat', async (ctx) => {
 
     let from = ctx.chat.id;
     getMenu(from);
@@ -618,7 +618,7 @@ client.action('albitaqat', async(ctx) => {
     await ctx.deleteMessage().catch((err) => console.log(err));
 
 });
-client.action('hisn_almuslim', async(ctx) => {
+client.action('hisn_almuslim', async (ctx) => {
 
     let from = ctx.chat.id;
     getMenu(from);
@@ -629,13 +629,13 @@ client.action('hisn_almuslim', async(ctx) => {
     let key = Object.keys(hisn_almuslim_json);
     let msg = 'من فضلك قم بإرسال رقم الدعاء او الذكر من القائمة التالية ✉️\n\n'
     let number = 1
-    
+
     for (let lop of key) {
-    
-      msg += `${number ++}- ${lop}\n`
-        
+
+        msg += `${number++}- ${lop}\n`
+
     }
-    
+
     msg += ' '
 
     await ctx.reply(msg, button).catch((erro) => console.log(erro));
@@ -643,7 +643,7 @@ client.action('hisn_almuslim', async(ctx) => {
 
 });
 
-client.action('Lectures', async(ctx) => {
+client.action('Lectures', async (ctx) => {
 
     let but_1 = [
         [Markup.button.callback('التالي', 'Lectures'), Markup.button.callback('رجوع', 'start')]
@@ -658,7 +658,7 @@ client.action('Lectures', async(ctx) => {
 
 });
 
-client.action('question', async(ctx) => {
+client.action('question', async (ctx) => {
 
     let question = await fs.readJson('./question.json').catch((error) => console.log(error));
     let number = Array.from(question.keys())
@@ -700,26 +700,26 @@ client.action('question', async(ctx) => {
     await ctx.reply(question[list].question, button)
         .catch((error) => console.log(error));
 
-    client.action(question[list].answer.id, async(ctx) => {
+    client.action(question[list].answer.id, async (ctx) => {
 
         await ctx.reply("إجابة صحيحة ✔️")
-            .then(async(data) => setTimeout(async() => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 10000))
+            .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 10000))
             .catch((error) => console.log(error));
 
     });
 
-    client.action(question[list].answer1.id, async(ctx) => {
+    client.action(question[list].answer1.id, async (ctx) => {
 
         await ctx.reply("إجابة خاطئة ❌")
-            .then(async(data) => setTimeout(async() => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 10000))
+            .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 10000))
             .catch((error) => console.log(error));
 
     });
 
-    client.action(question[list].answer2.id, async(ctx) => {
+    client.action(question[list].answer2.id, async (ctx) => {
 
         await ctx.reply("إجابة خاطئة ❌")
-            .then(async(data) => setTimeout(async() => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 10000))
+            .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 10000))
             .catch((error) => console.log(error));
 
     });
@@ -728,9 +728,44 @@ client.action('question', async(ctx) => {
 
 });
 
-client.catch(async(err) => {
+client.catch(async (error) => {
 
-    console.log(err);
+    let json = fs.readJsonSync('./db/user.json');
+
+    if (error.response.description === "Bad Request: group chat was upgraded to a supergroup chat") {
+
+        let id_new = error.response.parameters.migrate_to_chat_id
+        let id_old = error.on.payload.chat_id
+
+        delete Object.assign(json, {
+            [id_new]: json[id_old]
+        })[id_old]
+        json[id_new].id = id_new
+        fs.writeJsonSync('./db/user.json', json, { spaces: '\t' });
+
+        console.log(`ID has changed \n\n id old: ${id_old}\n id new: ${id_new}`);
+    } else if (error.response.description === "Forbidden: user is deactivated") {
+
+        let id_user = error.on.payload.chat_id
+
+        delete json[id_user]
+        fs.writeJsonSync('./db/user.json', json, { spaces: '\t' });
+        console.log(`Remove Id ${id_user}`);
+    } else if (error.response.description === "Bad Request: need administrator rights in the channel chat") {
+
+        let id_user = error.on.payload.chat_id
+
+        delete json[id_user]
+        fs.writeJsonSync('./db/user.json', json, { spaces: '\t' });
+        console.log(`Remove Id ${id_user}`);
+    } else if (error.response.description === "Forbidden: bot was blocked by the user") {
+
+        let id_user = error.on.payload.chat_id
+
+        delete json[id_user]
+        fs.writeJsonSync('./db/user.json', json, { spaces: '\t' });
+        console.log(`Remove Id ${id_user}`);
+    }
 
 });
 
