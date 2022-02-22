@@ -11,6 +11,7 @@ import broadcast from './lib/broadcast.js';
 import getMenu from './lib/getMenu.js';
 import MenuNmber from './lib/MenuNmber.js';
 import Hi from './menu/Hi.js';
+import Error from "./menu/error.js";
 
 const { Telegraf, Markup, Extra } = pkg;
 
@@ -50,7 +51,10 @@ if (fs.existsSync('./db/admin.json') === false) {
 
 }
 
-const tokenjson = await fs.readJson('./token.json').catch((error) => console.log(error));
+const tokenjson = await fs.readJson('./token.json').catch((error) => {
+    Error(error);
+    console.log(error);
+});
 const options = { channelMode: true, polling: true }
 const client = new Telegraf(tokenjson.token, options);
 
@@ -103,7 +107,10 @@ client.start(async (ctx) => {
     mesg += 'بمجرد إضافة البوت لقروبك سيبدأ بنشر الرسائل بشكل تلقائي ⚠️\n\n'
     mesg += 'يمكنك متابعة البوت على واتساب عبر الرقم 966502054247 🤖'
 
-    await ctx.reply(mesg, button).catch((erro) => console.log(erro));
+    await ctx.reply(mesg, button).catch((error) => {
+        Error(error);
+        console.log(error);
+    });
 
 });
 
@@ -124,7 +131,10 @@ client.command('bt', async (ctx) => {
             for (let lop of Object.keys(user)) {
 
                 await client.telegram.sendMessage(lop, msg)
-                    .catch((error) => console.log(error));
+                    .catch((error) => {
+                        Error(error);
+                        console.log(error);
+                    });
             }
         }
 
@@ -194,9 +204,15 @@ client.on("my_chat_member", async (ctx) => {
             ctx.update.my_chat_member.new_chat_member.can_post_messages === true || type === 'private' ? await ctx.reply(msg)
                 .then(async (data) => {
 
-                    ctx.update.my_chat_member.new_chat_member.can_delete_messages === true ? setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 20000) : ''
+                    ctx.update.my_chat_member.new_chat_member.can_delete_messages === true ? setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => {
+                        Error(error);
+                        console.log(error);
+                    }), 20000) : ''
                 })
-                .catch((err) => console.log(err)) : ''
+                .catch((error) => {
+                    Error(error);
+                    console.log(error);
+                }) : ''
             console.log(`Add Id ${from}`)
         }
 
@@ -208,7 +224,10 @@ client.on("my_chat_member", async (ctx) => {
 client.on("new_chat_members", async (ctx) => {
 
     let me = ctx.botInfo
-    let admin = await ctx.getChatAdministrators().catch((error) => console.log(error));
+    let admin = await ctx.getChatAdministrators().catch((error) => {
+        Error(error);
+        console.log(error);
+    });
     let members = ctx.update.message.new_chat_members[0];
     let u_f_i = members.username ? members.username : members.first_name ? members.first_name : members.id ? members.id : '';
 
@@ -225,7 +244,10 @@ client.on("new_chat_members", async (ctx) => {
             lop.can_delete_messages === true ? await ctx.reply(msg)
                 .then(async (data) => {
 
-                    setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 20000)
+                    setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => {
+                        Error(error);
+                        console.log(error);
+                    }), 20000)
                 }) : ''
 
         }
@@ -238,7 +260,10 @@ client.on("left_chat_member", async (ctx) => {
     if (ctx.message.left_chat_member.is_bot === false) {
 
         let me = ctx.botInfo
-        let admin = await ctx.getChatAdministrators().catch((error) => console.log(error));
+        let admin = await ctx.getChatAdministrators().catch((error) => {
+            Error(error);
+            console.log(error);
+        });
         let members = ctx.message.left_chat_member;
         let u_f_i = members.username ? members.username : members.first_name ? members.first_name : members.id ? members.id : '';
 
@@ -252,7 +277,10 @@ client.on("left_chat_member", async (ctx) => {
                 lop.can_delete_messages === true ? await ctx.reply(msg)
                     .then(async (data) => {
 
-                        setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 20000)
+                        setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => {
+                            Error(error);
+                            console.log(error);
+                        }), 20000)
                     }) : ''
 
             }
@@ -318,7 +346,10 @@ client.on("message", async (ctx) => {
         for (let lop of admin) {
 
             await ctx.forwardMessage(lop)
-                .catch((error) => console.log(error));
+                .catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
 
         }
 
@@ -403,8 +434,14 @@ client.action('quran', async (ctx) => {
     quran_menu += '6- خالد الجليل \n\n\n'
     quran_menu += '【 للرجوع للقائمة الرئيسية أرسل #️ 】'
 
-    await ctx.reply(quran_menu, button).catch((err) => console.log(err));
-    await ctx.deleteMessage().catch((err) => console.log(err));
+    await ctx.reply(quran_menu, button).catch((error) => {
+        Error(error);
+        console.log(error);
+    });
+    await ctx.deleteMessage().catch((error) => {
+        Error(error);
+        console.log(error);
+    });
 
 });
 
@@ -416,8 +453,14 @@ client.action('idris', async (ctx) => {
     let quran_idr = fs.readFileSync('./media/text/quran_1.txt', { encoding: 'utf8', flag: 'r' })
     let home = '【 للرجوع للقائمة الرئيسية أرسل #️ 】\n'
     home += '【 للرجوع للخلف أرسل * 】'
-    await ctx.reply(`${quran_idr}\n ${home}`).catch((err) => console.log(err));
-    await ctx.deleteMessage().catch((err) => console.log(err));
+    await ctx.reply(`${quran_idr}\n ${home}`).catch((error) => {
+        Error(error);
+        console.log(error);
+    });
+    await ctx.deleteMessage().catch((error) => {
+        Error(error);
+        console.log(error);
+    });
 
 });
 
@@ -429,8 +472,14 @@ client.action('mahar', async (ctx) => {
     let quran_idr = fs.readFileSync('./media/text/quran_2.txt', { encoding: 'utf8', flag: 'r' })
     let home = '【 للرجوع للقائمة الرئيسية أرسل #️ 】\n'
     home += '【 للرجوع للخلف أرسل * 】'
-    await ctx.reply(`${quran_idr}\n ${home}`).catch((err) => console.log(err));
-    await ctx.deleteMessage().catch((err) => console.log(err));
+    await ctx.reply(`${quran_idr}\n ${home}`).catch((error) => {
+        Error(error);
+        console.log(error);
+    });
+    await ctx.deleteMessage().catch((error) => {
+        Error(error);
+        console.log(error);
+    });
 
 });
 
@@ -442,8 +491,14 @@ client.action('alli', async (ctx) => {
     let quran_idr = fs.readFileSync('./media/text/quran_4.txt', { encoding: 'utf8', flag: 'r' })
     let home = '【 للرجوع للقائمة الرئيسية أرسل #️ 】\n'
     home += '【 للرجوع للخلف أرسل * 】'
-    await ctx.reply(`${quran_idr}\n ${home}`).catch((err) => console.log(err));
-    await ctx.deleteMessage().catch((err) => console.log(err));
+    await ctx.reply(`${quran_idr}\n ${home}`).catch((error) => {
+        Error(error);
+        console.log(error);
+    });
+    await ctx.deleteMessage().catch((error) => {
+        Error(error);
+        console.log(error);
+    });
 
 });
 
@@ -455,8 +510,14 @@ client.action('almosa', async (ctx) => {
     let quran_idr = fs.readFileSync('./media/text/quran_3.txt', { encoding: 'utf8', flag: 'r' })
     let home = '【 للرجوع للقائمة الرئيسية أرسل #️ 】\n'
     home += '【 للرجوع للخلف أرسل * 】'
-    await ctx.reply(`${quran_idr}\n ${home}`).catch((err) => console.log(err));
-    await ctx.deleteMessage().catch((err) => console.log(err));
+    await ctx.reply(`${quran_idr}\n ${home}`).catch((error) => {
+        Error(error);
+        console.log(error);
+    });
+    await ctx.deleteMessage().catch((error) => {
+        Error(error);
+        console.log(error);
+    });
 
 });
 
@@ -468,8 +529,14 @@ client.action('Alsudais', async (ctx) => {
     let quran_idr = fs.readFileSync('./media/text/quran_5.txt', { encoding: 'utf8', flag: 'r' })
     let home = '【 للرجوع للقائمة الرئيسية أرسل #️ 】\n'
     home += '【 للرجوع للخلف أرسل * 】'
-    await ctx.reply(`${quran_idr}\n ${home}`).catch((err) => console.log(err));
-    await ctx.deleteMessage().catch((err) => console.log(err));
+    await ctx.reply(`${quran_idr}\n ${home}`).catch((error) => {
+        Error(error);
+        console.log(error);
+    });
+    await ctx.deleteMessage().catch((error) => {
+        Error(error);
+        console.log(error);
+    });
 
 });
 
@@ -481,8 +548,14 @@ client.action('Galilee', async (ctx) => {
     let quran_idr = fs.readFileSync('./media/text/quran_6.txt', { encoding: 'utf8', flag: 'r' })
     let home = '【 للرجوع للقائمة الرئيسية أرسل #️ 】\n'
     home += '【 للرجوع للخلف أرسل * 】'
-    await ctx.reply(`${quran_idr}\n ${home}`).catch((err) => console.log(err));
-    await ctx.deleteMessage().catch((err) => console.log(err));
+    await ctx.reply(`${quran_idr}\n ${home}`).catch((error) => {
+        Error(error);
+        console.log(error);
+    });
+    await ctx.deleteMessage().catch((error) => {
+        Error(error);
+        console.log(error);
+    });
 
 });
 
@@ -531,8 +604,14 @@ client.action('start', async (ctx) => {
     mesg += 'بمجرد إضافة البوت لقروبك سيبدأ بنشر الرسائل بشكل تلقائي ⚠️\n\n'
     mesg += 'يمكنك متابعة البوت على واتساب عبر الرقم 966502054247 🤖'
 
-    await ctx.reply(mesg, button).catch((err) => console.log(err));
-    await ctx.deleteMessage().catch((err) => console.log(err));
+    await ctx.reply(mesg, button).catch((error) => {
+        Error(error);
+        console.log(error);
+    });
+    await ctx.deleteMessage().catch((error) => {
+        Error(error);
+        console.log(error);
+    });
 
 });
 
@@ -555,8 +634,14 @@ client.action('adhkar', async (ctx) => {
     adhkar_menu += '12- دُعَاءُ خَتْمِ القُرْآنِ الكَريمِ 📖 \n\n\n'
     adhkar_menu += '【 للرجوع للقائمة الرئيسية أرسل #️ 】'
 
-    await ctx.reply(adhkar_menu).catch((err) => console.log(err));
-    await ctx.deleteMessage().catch((err) => console.log(err));
+    await ctx.reply(adhkar_menu).catch((error) => {
+        Error(error);
+        console.log(error);
+    });
+    await ctx.deleteMessage().catch((error) => {
+        Error(error);
+        console.log(error);
+    });
 
 });
 
@@ -566,8 +651,14 @@ client.action('photo', async (ctx) => {
     let button = Markup.inlineKeyboard([but_1]);
     let listphoto = photo[Math.floor(Math.random() * photo.length)]
     await ctx.replyWithPhoto({ url: listphoto }, button)
-        .catch((err) => console.log(err));
-    await ctx.deleteMessage().catch((err) => console.log(err));
+        .catch((error) => {
+            Error(error);
+            console.log(error);
+        });
+    await ctx.deleteMessage().catch((error) => {
+        Error(error);
+        console.log(error);
+    });
 
 });
 
@@ -577,8 +668,14 @@ client.action('video', async (ctx) => {
     let button = Markup.inlineKeyboard([but_1]);
     let listvideo = video[Math.floor(Math.random() * video.length)]
     await ctx.replyWithVideo({ url: listvideo }, button)
-        .catch((erro) => console.log(erro));
-    await ctx.deleteMessage().catch((err) => console.log(err));
+        .catch((error) => {
+            Error(error);
+            console.log(error);
+        });
+    await ctx.deleteMessage().catch((error) => {
+        Error(error);
+        console.log(error);
+    });
 
 });
 
@@ -588,8 +685,14 @@ client.action('sticker', async (ctx) => {
     let button = Markup.inlineKeyboard([but_1]);
     let liststicker = sticker[Math.floor(Math.random() * sticker.length)]
     await ctx.replyWithSticker({ url: liststicker }, button)
-        .catch((erro) => console.log(erro));
-    await ctx.deleteMessage().catch((err) => console.log(err));
+        .catch((error) => {
+            Error(error);
+            console.log(error);
+        });
+    await ctx.deleteMessage().catch((error) => {
+        Error(error);
+        console.log(error);
+    });
 
 });
 
@@ -614,8 +717,14 @@ client.action('albitaqat', async (ctx) => {
     msg += '⚠️ لإرسال البطاقة صورة وصوت قم بإرسال رقم السورة او إسم السورة \n\n\n'
     msg += '【 للرجوع للقائمة الرئيسية أرسل #️ 】'
 
-    await ctx.reply(msg, button).catch((erro) => console.log(erro));
-    await ctx.deleteMessage().catch((err) => console.log(err));
+    await ctx.reply(msg, button).catch((error) => {
+        Error(error);
+        console.log(error);
+    });
+    await ctx.deleteMessage().catch((error) => {
+        Error(error);
+        console.log(error);
+    });
 
 });
 client.action('hisn_almuslim', async (ctx) => {
@@ -638,8 +747,14 @@ client.action('hisn_almuslim', async (ctx) => {
 
     msg += ' '
 
-    await ctx.reply(msg, button).catch((erro) => console.log(erro));
-    await ctx.deleteMessage().catch((err) => console.log(err));
+    await ctx.reply(msg, button).catch((error) => {
+        Error(error);
+        console.log(error);
+    });
+    await ctx.deleteMessage().catch((error) => {
+        Error(error);
+        console.log(error);
+    });
 
 });
 
@@ -653,14 +768,23 @@ client.action('Lectures', async (ctx) => {
     let msg = `✽\n\n${listlectures.Lectures}\n\n`
     msg += `الشيخ: ${listlectures.Author} 🔊`
     await ctx.replyWithVideo({ url: listlectures.FilePath }, { caption: msg, reply_markup: { inline_keyboard: but_1 } })
-        .catch((erro) => console.log(erro));
-    await ctx.deleteMessage().catch((err) => console.log(err));
+        .catch((error) => {
+            Error(error);
+            console.log(error);
+        });
+    await ctx.deleteMessage().catch((error) => {
+        Error(error);
+        console.log(error);
+    });
 
 });
 
 client.action('question', async (ctx) => {
 
-    let question = await fs.readJson('./question.json').catch((error) => console.log(error));
+    let question = await fs.readJson('./question.json').catch((error) => {
+        Error(error);
+        console.log(error);
+    });
     let number = Array.from(question.keys())
     let list = number[Math.floor(Math.random() * number.length)]
     let but_1 = Markup.button.callback(question[list].answer.asr, question[list].answer.id);
@@ -698,74 +822,64 @@ client.action('question', async (ctx) => {
     let button = Markup.inlineKeyboard(random);
 
     await ctx.reply(question[list].question, button)
-        .catch((error) => console.log(error));
+        .catch((error) => {
+            Error(error);
+            console.log(error);
+        });
 
     client.action(question[list].answer.id, async (ctx) => {
 
         await ctx.reply("إجابة صحيحة ✔️")
-            .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 10000))
-            .catch((error) => console.log(error));
+            .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => {
+                Error(error);
+                console.log(error);
+            }), 10000))
+            .catch((error) => {
+                Error(error);
+                console.log(error);
+            });
 
     });
 
     client.action(question[list].answer1.id, async (ctx) => {
 
         await ctx.reply("إجابة خاطئة ❌")
-            .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 10000))
-            .catch((error) => console.log(error));
+            .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => {
+                Error(error);
+                console.log(error);
+            }), 10000))
+            .catch((error) => {
+                Error(error);
+                console.log(error);
+            });
 
     });
 
     client.action(question[list].answer2.id, async (ctx) => {
 
         await ctx.reply("إجابة خاطئة ❌")
-            .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => console.log(error)), 10000))
-            .catch((error) => console.log(error));
+            .then(async (data) => setTimeout(async () => ctx.deleteMessage(data.message_id).catch((error) => {
+                Error(error);
+                console.log(error);
+            }), 10000))
+            .catch((error) => {
+                Error(error);
+                console.log(error);
+            });
 
     });
 
-    await ctx.deleteMessage().catch((err) => console.log(err));
+    await ctx.deleteMessage().catch((error) => {
+        Error(error);
+        console.log(error);
+    });
 
 });
 
 client.catch(async (error) => {
 
-    let json = fs.readJsonSync('./db/user.json');
-
-    if (error.response.description === "Bad Request: group chat was upgraded to a supergroup chat") {
-
-        let id_new = error.response.parameters.migrate_to_chat_id
-        let id_old = error.on.payload.chat_id
-
-        delete Object.assign(json, {
-            [id_new]: json[id_old]
-        })[id_old]
-        json[id_new].id = id_new
-        fs.writeJsonSync('./db/user.json', json, { spaces: '\t' });
-
-        console.log(`ID has changed \n\n id old: ${id_old}\n id new: ${id_new}`);
-    } else if (error.response.description === "Forbidden: user is deactivated") {
-
-        let id_user = error.on.payload.chat_id
-
-        delete json[id_user]
-        fs.writeJsonSync('./db/user.json', json, { spaces: '\t' });
-        console.log(`Remove Id ${id_user}`);
-    } else if (error.response.description === "Bad Request: need administrator rights in the channel chat") {
-
-        let id_user = error.on.payload.chat_id
-
-        delete json[id_user]
-        fs.writeJsonSync('./db/user.json', json, { spaces: '\t' });
-        console.log(`Remove Id ${id_user}`);
-    } else if (error.response.description === "Forbidden: bot was blocked by the user") {
-
-        let id_user = error.on.payload.chat_id
-
-        delete json[id_user]
-        fs.writeJsonSync('./db/user.json', json, { spaces: '\t' });
-        console.log(`Remove Id ${id_user}`);
-    }
+    Error(error);
+    console.log(error);
 
 });
 

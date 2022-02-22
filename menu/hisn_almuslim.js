@@ -1,4 +1,5 @@
 import fs from 'fs-extra';
+import Error from "../menu/error.js";
 
 
 export const hisn_almuslim = {
@@ -29,7 +30,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -51,7 +55,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -73,7 +80,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -95,7 +105,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -117,7 +130,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -139,7 +155,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -161,7 +180,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -183,7 +205,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -205,7 +230,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -227,7 +255,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -249,7 +280,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -271,7 +305,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -293,7 +330,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -315,7 +355,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -337,7 +380,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -359,7 +405,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -381,7 +430,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -403,7 +455,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -425,7 +480,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -447,7 +505,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -469,7 +530,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -491,7 +555,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -513,7 +580,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -535,7 +605,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -557,7 +630,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -579,7 +655,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -601,7 +680,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -623,7 +705,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -645,7 +730,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -667,7 +755,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -689,7 +780,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -711,7 +805,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -733,7 +830,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -755,7 +855,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -777,7 +880,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -799,7 +905,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -821,7 +930,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -843,7 +955,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -865,7 +980,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -887,7 +1005,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -909,7 +1030,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -931,7 +1055,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -953,7 +1080,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -975,7 +1105,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -997,7 +1130,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1019,7 +1155,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1041,7 +1180,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1063,7 +1205,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1085,7 +1230,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1107,7 +1255,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1129,7 +1280,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1151,7 +1305,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1173,7 +1330,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1195,7 +1355,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1217,7 +1380,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1239,7 +1405,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1261,7 +1430,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1283,7 +1455,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1305,7 +1480,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1327,7 +1505,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1349,7 +1530,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1371,7 +1555,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1393,7 +1580,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1415,7 +1605,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1437,7 +1630,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1459,7 +1655,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1481,7 +1680,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1503,7 +1705,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1525,7 +1730,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1547,7 +1755,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1569,7 +1780,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1591,7 +1805,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1613,7 +1830,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1635,7 +1855,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1657,7 +1880,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1679,7 +1905,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1701,7 +1930,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1723,7 +1955,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1745,7 +1980,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1767,7 +2005,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1789,7 +2030,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1811,7 +2055,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1833,7 +2080,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1855,7 +2105,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1877,7 +2130,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1899,7 +2155,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1921,7 +2180,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1943,7 +2205,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1965,7 +2230,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -1987,7 +2255,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2009,7 +2280,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2031,7 +2305,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2053,7 +2330,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2075,7 +2355,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2097,7 +2380,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2119,7 +2405,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2141,7 +2430,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2163,7 +2455,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2185,7 +2480,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2207,7 +2505,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2229,7 +2530,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2251,7 +2555,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2273,7 +2580,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2295,7 +2605,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2317,7 +2630,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2339,7 +2655,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2361,7 +2680,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2383,7 +2705,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2405,7 +2730,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2427,7 +2755,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2449,7 +2780,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2471,7 +2805,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2493,7 +2830,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2515,7 +2855,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2537,7 +2880,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2559,7 +2905,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2581,7 +2930,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2603,7 +2955,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2625,7 +2980,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2647,7 +3005,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2669,7 +3030,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2691,7 +3055,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2713,7 +3080,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2735,7 +3105,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2757,7 +3130,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2779,7 +3155,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2801,7 +3180,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2823,7 +3205,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2845,7 +3230,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2867,7 +3255,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2889,7 +3280,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2911,7 +3305,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2933,7 +3330,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
@@ -2955,7 +3355,10 @@ export const hisn_almuslim = {
 
                 }
 
-                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((erro) => console.log(erro));
+                await ctx.reply(msg, { parse_mode: 'HTML' }).catch((error) => {
+                    Error(error);
+                    console.log(error);
+                });
             }
 
 
