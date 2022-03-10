@@ -37,7 +37,7 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
 
                 if (type_private || type_supergroup || type_channel) {
 
-                    if (json[lop2].broadcast !== undefined) {
+                    if (json[lop2].broadcast !== false) {
 
                         let random = adhkar_all[Math.floor(Math.random() * adhkar_all.length)]
                         let message = `${random.category} \n\n\n`
@@ -65,7 +65,7 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
 
                 if (type_private || type_supergroup || type_channel) {
 
-                    if (json[lop2].broadcast !== undefined) {
+                    if (json[lop2].broadcast !== false) {
 
                         let listvideo = video[Math.floor(Math.random() * video.length)]
                         await bot.telegram.sendVideo(lop2, { url: listvideo });
@@ -87,8 +87,12 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
 
                 if (type_private || type_supergroup || type_channel) {
 
-                    let listphoto = photo[Math.floor(Math.random() * photo.length)]
-                    await bot.telegram.sendPhoto(lop2, { url: listphoto });
+                    if (json[lop2].broadcast !== false) {
+
+                        let listphoto = photo[Math.floor(Math.random() * photo.length)]
+                        await bot.telegram.sendPhoto(lop2, { url: listphoto });
+
+                    }
                 }
             }
 
@@ -104,7 +108,7 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
 
                 if (type_private || type_supergroup || type_channel) {
 
-                    if (json[lop2].broadcast !== undefined) {
+                    if (json[lop2].broadcast !== false) {
 
                         let listquran = QuranJson[Math.floor(Math.random() * QuranJson.length)]
                         let caption = `<b>▪سورة: ${listquran.Surah} 📖</b>\nالقارئ: ${listquran.Author} 🔊`
@@ -125,7 +129,8 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
 
                 if (type_private || type_supergroup || type_channel) {
 
-                    if (json[lop2].broadcast !== undefined) {
+                    if (json[lop2].broadcast !== false) {
+
                         let listlectures = LecturesJson[Math.floor(Math.random() * LecturesJson.length)]
                         let msg = `<b>▪${listlectures.Lectures}</b>\n\n`
                         msg += `الشيخ: ${listlectures.Author} 🔊 `
@@ -147,7 +152,8 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
 
                 if (type_private || type_supergroup || type_channel) {
 
-                    if (json[lop2].broadcast !== undefined) {
+                    if (json[lop2].broadcast !== false) {
+
                         let URL_MP3 = 'http://bot.altaqwaa.org/media/adhkar_mp3/Adhkar_sbh.mp3'
                         let msg = `<b>▪أذكار الصباح ☀️</b>\nبصوت إدريس أبكر 🔊`
                         await bot.telegram.sendAudio(lop2, { url: URL_MP3 }, { caption: msg, parse_mode: 'HTML' });
@@ -168,7 +174,8 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
 
                 if (type_private || type_supergroup || type_channel) {
 
-                    if (json[lop2].broadcast !== undefined) {
+                    if (json[lop2].broadcast !== false) {
+
                         let URL_MP3 = 'http://bot.altaqwaa.org/media/adhkar_mp3/Adhkar_msa.mp3'
                         let msg = `<b>▪أذكار المساء 🌑</b>\nبصوت فيصل بن جذيان 🔊`
                         await bot.telegram.sendAudio(lop2, { url: URL_MP3 }, { caption: msg, parse_mode: 'HTML' });
@@ -189,8 +196,8 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
 
                 if (type_private || type_supergroup || type_channel) {
 
-                    if (json[lop2].broadcast !== undefined) {
-                        
+                    if (json[lop2].broadcast !== false) {
+
                         let hisn_almuslim_json = fs.readJSONSync(path.join(Path_Local, '/src/Telegram/button/hisn_almuslim.json'));
                         let key = Object.keys(hisn_almuslim_json);
                         let list_hisn_almuslim = key[Math.floor(Math.random() * key.length)]

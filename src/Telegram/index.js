@@ -186,16 +186,16 @@ module.exports = async function islam_bot(Path_appDate, Path_Local) {
 
             if (body === 'تعطيل') {
 
-                if (json[id].broadcast !== true) {
+                if (json[id].broadcast !== false) {
 
                     let message = 'لقد تم تعطيل الخدمة \nلإعادة التفعيل ارسل كلمة تفعيل'
-                    json[id].broadcast = true
+                    json[id].broadcast = false
                     fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
                     await ctx.reply(message);
 
                 }
 
-                else if (json[id].broadcast === true) {
+                else if (json[id].broadcast === false) {
 
                     let message = 'الخدمة معطلة بالفعل !'
                     await ctx.reply(message);
@@ -208,7 +208,7 @@ module.exports = async function islam_bot(Path_appDate, Path_Local) {
             else if (body === 'تفعيل') {
 
 
-                if (json[id].broadcast === true) {
+                if (json[id].broadcast === false) {
 
                     let message = 'لقد تم تفعيل خدمة إرسال الرسائل بشكل تلقائي'
                     json[id].broadcast = undefined

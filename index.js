@@ -27,7 +27,7 @@ const createWindow = () => {
     });
 
     mainWindow.loadFile('./src/index.html');
-    //mainWindow.removeMenu()
+    mainWindow.removeMenu()
 
     mainWindow.once('ready-to-show', () => {
         mainWindow.show();
@@ -123,7 +123,7 @@ app.whenReady().then(async () => {
 app.on('ready', (e) => {
 
     e.preventDefault();
-    app.setAppUserModelId("org.TeleBotApp.rn0x");
+    app.setAppUserModelId("org.IslamBot.rn0x");
 
     ipcMain.on('minimize', () => {
 
