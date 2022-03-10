@@ -14,7 +14,7 @@
 
 
 <p align="center">
-  <img align="center" src="/github/1.jpg"> <br><br><br><br>
+  <img align="center" src="/github/1.png"> <br><br><br><br>
   <img align="center" src="/github/logo.png" width="80px"> <br><br><br>
   <img align="center" src="/github/1.png"> <br><br>
   <img align="center" src="/github/2.png"> <br><br>
