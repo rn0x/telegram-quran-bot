@@ -1,21 +1,101 @@
 {
-  "name": "bot-adhkar-telegram",
+  "name": "islam_bot",
   "version": "1.0.0",
-  "description": "bot-adhkar-telegram [ quran, adhkar, video, photo, question, sticker ]",
+  "homepage": "https://github.com/rn0x",
+  "description": "Islam_Bot - publishes adhkar and the Qur’an ..",
   "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "type": "commonjs",
+  "author": {
+    "name": "Ryan Almalki",
+    "email": "rn0xx711@gmail.com",
+    "url": "https://github.com/rn0x"
   },
-  "author": "rn0x",
-  "license": "AGPL-3.0",
+  "license": "MIT",
+  "scripts": {
+    "packwin": "electron-builder --windows",
+    "packlinux": "electron-builder --linux",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "dev": "nodemon --exec electron ."
+  },
+  "devDependencies": {
+    "electron": "^17.1.0",
+    "electron-builder": "^22.14.13",
+    "nodemon": "^2.0.15"
+  },
   "dependencies": {
-    "exec-sh": "^0.4.0",
-    "figlet": "^1.5.2",
-    "fs-extra": "^10.0.0",
-    "input": "^1.0.1",
-    "moment-timezone": "^0.5.33",
-    "telegraf": "^4.4.2"
+    "fs-extra": "^10.0.1",
+    "moment": "^2.29.1",
+    "path": "^0.12.7",
+    "telegraf": "^4.7.0"
+  },
+  "build": {
+    "productName": "Islam_Bot",
+    "appId": "org.IslamBot.rn0x",
+    "copyright": "Copyright © 2022 Islam_Bot",
+    "extraFiles": [
+      {
+        "from": "./",
+        "to": "resources",
+        "filter": [
+          "!dist",
+          "!node_modules"
+        ]
+      }
+    ],
+    "win": {
+      "icon": "build/icon.ico",
+      "signingHashAlgorithms": [
+        "sha256",
+        "sha1"
+      ],
+      "signAndEditExecutable": true,
+      "publisherName": "Ryan Almalki",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        },
+        {
+          "target": "portable"
+        },
+        {
+          "target": "msi"
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": "false",
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": "true",
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "license": "build/LICENSE.txt",
+      "shortcutName": "Islam_Bot",
+      "uninstallDisplayName": "Islam_Bot",
+      "installerSidebar": "build/installerSidebar.bmp",
+      "uninstallerSidebar": "build/installerSidebar.bmp",
+      "installerHeader": "build/installerHeader.bmp"
+    },
+    "linux": {
+      "category": "Education",
+      "icon": "build/icons/icon.icns",
+      "vendor": "Ryan Almalki",
+      "executableName": "Islam_Bot",
+      "description": "Islam_Bot - publishes adhkar and the Qur’an ..",
+      "synopsis": "publishes adhkar and the Qur’an",
+      "target": [
+        "AppImage",
+        "deb",
+        "rpm"
+      ]
+    },
+    "directories": {
+      "buildResources": "resources"
+    }
   }
 }

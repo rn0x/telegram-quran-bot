@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header id="titlebar" onmousedown='return false;' onselectstart='return false;' onContextMenu="return false;">
+
+        <div id="drag-region">
+            <div id="window-controls">
+
+                <div class="button" id="min-button">
+                    <img class="icon" srcset="./icon/minimize.png" draggable="false" />
+                </div>
+
+                <div class="button" id="close-button">
+                    <img class="icon" srcset="./icon/close.png" draggable="false" />
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <div class="token" id="token">
+        <img src="./icon/pin-code.png" id="icon_token" onmousedown='return false;' onselectstart='return false;'
+            onContextMenu="return false;">
+        <p id="titel_token">قم بوضع التوكن هنا</p>
+        <input type="text" id="input_token" placeholder="Please put your token here">
+        <button id="but_token">تشغيل</button>
+        <p id="error">تأكد من كتابة التوكن بشكل صحيح !</p>
+    </div>
+
+
+    <div class="bot_start" id="bot_start">
+        <ul class="bot_start_ul" onmousedown='return false;' onselectstart='return false;'
+            onContextMenu="return false;">
+            <li>
+                <img src="./icon/member-card.png" class="bot_icon">
+                <p class="bot_title">المشتركين</p>
+                <p class="number_json" id="number_private"></p>
+            </li>
+            <li>
+                <img src="./icon/group.png" class="bot_icon">
+                <p class="bot_title">القروبات</p>
+                <p class="number_json" id="number_supergroup"></p>
+            </li>
+            <li>
+                <img src="./icon/tv-screen.png" class="bot_icon">
+                <p class="bot_title">القنوات</p>
+                <p class="number_json" id="number_channel"></p>
+            </li>
+        </ul>
+
+        <p id="Status">الحالة: <span id="span_Status"></span></p>
+
+        <div class="bot_but">
+            <button id="off">إيقاف</button>
+            <button id="on">تشغيل</button>
+            <button id="delete">حذف التوكن</button>
+        </div>
+
+        <p id="Developed">Developed by: Ryan Almalki</p>
+    </div>
+
+</body>
+
+</html>
