@@ -79,10 +79,10 @@ yarn run packlinux
 ## صور من داخل البوت
 
 <p align="center">
-  <img align="center" src="/github/5.png">
-  <img align="center" src="/github/6.png">
-  <img align="center" src="/github/7.png">
-  <img align="center" src="/github/8.png">
-  <img align="center" src="/github/9.png">
-  <img align="center" src="/github/10.png">
+  <img align="center" src="/github/5.jpg">
+  <img align="center" src="/github/6.jpg">
+  <img align="center" src="/github/7.jpg">
+  <img align="center" src="/github/8.jpg">
+  <img align="center" src="/github/9.jpg">
+  <img align="center" src="/github/10.jpg">
 </p>
