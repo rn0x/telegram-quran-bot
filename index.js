@@ -91,6 +91,12 @@ app.whenReady().then(async () => {
 
     createWindow();
 
+    if (process.argv.includes('--hidden')) {
+
+        mainWindow.hide()
+
+    }
+    
     if (fs.existsSync(path.join(Path_appDate, '/islam_bot/Settings.json'))) {
 
         let Settings = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Settings.json'));
@@ -100,12 +106,6 @@ app.whenReady().then(async () => {
             islam_bot(app.getPath("appData"), Path_Local, Notification);
 
         }
-
-    }
-
-    else if (process.argv.includes('--hidden')) {
-
-        mainWindow.hide()
 
     }
 
@@ -158,6 +158,7 @@ app.on('window-all-closed', () => {
 });
 
 app.setLoginItemSettings({
-    openAtLogin: true,
-    args: ['--hidden']
-});
+  openAtLogin: true,
+  path: path.join(process.resourcesPath, '../Islam_Bot.exe'),
+  args: ['--hidden']
+})
