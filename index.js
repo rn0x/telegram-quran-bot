@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain, Tray, Menu } = require('electron');
+const { app, BrowserWindow, ipcMain, Tray, Menu, Notification } = require('electron');
 const path = require('path');
 const fs = require('fs-extra');
 const islam_bot = require('./src/Telegram/index.js');
@@ -20,7 +20,6 @@ const createWindow = () => {
         frame: false, // ايطار البرنامج
         title: 'islam_bot',
         icon: path.join(Path_Local, '/build/icons/icon.png'),
-        radii: 88,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js')
         }
@@ -95,11 +94,19 @@ app.whenReady().then(async () => {
     if (fs.existsSync(path.join(Path_appDate, '/islam_bot/Settings.json'))) {
 
         let Settings = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Settings.json'));
+
         if (Settings.start === true && Settings.off_on === 'on') {
 
-            islam_bot(app.getPath("appData"), Path_Local);
+            islam_bot(app.getPath("appData"), Path_Local, Notification);
 
         }
+
+    }
+
+    else if (process.argv.includes('--hidden')) {
+
+        mainWindow.hide()
+
     }
 
     setInterval(async () => {
@@ -109,7 +116,7 @@ app.whenReady().then(async () => {
             let Settings = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Settings.json'));
             if (Settings.start === false && Settings.off_on === 'on') {
 
-                islam_bot(app.getPath("appData"), Path_Local);
+                islam_bot(app.getPath("appData"), Path_Local, Notification);
                 let data = Object.assign({}, Settings, { start: true })
                 fs.writeJSONSync(path.join(Path_appDate, '/islam_bot/Settings.json'), data, { spaces: '\t' });
 
@@ -140,16 +147,6 @@ app.on('ready', (e) => {
 
 });
 
-app.on('activate', () => {
-
-    if (BrowserWindow.getAllWindows().length === 0) {
-
-        createWindow();
-
-    }
-
-});
-
 app.on('before-quit', function () {
     tray.destroy();
 });
@@ -158,4 +155,9 @@ app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') {
         app.quit()
     }
+});
+
+app.setLoginItemSettings({
+    openAtLogin: true,
+    args: ['--hidden']
 });

@@ -25,8 +25,7 @@ module.exports = async function Save_db(id, first_name, username, type, Path_app
                         id: id,
                         first_name: first_name,
                         username: username,
-                        type: type,
-                        broadcast: true
+                        type: type
 
                     }
                 }

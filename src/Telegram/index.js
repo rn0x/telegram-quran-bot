@@ -6,7 +6,7 @@ const button = require('./button.js');
 const broadcast = require('./broadcast.js');
 const Error = require('./Error.js');
 
-module.exports = async function islam_bot(Path_appDate, Path_Local) {
+module.exports = async function islam_bot(Path_appDate, Path_Local, Notification) {
 
     let Settings = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Settings.json'));
     let options = { channelMode: true, polling: true }
@@ -22,14 +22,17 @@ module.exports = async function islam_bot(Path_appDate, Path_Local) {
         let json = json_true ? fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json')) : undefined;
         json_true && json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : '';
         let name_bot = ctx.botInfo.first_name
-        let channel = []
-        let supergroup = []
+        let channel = [];
+        let supergroup = [];
+        let private = [];
 
         for (let lop of Object.keys(json)) {
             if (json[lop].type === 'channel') {
                 channel.push(lop)
             } else if (json[lop].type === 'supergroup') {
                 supergroup.push(lop)
+            } else if (json[lop].type === 'private') {
+                private.push(lop)
             }
         }
 
@@ -44,7 +47,7 @@ module.exports = async function islam_bot(Path_appDate, Path_Local) {
         message_start += '7- حصن المسلم 🏰 \n'
         message_start += '8- محاضرات 🌾 \n\n\n'
         message_start += 'إحصائيات البوت \n\n'
-        message_start += `عدد المحادثات : ${Object.keys(json).length}\n`
+        message_start += `عدد المحادثات : ${private.length}\n`
         message_start += `عدد المجموعات : ${supergroup.length}\n`
         message_start += `عدد القنوات : ${channel.length}\n\n\n`
         message_start += 'قم بالتنقل بين الخدمات  بالضغط على الازرار التي بالأسفل 🔘'
@@ -82,6 +85,10 @@ module.exports = async function islam_bot(Path_appDate, Path_Local) {
             let username = ctx.chat.username ? ctx.chat.username : null;
             let first_name = ctx.chat.first_name ? ctx.chat.first_name : ctx.chat.last_name ? ctx.chat.last_name : ctx.chat.title ? ctx.chat.title : null;
             let type = ctx.chat.type
+            let body = `الإسم: ${first_name}\n`
+            body += `اليوزر: ${username}\n`
+            body += `المعرف: ${id}\n`
+            body += `النوع: ${type}\n`
 
             if (ctx.update.my_chat_member.new_chat_member.status === 'member' || ctx.update.my_chat_member.new_chat_member.status === 'administrator') {
 
@@ -98,6 +105,18 @@ module.exports = async function islam_bot(Path_appDate, Path_Local) {
 
                 }
 
+                let notification = new Notification({
+                    title: 'مشترك جديد ✔️',
+                    body: body,
+                    silent: false,
+                    icon: path.join(Path_Local, '/build/icons/icon.png'),
+                    urgency: "normal",
+                    timeoutType: 'never'
+                });
+
+                notification.show();
+                setTimeout(() => notification.close(), 10000);
+
             }
 
             else if (ctx.update.my_chat_member.new_chat_member.status === 'left' || ctx.update.my_chat_member.new_chat_member.status === 'kicked') {
@@ -107,6 +126,18 @@ module.exports = async function islam_bot(Path_appDate, Path_Local) {
                     delete json[id]
                     fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
                 }
+
+                let notification = new Notification({
+                    title: 'مشترك غادر ⚠️',
+                    body: body,
+                    silent: false,
+                    icon: path.join(Path_Local, '/build/icons/icon.png'),
+                    urgency: "normal",
+                    timeoutType: 'never'
+                });
+
+                notification.show();
+                setTimeout(() => notification.close(), 10000);
             }
 
 

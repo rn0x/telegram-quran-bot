@@ -11,14 +11,17 @@ module.exports = async function start(bot, Path_appDate, Markup) {
         let username = ctx.chat.username ? ctx.chat.username : null;
         let first_name = ctx.chat.first_name ? ctx.chat.first_name : ctx.chat.last_name ? ctx.chat.last_name : ctx.chat.title ? ctx.chat.title : null;
         let name_bot = ctx.botInfo.first_name
-        let channel = []
-        let supergroup = []
+        let channel = [];
+        let supergroup = [];
+        let private = [];
 
         for (let lop of Object.keys(json)) {
             if (json[lop].type === 'channel') {
                 channel.push(lop)
             } else if (json[lop].type === 'supergroup') {
                 supergroup.push(lop)
+            } else if (json[lop].type === 'private') {
+                private.push(lop)
             }
         }
 
@@ -33,7 +36,7 @@ module.exports = async function start(bot, Path_appDate, Markup) {
         message_start += '7- حصن المسلم 🏰 \n'
         message_start += '8- محاضرات 🌾 \n\n\n'
         message_start += 'إحصائيات البوت \n\n'
-        message_start += `عدد المحادثات : ${Object.keys(json).length}\n`
+        message_start += `عدد المحادثات : ${private.length}\n`
         message_start += `عدد المجموعات : ${supergroup.length}\n`
         message_start += `عدد القنوات : ${channel.length}\n\n\n`
         message_start += 'قم بالتنقل بين الخدمات  بالضغط على الازرار التي بالأسفل 🔘'
@@ -45,7 +48,7 @@ module.exports = async function start(bot, Path_appDate, Markup) {
         let { message_id } = await ctx.reply(message_start, button);
         json[id].message_id = message_id
         fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
-        
+
 
     });
 

@@ -169,20 +169,6 @@ body {
 
 }
 
-.loading {
-    border           : 16px solid #e9e9e9;
-    border-radius    : 50%;
-    border-top       : 16px solid #ffffff;
-    width            : 60px;
-    height           : 60px;
-    -webkit-animation: spin 2s linear infinite;
-    /* Safari */
-    animation        : spin 2s linear infinite;
-    margin-left      : auto;
-    margin-right     : auto;
-    margin-top       : 100px;
-}
-
 /* Safari */
 @-webkit-keyframes spin {
     0% {
