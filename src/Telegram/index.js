@@ -20,7 +20,11 @@ module.exports = async function islam_bot(Path_appDate, Path_Local, Notification
         let type = ctx.chat.type
         let json_true = fs.existsSync(path.join(Path_appDate, '/islam_bot/Users.json'));
         let json = json_true ? fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json')) : undefined;
-        json_true && json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : '';
+        if (json_true && json[id] && json[id].message_id !== undefined) {
+
+            ctx.deleteMessage(json[id].message_id);
+            
+        }
         let name_bot = ctx.botInfo.first_name
         let channel = [];
         let supergroup = [];
@@ -45,7 +49,7 @@ module.exports = async function islam_bot(Path_appDate, Path_Local, Notification
         message_start += '5- أسماء الله الحسنى ✨ \n'
         message_start += '6- بطاقات القرآن 🎴 \n'
         message_start += '7- حصن المسلم 🏰 \n'
-        message_start += '8- محاضرات 🌾 \n\n\n'
+        message_start += '8- محاضرات و توعية 🌾 \n\n\n'
         message_start += 'إحصائيات البوت \n\n'
         message_start += `عدد المحادثات : ${private.length}\n`
         message_start += `عدد المجموعات : ${supergroup.length}\n`
@@ -54,11 +58,11 @@ module.exports = async function islam_bot(Path_appDate, Path_Local, Notification
         let but_1 = [Markup.button.callback('قرآن كريم 📖', 'quran'), Markup.button.callback('حصن المسلم 🏰', 'hisn_almuslim')];
         let but_2 = [Markup.button.callback('أذكار 📿', 'adhkar'), Markup.button.callback('بطاقات 🎴', 'albitaqat')];
         let but_3 = [Markup.button.callback('فيديو 🎥', 'video'), Markup.button.callback('صور 🖼️', 'photo')];
-        let but_4 = [Markup.button.callback('محاضرات 🌾', 'Lectures'), Markup.button.callback('أسماء الله الحسنى ✨', 'Names_Of_Allah')];
+        let but_4 = [Markup.button.callback('محاضرات و توعية 🌾', 'Lectures'), Markup.button.callback('أسماء الله الحسنى ✨', 'Names_Of_Allah')];
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4]);
         let { message_id } = await ctx.reply(message_start, button);
 
-        if (json_true) {
+        if (json_true && json[id]) {
 
             json[id].message_id = message_id
             fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);

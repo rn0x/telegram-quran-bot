@@ -30,8 +30,8 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
 
             for (let lop2 of user) {
 
-                let info_admin_supergroup = json[lop2].type === 'supergroup' ? await bot.telegram.getChatAdministrators(lop2) : undefined;
-                let info_admin_channel = json[lop2].type === 'channel' ? await bot.telegram.getChatAdministrators(lop2) : undefined;
+                let info_admin_supergroup = json[lop2].type === 'supergroup' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
+                let info_admin_channel = json[lop2].type === 'channel' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
                 let type_private = json[lop2].type === 'private';
                 let type_supergroup = json[lop2].type === 'supergroup' && info_admin_supergroup !== undefined ? info_admin_supergroup.some(fl => fl.user.id === bot.botInfo.id && fl.status === 'administrator') : false;
                 let type_channel = json[lop2].type === 'channel' && info_admin_channel !== undefined ? info_admin_channel.some(fl => fl.user.id === bot.botInfo.id && fl.can_post_messages === true) : false;
@@ -47,7 +47,7 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
                         message += `${random.count !== '' ? `\n\nعدد التكرار: ${random.count}` : ''}`
                         message += `${random.reference !== '' ? `\n\n ${random.reference}` : ''}`
                         await bot.telegram.sendMessage(lop2, message)
-                        .catch(error => Error(error, Path_appDate));
+                            .catch(error => Error(error, Path_appDate));
 
                     }
 
@@ -59,8 +59,8 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
 
             for (let lop2 of user) {
 
-                let info_admin_supergroup = json[lop2].type === 'supergroup' ? await bot.telegram.getChatAdministrators(lop2) : undefined;
-                let info_admin_channel = json[lop2].type === 'channel' ? await bot.telegram.getChatAdministrators(lop2) : undefined;
+                let info_admin_supergroup = json[lop2].type === 'supergroup' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
+                let info_admin_channel = json[lop2].type === 'channel' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
                 let type_private = json[lop2].type === 'private';
                 let type_supergroup = json[lop2].type === 'supergroup' && info_admin_supergroup !== undefined ? info_admin_supergroup.some(fl => fl.user.id === bot.botInfo.id && fl.status === 'administrator') : false;
                 let type_channel = json[lop2].type === 'channel' && info_admin_channel !== undefined ? info_admin_channel.some(fl => fl.user.id === bot.botInfo.id && fl.can_post_messages === true) : false;
@@ -71,7 +71,7 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
 
                         let listvideo = video[Math.floor(Math.random() * video.length)]
                         await bot.telegram.sendVideo(lop2, { url: listvideo })
-                        .catch(error => Error(error, Path_appDate));
+                            .catch(error => Error(error, Path_appDate));
 
                     }
                 }
@@ -82,8 +82,8 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
 
             for (let lop2 of user) {
 
-                let info_admin_supergroup = json[lop2].type === 'supergroup' ? await bot.telegram.getChatAdministrators(lop2) : undefined;
-                let info_admin_channel = json[lop2].type === 'channel' ? await bot.telegram.getChatAdministrators(lop2) : undefined;
+                let info_admin_supergroup = json[lop2].type === 'supergroup' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
+                let info_admin_channel = json[lop2].type === 'channel' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
                 let type_private = json[lop2].type === 'private';
                 let type_supergroup = json[lop2].type === 'supergroup' && info_admin_supergroup !== undefined ? info_admin_supergroup.some(fl => fl.user.id === bot.botInfo.id && fl.status === 'administrator') : false;
                 let type_channel = json[lop2].type === 'channel' && info_admin_channel !== undefined ? info_admin_channel.some(fl => fl.user.id === bot.botInfo.id && fl.can_post_messages === true) : false;
@@ -94,7 +94,7 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
 
                         let listphoto = photo[Math.floor(Math.random() * photo.length)]
                         await bot.telegram.sendPhoto(lop2, { url: listphoto })
-                        .catch(error => Error(error, Path_appDate));
+                            .catch(error => Error(error, Path_appDate));
 
                     }
                 }
@@ -104,8 +104,8 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
 
             for (let lop2 of user) {
 
-                let info_admin_supergroup = json[lop2].type === 'supergroup' ? await bot.telegram.getChatAdministrators(lop2) : undefined;
-                let info_admin_channel = json[lop2].type === 'channel' ? await bot.telegram.getChatAdministrators(lop2) : undefined;
+                let info_admin_supergroup = json[lop2].type === 'supergroup' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
+                let info_admin_channel = json[lop2].type === 'channel' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
                 let type_private = json[lop2].type === 'private';
                 let type_supergroup = json[lop2].type === 'supergroup' && info_admin_supergroup !== undefined ? info_admin_supergroup.some(fl => fl.user.id === bot.botInfo.id && fl.status === 'administrator') : false;
                 let type_channel = json[lop2].type === 'channel' && info_admin_channel !== undefined ? info_admin_channel.some(fl => fl.user.id === bot.botInfo.id && fl.can_post_messages === true) : false;
@@ -117,7 +117,7 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
                         let listquran = QuranJson[Math.floor(Math.random() * QuranJson.length)]
                         let caption = `<b>▪سورة: ${listquran.Surah} 📖</b>\nالقارئ: ${listquran.Author} 🔊`
                         await bot.telegram.sendAudio(lop2, { url: listquran.FilePath }, { caption: caption, parse_mode: 'HTML' })
-                        .catch(error => Error(error, Path_appDate));
+                            .catch(error => Error(error, Path_appDate));
                     }
                 }
             }
@@ -126,8 +126,8 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
 
             for (let lop2 of user) {
 
-                let info_admin_supergroup = json[lop2].type === 'supergroup' ? await bot.telegram.getChatAdministrators(lop2) : undefined;
-                let info_admin_channel = json[lop2].type === 'channel' ? await bot.telegram.getChatAdministrators(lop2) : undefined;
+                let info_admin_supergroup = json[lop2].type === 'supergroup' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
+                let info_admin_channel = json[lop2].type === 'channel' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
                 let type_private = json[lop2].type === 'private';
                 let type_supergroup = json[lop2].type === 'supergroup' && info_admin_supergroup !== undefined ? info_admin_supergroup.some(fl => fl.user.id === bot.botInfo.id && fl.status === 'administrator') : false;
                 let type_channel = json[lop2].type === 'channel' && info_admin_channel !== undefined ? info_admin_channel.some(fl => fl.user.id === bot.botInfo.id && fl.can_post_messages === true) : false;
@@ -138,9 +138,9 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
 
                         let listlectures = LecturesJson[Math.floor(Math.random() * LecturesJson.length)]
                         let msg = `<b>▪${listlectures.Lectures}</b>\n\n`
-                        msg += `الشيخ: ${listlectures.Author} 🔊 `
+                        msg += `${listlectures.Author ? `\n\n<b>الشيخ:</b> ${listlectures.Author} 🔊` : ''}`
                         await bot.telegram.sendVideo(lop2, { url: listlectures.FilePath }, { caption: msg, parse_mode: 'HTML' })
-                        .catch(error => Error(error, Path_appDate));
+                            .catch(error => Error(error, Path_appDate));
                     }
 
                 }
@@ -150,8 +150,8 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
 
             for (let lop2 of user) {
 
-                let info_admin_supergroup = json[lop2].type === 'supergroup' ? await bot.telegram.getChatAdministrators(lop2) : undefined;
-                let info_admin_channel = json[lop2].type === 'channel' ? await bot.telegram.getChatAdministrators(lop2) : undefined;
+                let info_admin_supergroup = json[lop2].type === 'supergroup' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
+                let info_admin_channel = json[lop2].type === 'channel' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
                 let type_private = json[lop2].type === 'private';
                 let type_supergroup = json[lop2].type === 'supergroup' && info_admin_supergroup !== undefined ? info_admin_supergroup.some(fl => fl.user.id === bot.botInfo.id && fl.status === 'administrator') : false;
                 let type_channel = json[lop2].type === 'channel' && info_admin_channel !== undefined ? info_admin_channel.some(fl => fl.user.id === bot.botInfo.id && fl.can_post_messages === true) : false;
@@ -163,7 +163,7 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
                         let URL_MP3 = 'http://bot.altaqwaa.org/media/adhkar_mp3/Adhkar_sbh.mp3'
                         let msg = `<b>▪أذكار الصباح ☀️</b>\nبصوت إدريس أبكر 🔊`
                         await bot.telegram.sendAudio(lop2, { url: URL_MP3 }, { caption: msg, parse_mode: 'HTML' })
-                        .catch(error => Error(error, Path_appDate));
+                            .catch(error => Error(error, Path_appDate));
                     }
 
                 }
@@ -173,8 +173,8 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
 
             for (let lop2 of user) {
 
-                let info_admin_supergroup = json[lop2].type === 'supergroup' ? await bot.telegram.getChatAdministrators(lop2) : undefined;
-                let info_admin_channel = json[lop2].type === 'channel' ? await bot.telegram.getChatAdministrators(lop2) : undefined;
+                let info_admin_supergroup = json[lop2].type === 'supergroup' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
+                let info_admin_channel = json[lop2].type === 'channel' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
                 let type_private = json[lop2].type === 'private';
                 let type_supergroup = json[lop2].type === 'supergroup' && info_admin_supergroup !== undefined ? info_admin_supergroup.some(fl => fl.user.id === bot.botInfo.id && fl.status === 'administrator') : false;
                 let type_channel = json[lop2].type === 'channel' && info_admin_channel !== undefined ? info_admin_channel.some(fl => fl.user.id === bot.botInfo.id && fl.can_post_messages === true) : false;
@@ -186,7 +186,7 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
                         let URL_MP3 = 'http://bot.altaqwaa.org/media/adhkar_mp3/Adhkar_msa.mp3'
                         let msg = `<b>▪أذكار المساء 🌑</b>\nبصوت فيصل بن جذيان 🔊`
                         await bot.telegram.sendAudio(lop2, { url: URL_MP3 }, { caption: msg, parse_mode: 'HTML' })
-                        .catch(error => Error(error, Path_appDate));
+                            .catch(error => Error(error, Path_appDate));
                     }
 
                 }
@@ -196,8 +196,8 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
 
             for (let lop2 of user) {
 
-                let info_admin_supergroup = json[lop2].type === 'supergroup' ? await bot.telegram.getChatAdministrators(lop2) : undefined;
-                let info_admin_channel = json[lop2].type === 'channel' ? await bot.telegram.getChatAdministrators(lop2) : undefined;
+                let info_admin_supergroup = json[lop2].type === 'supergroup' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
+                let info_admin_channel = json[lop2].type === 'channel' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
                 let type_private = json[lop2].type === 'private';
                 let type_supergroup = json[lop2].type === 'supergroup' && info_admin_supergroup !== undefined ? info_admin_supergroup.some(fl => fl.user.id === bot.botInfo.id && fl.status === 'administrator') : false;
                 let type_channel = json[lop2].type === 'channel' && info_admin_channel !== undefined ? info_admin_channel.some(fl => fl.user.id === bot.botInfo.id && fl.can_post_messages === true) : false;
@@ -225,7 +225,7 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
 
                         }
                         await bot.telegram.sendMessage(lop2, msg, { parse_mode: 'HTML' })
-                        .catch(error => Error(error, Path_appDate));
+                            .catch(error => Error(error, Path_appDate));
 
                     }
                 }

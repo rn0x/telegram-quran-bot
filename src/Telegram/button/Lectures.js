@@ -13,7 +13,7 @@ module.exports = async function Lectures(bot, Path_appDate, Markup, Path_Local) 
         let but_1 = [Markup.button.callback('🔄', 'Lectures'), Markup.button.callback('الرجوع', 'start')];
         let button = Markup.inlineKeyboard([but_1]);
         let caption = `<b>▪${random.Lectures}</b>\n\n`
-        caption += `الشيخ: ${random.Author} 🔊`
+        caption += `${random.Author ? `\n\n<b>الشيخ:</b> ${random.Author} 🔊` : ''}`
         let { message_id } = await ctx.replyWithVideo({ url: random.FilePath }, { caption: caption, reply_markup: button.reply_markup , parse_mode: 'HTML' });
         json[id].message_id = message_id
         fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
