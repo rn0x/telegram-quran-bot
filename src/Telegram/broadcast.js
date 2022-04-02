@@ -24,6 +24,7 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
         const QuranJson = fs.readJSONSync(path.join(Path_Local, '/src/Telegram/button/Quran.json'));
         const json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
         const user = Object.keys(json);
+        const me = await bot.telegram.getMe();
 
 
         if (time_adhkar_all.includes(time)) {
@@ -33,8 +34,8 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
                 let info_admin_supergroup = json[lop2].type === 'supergroup' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
                 let info_admin_channel = json[lop2].type === 'channel' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
                 let type_private = json[lop2].type === 'private';
-                let type_supergroup = json[lop2].type === 'supergroup' && info_admin_supergroup !== undefined ? info_admin_supergroup.some(fl => fl.user.id === bot.botInfo.id && fl.status === 'administrator') : false;
-                let type_channel = json[lop2].type === 'channel' && info_admin_channel !== undefined ? info_admin_channel.some(fl => fl.user.id === bot.botInfo.id && fl.can_post_messages === true) : false;
+                let type_supergroup = json[lop2].type === 'supergroup' && info_admin_supergroup !== undefined ? info_admin_supergroup.some(fl => fl.user.id === me.id && fl.status === 'administrator') : false;
+                let type_channel = json[lop2].type === 'channel' && info_admin_channel !== undefined ? info_admin_channel.some(fl => fl.user.id === me.id && fl.can_post_messages === true) : false;
 
                 if (type_private || type_supergroup || type_channel) {
 
@@ -62,8 +63,8 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
                 let info_admin_supergroup = json[lop2].type === 'supergroup' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
                 let info_admin_channel = json[lop2].type === 'channel' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
                 let type_private = json[lop2].type === 'private';
-                let type_supergroup = json[lop2].type === 'supergroup' && info_admin_supergroup !== undefined ? info_admin_supergroup.some(fl => fl.user.id === bot.botInfo.id && fl.status === 'administrator') : false;
-                let type_channel = json[lop2].type === 'channel' && info_admin_channel !== undefined ? info_admin_channel.some(fl => fl.user.id === bot.botInfo.id && fl.can_post_messages === true) : false;
+                let type_supergroup = json[lop2].type === 'supergroup' && info_admin_supergroup !== undefined ? info_admin_supergroup.some(fl => fl.user.id === me.id && fl.status === 'administrator') : false;
+                let type_channel = json[lop2].type === 'channel' && info_admin_channel !== undefined ? info_admin_channel.some(fl => fl.user.id === me.id && fl.can_post_messages === true) : false;
 
                 if (type_private || type_supergroup || type_channel) {
 
@@ -85,8 +86,8 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
                 let info_admin_supergroup = json[lop2].type === 'supergroup' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
                 let info_admin_channel = json[lop2].type === 'channel' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
                 let type_private = json[lop2].type === 'private';
-                let type_supergroup = json[lop2].type === 'supergroup' && info_admin_supergroup !== undefined ? info_admin_supergroup.some(fl => fl.user.id === bot.botInfo.id && fl.status === 'administrator') : false;
-                let type_channel = json[lop2].type === 'channel' && info_admin_channel !== undefined ? info_admin_channel.some(fl => fl.user.id === bot.botInfo.id && fl.can_post_messages === true) : false;
+                let type_supergroup = json[lop2].type === 'supergroup' && info_admin_supergroup !== undefined ? info_admin_supergroup.some(fl => fl.user.id === me.id && fl.status === 'administrator') : false;
+                let type_channel = json[lop2].type === 'channel' && info_admin_channel !== undefined ? info_admin_channel.some(fl => fl.user.id === me.id && fl.can_post_messages === true) : false;
 
                 if (type_private || type_supergroup || type_channel) {
 
@@ -107,8 +108,8 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
                 let info_admin_supergroup = json[lop2].type === 'supergroup' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
                 let info_admin_channel = json[lop2].type === 'channel' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
                 let type_private = json[lop2].type === 'private';
-                let type_supergroup = json[lop2].type === 'supergroup' && info_admin_supergroup !== undefined ? info_admin_supergroup.some(fl => fl.user.id === bot.botInfo.id && fl.status === 'administrator') : false;
-                let type_channel = json[lop2].type === 'channel' && info_admin_channel !== undefined ? info_admin_channel.some(fl => fl.user.id === bot.botInfo.id && fl.can_post_messages === true) : false;
+                let type_supergroup = json[lop2].type === 'supergroup' && info_admin_supergroup !== undefined ? info_admin_supergroup.some(fl => fl.user.id === me.id && fl.status === 'administrator') : false;
+                let type_channel = json[lop2].type === 'channel' && info_admin_channel !== undefined ? info_admin_channel.some(fl => fl.user.id === me.id && fl.can_post_messages === true) : false;
 
                 if (type_private || type_supergroup || type_channel) {
 
@@ -129,8 +130,8 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
                 let info_admin_supergroup = json[lop2].type === 'supergroup' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
                 let info_admin_channel = json[lop2].type === 'channel' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
                 let type_private = json[lop2].type === 'private';
-                let type_supergroup = json[lop2].type === 'supergroup' && info_admin_supergroup !== undefined ? info_admin_supergroup.some(fl => fl.user.id === bot.botInfo.id && fl.status === 'administrator') : false;
-                let type_channel = json[lop2].type === 'channel' && info_admin_channel !== undefined ? info_admin_channel.some(fl => fl.user.id === bot.botInfo.id && fl.can_post_messages === true) : false;
+                let type_supergroup = json[lop2].type === 'supergroup' && info_admin_supergroup !== undefined ? info_admin_supergroup.some(fl => fl.user.id === me.id && fl.status === 'administrator') : false;
+                let type_channel = json[lop2].type === 'channel' && info_admin_channel !== undefined ? info_admin_channel.some(fl => fl.user.id === me.id && fl.can_post_messages === true) : false;
 
                 if (type_private || type_supergroup || type_channel) {
 
@@ -153,8 +154,8 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
                 let info_admin_supergroup = json[lop2].type === 'supergroup' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
                 let info_admin_channel = json[lop2].type === 'channel' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
                 let type_private = json[lop2].type === 'private';
-                let type_supergroup = json[lop2].type === 'supergroup' && info_admin_supergroup !== undefined ? info_admin_supergroup.some(fl => fl.user.id === bot.botInfo.id && fl.status === 'administrator') : false;
-                let type_channel = json[lop2].type === 'channel' && info_admin_channel !== undefined ? info_admin_channel.some(fl => fl.user.id === bot.botInfo.id && fl.can_post_messages === true) : false;
+                let type_supergroup = json[lop2].type === 'supergroup' && info_admin_supergroup !== undefined ? info_admin_supergroup.some(fl => fl.user.id === me.id && fl.status === 'administrator') : false;
+                let type_channel = json[lop2].type === 'channel' && info_admin_channel !== undefined ? info_admin_channel.some(fl => fl.user.id === me.id && fl.can_post_messages === true) : false;
 
                 if (type_private || type_supergroup || type_channel) {
 
@@ -176,8 +177,8 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
                 let info_admin_supergroup = json[lop2].type === 'supergroup' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
                 let info_admin_channel = json[lop2].type === 'channel' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
                 let type_private = json[lop2].type === 'private';
-                let type_supergroup = json[lop2].type === 'supergroup' && info_admin_supergroup !== undefined ? info_admin_supergroup.some(fl => fl.user.id === bot.botInfo.id && fl.status === 'administrator') : false;
-                let type_channel = json[lop2].type === 'channel' && info_admin_channel !== undefined ? info_admin_channel.some(fl => fl.user.id === bot.botInfo.id && fl.can_post_messages === true) : false;
+                let type_supergroup = json[lop2].type === 'supergroup' && info_admin_supergroup !== undefined ? info_admin_supergroup.some(fl => fl.user.id === me.id && fl.status === 'administrator') : false;
+                let type_channel = json[lop2].type === 'channel' && info_admin_channel !== undefined ? info_admin_channel.some(fl => fl.user.id === me.id && fl.can_post_messages === true) : false;
 
                 if (type_private || type_supergroup || type_channel) {
 
@@ -199,8 +200,8 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
                 let info_admin_supergroup = json[lop2].type === 'supergroup' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
                 let info_admin_channel = json[lop2].type === 'channel' ? await bot.telegram.getChatAdministrators(lop2).catch(error => Error(error, Path_appDate)) : undefined;
                 let type_private = json[lop2].type === 'private';
-                let type_supergroup = json[lop2].type === 'supergroup' && info_admin_supergroup !== undefined ? info_admin_supergroup.some(fl => fl.user.id === bot.botInfo.id && fl.status === 'administrator') : false;
-                let type_channel = json[lop2].type === 'channel' && info_admin_channel !== undefined ? info_admin_channel.some(fl => fl.user.id === bot.botInfo.id && fl.can_post_messages === true) : false;
+                let type_supergroup = json[lop2].type === 'supergroup' && info_admin_supergroup !== undefined ? info_admin_supergroup.some(fl => fl.user.id === me.id && fl.status === 'administrator') : false;
+                let type_channel = json[lop2].type === 'channel' && info_admin_channel !== undefined ? info_admin_channel.some(fl => fl.user.id === me.id && fl.can_post_messages === true) : false;
 
                 if (type_private || type_supergroup || type_channel) {
 
