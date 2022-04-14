@@ -418,7 +418,7 @@ module.exports = async function Ali_Jaber(bot, Path_appDate, Markup) {
 
         let caption = "سورة: الفاتحة 📖\nالقارئ: علي جابر 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server11.mp3quran.net/a_jbr/001.mp3"
+        caption += "http://server11.mp3quran.net/a_jbr/001.mp3"
         ctx.reply(caption)
 
     });
@@ -427,7 +427,7 @@ module.exports = async function Ali_Jaber(bot, Path_appDate, Markup) {
 
         let caption = "سورة: البقرة 📖\nالقارئ: علي جابر 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server11.mp3quran.net/a_jbr/002.mp3"
+        caption += "http://server11.mp3quran.net/a_jbr/002.mp3"
         ctx.reply(caption)
 
     });
@@ -436,7 +436,7 @@ module.exports = async function Ali_Jaber(bot, Path_appDate, Markup) {
 
         let caption = "سورة: آل عمران 📖\nالقارئ: علي جابر 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server11.mp3quran.net/a_jbr/003.mp3"
+        caption += "http://server11.mp3quran.net/a_jbr/003.mp3"
         ctx.reply(caption)
 
     });
@@ -445,7 +445,7 @@ module.exports = async function Ali_Jaber(bot, Path_appDate, Markup) {
 
         let caption = "سورة: النساء 📖\nالقارئ: علي جابر 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server11.mp3quran.net/a_jbr/004.mp3"
+        caption += "http://server11.mp3quran.net/a_jbr/004.mp3"
         ctx.reply(caption)
 
     });
@@ -454,7 +454,7 @@ module.exports = async function Ali_Jaber(bot, Path_appDate, Markup) {
 
         let caption = "سورة: المائدة 📖\nالقارئ: علي جابر 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server11.mp3quran.net/a_jbr/005.mp3"
+        caption += "http://server11.mp3quran.net/a_jbr/005.mp3"
         ctx.reply(caption)
 
     });
@@ -463,7 +463,7 @@ module.exports = async function Ali_Jaber(bot, Path_appDate, Markup) {
 
         let caption = "سورة: الأنعام 📖\nالقارئ: علي جابر 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server11.mp3quran.net/a_jbr/006.mp3"
+        caption += "http://server11.mp3quran.net/a_jbr/006.mp3"
         ctx.reply(caption)
 
     });
@@ -472,7 +472,7 @@ module.exports = async function Ali_Jaber(bot, Path_appDate, Markup) {
 
         let caption = "سورة: الأعراف 📖\nالقارئ: علي جابر 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server11.mp3quran.net/a_jbr/007.mp3"
+        caption += "http://server11.mp3quran.net/a_jbr/007.mp3"
         ctx.reply(caption)
 
     });
@@ -481,7 +481,7 @@ module.exports = async function Ali_Jaber(bot, Path_appDate, Markup) {
 
         let caption = "سورة: الأنفال 📖\nالقارئ: علي جابر 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server11.mp3quran.net/a_jbr/008.mp3"
+        caption += "http://server11.mp3quran.net/a_jbr/008.mp3"
         ctx.reply(caption)
 
     });
@@ -490,7 +490,7 @@ module.exports = async function Ali_Jaber(bot, Path_appDate, Markup) {
 
         let caption = "سورة: التوبة 📖\nالقارئ: علي جابر 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server11.mp3quran.net/a_jbr/009.mp3"
+        caption += "http://server11.mp3quran.net/a_jbr/009.mp3"
         ctx.reply(caption)
 
     });
@@ -498,735 +498,735 @@ module.exports = async function Ali_Jaber(bot, Path_appDate, Markup) {
     bot.action('Ali_Jaber_010', async (ctx) => {
 
         let caption = "سورة: يونس 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/010.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/010.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_011', async (ctx) => {
 
         let caption = "سورة: هود 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/011.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/011.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_012', async (ctx) => {
 
         let caption = "سورة: يوسف 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/012.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/012.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_013', async (ctx) => {
 
         let caption = "سورة: الرعد 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/013.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/013.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_014', async (ctx) => {
 
         let caption = "سورة: إبراهيم 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/014.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/014.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_015', async (ctx) => {
 
         let caption = "سورة: الحجر 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/015.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/015.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_016', async (ctx) => {
 
         let caption = "سورة: النحل 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/016.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/016.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_017', async (ctx) => {
 
         let caption = "سورة: الإسراء 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/017.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/017.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_018', async (ctx) => {
 
         let caption = "سورة: الكهف 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/018.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/018.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_019', async (ctx) => {
 
         let caption = "سورة: مريم 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/019.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/019.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_020', async (ctx) => {
 
         let caption = "سورة: طه 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/020.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/020.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_021', async (ctx) => {
 
         let caption = "سورة: الأنبياء 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/021.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/021.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_022', async (ctx) => {
 
         let caption = "سورة: الحج 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/022.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/022.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_023', async (ctx) => {
 
         let caption = "سورة: المؤمنون 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/023.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/023.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_024', async (ctx) => {
 
         let caption = "سورة: النور 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/024.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/024.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_025', async (ctx) => {
 
         let caption = "سورة: الفرقان 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/025.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/025.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_026', async (ctx) => {
 
         let caption = "سورة: الشعراء 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/026.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/026.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_027', async (ctx) => {
 
         let caption = "سورة: النمل 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/027.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/027.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_028', async (ctx) => {
 
         let caption = "سورة: القصص 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/028.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/028.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_029', async (ctx) => {
 
         let caption = "سورة: العنكبوت 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/029.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/029.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_030', async (ctx) => {
 
         let caption = "سورة: الروم 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/030.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/030.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_031', async (ctx) => {
 
         let caption = "سورة: لقمان 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/031.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/031.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_032', async (ctx) => {
 
         let caption = "سورة: السجدة 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/032.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/032.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_033', async (ctx) => {
 
         let caption = "سورة: الأحزاب 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/033.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/033.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_034', async (ctx) => {
 
         let caption = "سورة: سبأ 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/034.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/034.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_035', async (ctx) => {
 
         let caption = "سورة: فاطر 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/035.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/035.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_036', async (ctx) => {
 
         let caption = "سورة: يس 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/036.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/036.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_037', async (ctx) => {
 
         let caption = "سورة: الصافات 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/037.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/037.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_038', async (ctx) => {
 
         let caption = "سورة: ص 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/038.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/038.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_039', async (ctx) => {
 
         let caption = "سورة: الزمر 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/039.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/039.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_040', async (ctx) => {
 
         let caption = "سورة: غافر 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/040.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/040.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_041', async (ctx) => {
 
         let caption = "سورة: فصلت 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/041.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/041.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_042', async (ctx) => {
 
         let caption = "سورة: الشورى 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/042.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/042.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_043', async (ctx) => {
 
         let caption = "سورة: الزخرف 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/043.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/043.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_044', async (ctx) => {
 
         let caption = "سورة: الدخان 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/044.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/044.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_045', async (ctx) => {
 
         let caption = "سورة: الجاثية 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/045.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/045.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_046', async (ctx) => {
 
         let caption = "سورة: الأحقاف 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/046.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/046.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_047', async (ctx) => {
 
         let caption = "سورة: محمد 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/047.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/047.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_048', async (ctx) => {
 
         let caption = "سورة: الفتح 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/048.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/048.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_049', async (ctx) => {
 
         let caption = "سورة: الحجرات 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/049.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/049.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_050', async (ctx) => {
 
         let caption = "سورة: ق 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/050.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/050.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_051', async (ctx) => {
 
         let caption = "سورة: الذاريات 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/051.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/051.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_052', async (ctx) => {
 
         let caption = "سورة: الطور 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/052.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/052.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_053', async (ctx) => {
 
         let caption = "سورة: النجم 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/053.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/053.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_054', async (ctx) => {
 
         let caption = "سورة: القمر 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/054.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/054.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_055', async (ctx) => {
 
         let caption = "سورة: الرحمن 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/055.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/055.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_056', async (ctx) => {
 
         let caption = "سورة: الواقعة 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/056.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/056.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_057', async (ctx) => {
 
         let caption = "سورة: الحديد 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/057.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/057.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_058', async (ctx) => {
 
         let caption = "سورة: المجادلة 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/058.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/058.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_059', async (ctx) => {
 
         let caption = "سورة: الحشر 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/059.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/059.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_060', async (ctx) => {
 
         let caption = "سورة: الممتحنة 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/060.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/060.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_061', async (ctx) => {
 
         let caption = "سورة: الصف 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/061.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/061.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_062', async (ctx) => {
 
         let caption = "سورة: الجمعة 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/062.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/062.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_063', async (ctx) => {
 
         let caption = "سورة: المنافقون 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/063.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/063.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_064', async (ctx) => {
 
         let caption = "سورة: التغابن 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/064.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/064.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_065', async (ctx) => {
 
         let caption = "سورة: الطلاق 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/065.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/065.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_066', async (ctx) => {
 
         let caption = "سورة: التحريم 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/066.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/066.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_067', async (ctx) => {
 
         let caption = "سورة: الملك 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/067.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/067.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_068', async (ctx) => {
 
         let caption = "سورة: القلم 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/068.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/068.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_069', async (ctx) => {
 
         let caption = "سورة: الحاقة 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/069.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/069.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_070', async (ctx) => {
 
         let caption = "سورة: المعارج 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/070.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/070.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_071', async (ctx) => {
 
         let caption = "سورة: نوح 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/071.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/071.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_072', async (ctx) => {
 
         let caption = "سورة: الجن 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/072.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/072.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_073', async (ctx) => {
 
         let caption = "سورة: المزمل 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/073.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/073.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_074', async (ctx) => {
 
         let caption = "سورة: المدثر 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/074.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/074.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_075', async (ctx) => {
 
         let caption = "سورة: القيامة 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/075.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/075.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_076', async (ctx) => {
 
         let caption = "سورة: الإنسان 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/076.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/076.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_077', async (ctx) => {
 
         let caption = "سورة: المرسلات 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/077.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/077.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_078', async (ctx) => {
 
         let caption = "سورة: النبأ 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/078.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/078.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_079', async (ctx) => {
 
         let caption = "سورة: النازعات 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/079.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/079.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_080', async (ctx) => {
 
         let caption = "سورة: عبس 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/080.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/080.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_081', async (ctx) => {
 
         let caption = "سورة: التكوير 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/081.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/081.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_082', async (ctx) => {
 
         let caption = "سورة: الانفطار 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/082.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/082.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_083', async (ctx) => {
 
         let caption = "سورة: المطففين 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/083.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/083.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_084', async (ctx) => {
 
         let caption = "سورة: الانشقاق 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/084.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/084.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_085', async (ctx) => {
 
         let caption = "سورة: البروج 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/085.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/085.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_086', async (ctx) => {
 
         let caption = "سورة: الطارق 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/086.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/086.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_087', async (ctx) => {
 
         let caption = "سورة: الأعلى 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/087.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/087.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_088', async (ctx) => {
 
         let caption = "سورة: الغاشية 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/088.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/088.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_089', async (ctx) => {
 
         let caption = "سورة: الفجر 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/089.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/089.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_090', async (ctx) => {
 
         let caption = "سورة: البلد 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/090.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/090.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_091', async (ctx) => {
 
         let caption = "سورة: الشمس 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/091.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/091.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_092', async (ctx) => {
 
         let caption = "سورة: الليل 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/092.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/092.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_093', async (ctx) => {
 
         let caption = "سورة: الضحى 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/093.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/093.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_094', async (ctx) => {
 
         let caption = "سورة: الشرح 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/094.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/094.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_095', async (ctx) => {
 
         let caption = "سورة: التين 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/095.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/095.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_096', async (ctx) => {
 
         let caption = "سورة: العلق 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/096.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/096.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_097', async (ctx) => {
 
         let caption = "سورة: القدر 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/097.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/097.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_098', async (ctx) => {
 
         let caption = "سورة: البينة 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/098.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/098.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_099', async (ctx) => {
 
         let caption = "سورة: الزلزلة 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/099.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/099.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_100', async (ctx) => {
 
         let caption = "سورة: العاديات 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/100.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/100.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_101', async (ctx) => {
 
         let caption = "سورة: القارعة 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/101.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/101.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_102', async (ctx) => {
 
         let caption = "سورة: التكاثر 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/102.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/102.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_103', async (ctx) => {
 
         let caption = "سورة: العصر 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/103.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/103.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_104', async (ctx) => {
 
         let caption = "سورة: الهمزة 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/104.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/104.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_105', async (ctx) => {
 
         let caption = "سورة: الفيل 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/105.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/105.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_106', async (ctx) => {
 
         let caption = "سورة: قريش 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/106.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/106.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_107', async (ctx) => {
 
         let caption = "سورة: الماعون 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/107.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/107.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_108', async (ctx) => {
 
         let caption = "سورة: الكوثر 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/108.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/108.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_109', async (ctx) => {
 
         let caption = "سورة: الكافرون 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/109.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/109.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_110', async (ctx) => {
 
         let caption = "سورة: النصر 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/110.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/110.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_111', async (ctx) => {
 
         let caption = "سورة: المسد 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/111.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/111.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_112', async (ctx) => {
 
         let caption = "سورة: الإخلاص 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/112.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/112.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_113', async (ctx) => {
 
         let caption = "سورة: الفلق 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/113.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/113.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ali_Jaber_114', async (ctx) => {
 
         let caption = "سورة: الناس 📖\nالقارئ: علي جابر 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/a_jbr/114.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/a_jbr/114.mp3' }, { caption: caption })
 
     });
 

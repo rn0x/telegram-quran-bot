@@ -418,7 +418,7 @@ module.exports = async function Ahmed_Al_Suwailem(bot, Path_appDate, Markup) {
 
         let caption = "سورة: الفاتحة 📖\nالقارئ: احمد السويلم 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/001.mp3"
+        caption += "http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/001.mp3"
         ctx.reply(caption)
 
     });
@@ -427,7 +427,7 @@ module.exports = async function Ahmed_Al_Suwailem(bot, Path_appDate, Markup) {
 
         let caption = "سورة: البقرة 📖\nالقارئ: احمد السويلم 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/002.mp3"
+        caption += "http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/002.mp3"
         ctx.reply(caption)
 
     });
@@ -436,7 +436,7 @@ module.exports = async function Ahmed_Al_Suwailem(bot, Path_appDate, Markup) {
 
         let caption = "سورة: آل عمران 📖\nالقارئ: احمد السويلم 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/003.mp3"
+        caption += "http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/003.mp3"
         ctx.reply(caption)
 
     });
@@ -445,7 +445,7 @@ module.exports = async function Ahmed_Al_Suwailem(bot, Path_appDate, Markup) {
 
         let caption = "سورة: النساء 📖\nالقارئ: احمد السويلم 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/004.mp3"
+        caption += "http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/004.mp3"
         ctx.reply(caption)
 
     });
@@ -453,7 +453,7 @@ module.exports = async function Ahmed_Al_Suwailem(bot, Path_appDate, Markup) {
     bot.action('Ahmed_Al_Suwailem_005', async (ctx) => {
 
         let caption = "سورة: المائدة 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/005.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/005.mp3' }, { caption: caption })
 
     });
 
@@ -461,7 +461,7 @@ module.exports = async function Ahmed_Al_Suwailem(bot, Path_appDate, Markup) {
 
         let caption = "سورة: الأنعام 📖\nالقارئ: احمد السويلم 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/006.mp3"
+        caption += "http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/006.mp3"
         ctx.reply(caption)
 
     });
@@ -470,7 +470,7 @@ module.exports = async function Ahmed_Al_Suwailem(bot, Path_appDate, Markup) {
 
         let caption = "سورة: الأعراف 📖\nالقارئ: احمد السويلم 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/007.mp3"
+        caption += "http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/007.mp3"
         ctx.reply(caption)
 
     });
@@ -479,7 +479,7 @@ module.exports = async function Ahmed_Al_Suwailem(bot, Path_appDate, Markup) {
 
         let caption = "سورة: الأنفال 📖\nالقارئ: احمد السويلم 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/008.mp3"
+        caption += "http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/008.mp3"
         ctx.reply(caption)
 
     });
@@ -488,7 +488,7 @@ module.exports = async function Ahmed_Al_Suwailem(bot, Path_appDate, Markup) {
 
         let caption = "سورة: التوبة 📖\nالقارئ: احمد السويلم 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/009.mp3"
+        caption += "http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/009.mp3"
         ctx.reply(caption)
 
     });
@@ -497,7 +497,7 @@ module.exports = async function Ahmed_Al_Suwailem(bot, Path_appDate, Markup) {
 
         let caption = "سورة: يونس 📖\nالقارئ: احمد السويلم 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/010.mp3"
+        caption += "http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/010.mp3"
         ctx.reply(caption)
 
     });
@@ -505,105 +505,105 @@ module.exports = async function Ahmed_Al_Suwailem(bot, Path_appDate, Markup) {
     bot.action('Ahmed_Al_Suwailem_011', async (ctx) => {
 
         let caption = "سورة: هود 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/011.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/011.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_012', async (ctx) => {
 
         let caption = "سورة: يوسف 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/012.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/012.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_013', async (ctx) => {
 
         let caption = "سورة: الرعد 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/013.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/013.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_014', async (ctx) => {
 
         let caption = "سورة: إبراهيم 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/014.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/014.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_015', async (ctx) => {
 
         let caption = "سورة: الحجر 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/015.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/015.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_016', async (ctx) => {
 
         let caption = "سورة: النحل 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/016.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/016.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_017', async (ctx) => {
 
         let caption = "سورة: الإسراء 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/017.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/017.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_018', async (ctx) => {
 
         let caption = "سورة: الكهف 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/018.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/018.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_019', async (ctx) => {
 
         let caption = "سورة: مريم 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/019.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/019.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_020', async (ctx) => {
 
         let caption = "سورة: طه 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/020.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/020.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_021', async (ctx) => {
 
         let caption = "سورة: الأنبياء 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/021.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/021.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_022', async (ctx) => {
 
         let caption = "سورة: الحج 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/022.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/022.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_023', async (ctx) => {
 
         let caption = "سورة: المؤمنون 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/023.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/023.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_024', async (ctx) => {
 
         let caption = "سورة: النور 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/024.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/024.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_025', async (ctx) => {
 
         let caption = "سورة: الفرقان 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/025.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/025.mp3' }, { caption: caption })
 
     });
 
@@ -611,7 +611,7 @@ module.exports = async function Ahmed_Al_Suwailem(bot, Path_appDate, Markup) {
 
         let caption = "سورة: الشعراء 📖\nالقارئ: احمد السويلم 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/026.mp3"
+        caption += "http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/026.mp3"
         ctx.reply(caption)
 
     });
@@ -619,7 +619,7 @@ module.exports = async function Ahmed_Al_Suwailem(bot, Path_appDate, Markup) {
     bot.action('Ahmed_Al_Suwailem_027', async (ctx) => {
 
         let caption = "سورة: النمل 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/027.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/027.mp3' }, { caption: caption })
 
     });
 
@@ -627,7 +627,7 @@ module.exports = async function Ahmed_Al_Suwailem(bot, Path_appDate, Markup) {
 
         let caption = "سورة: القصص 📖\nالقارئ: احمد السويلم 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/028.mp3"
+        caption += "http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/028.mp3"
         ctx.reply(caption)
 
     });
@@ -635,602 +635,602 @@ module.exports = async function Ahmed_Al_Suwailem(bot, Path_appDate, Markup) {
     bot.action('Ahmed_Al_Suwailem_029', async (ctx) => {
 
         let caption = "سورة: العنكبوت 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/029.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/029.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_030', async (ctx) => {
 
         let caption = "سورة: الروم 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/030.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/030.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_031', async (ctx) => {
 
         let caption = "سورة: لقمان 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/031.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/031.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_032', async (ctx) => {
 
         let caption = "سورة: السجدة 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/032.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/032.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_033', async (ctx) => {
 
         let caption = "سورة: الأحزاب 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/033.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/033.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_034', async (ctx) => {
 
         let caption = "سورة: سبأ 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/034.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/034.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_035', async (ctx) => {
 
         let caption = "سورة: فاطر 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/035.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/035.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_036', async (ctx) => {
 
         let caption = "سورة: يس 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/036.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/036.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_037', async (ctx) => {
 
         let caption = "سورة: الصافات 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/037.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/037.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_038', async (ctx) => {
 
         let caption = "سورة: ص 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/038.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/038.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_039', async (ctx) => {
 
         let caption = "سورة: الزمر 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/039.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/039.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_040', async (ctx) => {
 
         let caption = "سورة: غافر 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/040.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/040.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_041', async (ctx) => {
 
         let caption = "سورة: فصلت 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/041.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/041.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_042', async (ctx) => {
 
         let caption = "سورة: الشورى 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/042.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/042.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_043', async (ctx) => {
 
         let caption = "سورة: الزخرف 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/043.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/043.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_044', async (ctx) => {
 
         let caption = "سورة: الدخان 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/044.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/044.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_045', async (ctx) => {
 
         let caption = "سورة: الجاثية 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/045.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/045.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_046', async (ctx) => {
 
         let caption = "سورة: الأحقاف 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/046.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/046.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_047', async (ctx) => {
 
         let caption = "سورة: محمد 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/047.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/047.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_048', async (ctx) => {
 
         let caption = "سورة: الفتح 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/048.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/048.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_049', async (ctx) => {
 
         let caption = "سورة: الحجرات 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/049.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/049.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_050', async (ctx) => {
 
         let caption = "سورة: ق 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/050.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/050.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_051', async (ctx) => {
 
         let caption = "سورة: الذاريات 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/051.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/051.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_052', async (ctx) => {
 
         let caption = "سورة: الطور 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/052.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/052.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_053', async (ctx) => {
 
         let caption = "سورة: النجم 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/053.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/053.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_054', async (ctx) => {
 
         let caption = "سورة: القمر 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/054.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/054.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_055', async (ctx) => {
 
         let caption = "سورة: الرحمن 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/055.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/055.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_056', async (ctx) => {
 
         let caption = "سورة: الواقعة 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/056.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/056.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_057', async (ctx) => {
 
         let caption = "سورة: الحديد 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/057.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/057.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_058', async (ctx) => {
 
         let caption = "سورة: المجادلة 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/058.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/058.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_059', async (ctx) => {
 
         let caption = "سورة: الحشر 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/059.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/059.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_060', async (ctx) => {
 
         let caption = "سورة: الممتحنة 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/060.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/060.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_061', async (ctx) => {
 
         let caption = "سورة: الصف 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/061.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/061.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_062', async (ctx) => {
 
         let caption = "سورة: الجمعة 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/062.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/062.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_063', async (ctx) => {
 
         let caption = "سورة: المنافقون 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/063.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/063.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_064', async (ctx) => {
 
         let caption = "سورة: التغابن 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/064.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/064.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_065', async (ctx) => {
 
         let caption = "سورة: الطلاق 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/065.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/065.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_066', async (ctx) => {
 
         let caption = "سورة: التحريم 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/066.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/066.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_067', async (ctx) => {
 
         let caption = "سورة: الملك 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/067.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/067.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_068', async (ctx) => {
 
         let caption = "سورة: القلم 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/068.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/068.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_069', async (ctx) => {
 
         let caption = "سورة: الحاقة 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/069.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/069.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_070', async (ctx) => {
 
         let caption = "سورة: المعارج 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/070.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/070.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_071', async (ctx) => {
 
         let caption = "سورة: نوح 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/071.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/071.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_072', async (ctx) => {
 
         let caption = "سورة: الجن 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/072.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/072.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_073', async (ctx) => {
 
         let caption = "سورة: المزمل 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/073.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/073.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_074', async (ctx) => {
 
         let caption = "سورة: المدثر 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/074.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/074.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_075', async (ctx) => {
 
         let caption = "سورة: القيامة 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/075.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/075.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_076', async (ctx) => {
 
         let caption = "سورة: الإنسان 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/076.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/076.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_077', async (ctx) => {
 
         let caption = "سورة: المرسلات 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/077.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/077.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_078', async (ctx) => {
 
         let caption = "سورة: النبأ 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/078.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/078.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_079', async (ctx) => {
 
         let caption = "سورة: النازعات 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/079.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/079.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_080', async (ctx) => {
 
         let caption = "سورة: عبس 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/080.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/080.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_081', async (ctx) => {
 
         let caption = "سورة: التكوير 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/081.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/081.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_082', async (ctx) => {
 
         let caption = "سورة: الانفطار 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/082.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/082.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_083', async (ctx) => {
 
         let caption = "سورة: المطففين 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/083.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/083.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_084', async (ctx) => {
 
         let caption = "سورة: الانشقاق 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/084.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/084.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_085', async (ctx) => {
 
         let caption = "سورة: البروج 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/085.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/085.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_086', async (ctx) => {
 
         let caption = "سورة: الطارق 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/086.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/086.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_087', async (ctx) => {
 
         let caption = "سورة: الأعلى 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/087.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/087.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_088', async (ctx) => {
 
         let caption = "سورة: الغاشية 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/088.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/088.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_089', async (ctx) => {
 
         let caption = "سورة: الفجر 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/089.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/089.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_090', async (ctx) => {
 
         let caption = "سورة: البلد 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/090.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/090.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_091', async (ctx) => {
 
         let caption = "سورة: الشمس 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/091.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/091.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_092', async (ctx) => {
 
         let caption = "سورة: الليل 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/092.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/092.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_093', async (ctx) => {
 
         let caption = "سورة: الضحى 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/093.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/093.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_094', async (ctx) => {
 
         let caption = "سورة: الشرح 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/094.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/094.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_095', async (ctx) => {
 
         let caption = "سورة: التين 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/095.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/095.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_096', async (ctx) => {
 
         let caption = "سورة: العلق 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/096.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/096.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_097', async (ctx) => {
 
         let caption = "سورة: القدر 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/097.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/097.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_098', async (ctx) => {
 
         let caption = "سورة: البينة 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/098.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/098.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_099', async (ctx) => {
 
         let caption = "سورة: الزلزلة 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/099.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/099.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_100', async (ctx) => {
 
         let caption = "سورة: العاديات 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/100.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/100.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_101', async (ctx) => {
 
         let caption = "سورة: القارعة 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/101.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/101.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_102', async (ctx) => {
 
         let caption = "سورة: التكاثر 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/102.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/102.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_103', async (ctx) => {
 
         let caption = "سورة: العصر 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/103.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/103.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_104', async (ctx) => {
 
         let caption = "سورة: الهمزة 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/104.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/104.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_105', async (ctx) => {
 
         let caption = "سورة: الفيل 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/105.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/105.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_106', async (ctx) => {
 
         let caption = "سورة: قريش 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/106.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/106.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_107', async (ctx) => {
 
         let caption = "سورة: الماعون 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/107.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/107.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_108', async (ctx) => {
 
         let caption = "سورة: الكوثر 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/108.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/108.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_109', async (ctx) => {
 
         let caption = "سورة: الكافرون 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/109.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/109.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_110', async (ctx) => {
 
         let caption = "سورة: النصر 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/110.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/110.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_111', async (ctx) => {
 
         let caption = "سورة: المسد 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/111.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/111.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_112', async (ctx) => {
 
         let caption = "سورة: الإخلاص 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/112.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/112.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_113', async (ctx) => {
 
         let caption = "سورة: الفلق 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/113.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/113.mp3' }, { caption: caption })
 
     });
 
     bot.action('Ahmed_Al_Suwailem_114', async (ctx) => {
 
         let caption = "سورة: الناس 📖\nالقارئ: احمد السويلم 🔊"
-        ctx.replyWithAudio({ url: 'https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/114.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem/114.mp3' }, { caption: caption })
 
     });
 

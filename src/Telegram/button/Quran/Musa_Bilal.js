@@ -417,7 +417,7 @@ module.exports = async function Musa_Bilal(bot, Path_appDate, Markup) {
     bot.action('Musa_Bilal_001', async (ctx) => {
 
         let caption = "سورة: الفاتحة 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/001.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/001.mp3' }, { caption: caption })
     
     });
     
@@ -425,7 +425,7 @@ module.exports = async function Musa_Bilal(bot, Path_appDate, Markup) {
     
         let caption = "سورة: البقرة 📖\nالقارئ: موسى بلال 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server11.mp3quran.net/bilal/002.mp3"
+        caption += "http://server11.mp3quran.net/bilal/002.mp3"
         ctx.reply(caption)
     
     });
@@ -434,7 +434,7 @@ module.exports = async function Musa_Bilal(bot, Path_appDate, Markup) {
     
         let caption = "سورة: آل عمران 📖\nالقارئ: موسى بلال 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server11.mp3quran.net/bilal/003.mp3"
+        caption += "http://server11.mp3quran.net/bilal/003.mp3"
         ctx.reply(caption)
     
     });
@@ -443,7 +443,7 @@ module.exports = async function Musa_Bilal(bot, Path_appDate, Markup) {
     
         let caption = "سورة: النساء 📖\nالقارئ: موسى بلال 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server11.mp3quran.net/bilal/002.mp3"
+        caption += "http://server11.mp3quran.net/bilal/002.mp3"
         ctx.reply(caption)
     
     });
@@ -451,770 +451,770 @@ module.exports = async function Musa_Bilal(bot, Path_appDate, Markup) {
     bot.action('Musa_Bilal_005', async (ctx) => {
     
         let caption = "سورة: المائدة 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/005.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/005.mp3' }, { caption: caption })
     
     });
     
     bot.action('Musa_Bilal_006', async (ctx) => {
     
         let caption = "سورة: الأنعام 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/006.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/006.mp3' }, { caption: caption })
     
     });
     
     bot.action('Musa_Bilal_007', async (ctx) => {
     
         let caption = "سورة: الأعراف 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/007.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/007.mp3' }, { caption: caption })
     
     });
     
     bot.action('Musa_Bilal_008', async (ctx) => {
     
         let caption = "سورة: الأنفال 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/008.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/008.mp3' }, { caption: caption })
     
     });
     
     bot.action('Musa_Bilal_009', async (ctx) => {
     
         let caption = "سورة: التوبة 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/009.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/009.mp3' }, { caption: caption })
     
     });
 
     bot.action('Musa_Bilal_010', async (ctx) => {
 
         let caption = "سورة: يونس 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/010.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/010.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_011', async (ctx) => {
 
         let caption = "سورة: هود 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/011.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/011.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_012', async (ctx) => {
 
         let caption = "سورة: يوسف 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/012.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/012.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_013', async (ctx) => {
 
         let caption = "سورة: الرعد 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/013.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/013.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_014', async (ctx) => {
 
         let caption = "سورة: إبراهيم 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/014.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/014.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_015', async (ctx) => {
 
         let caption = "سورة: الحجر 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/015.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/015.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_016', async (ctx) => {
 
         let caption = "سورة: النحل 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/016.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/016.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_017', async (ctx) => {
 
         let caption = "سورة: الإسراء 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/017.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/017.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_018', async (ctx) => {
 
         let caption = "سورة: الكهف 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/018.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/018.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_019', async (ctx) => {
 
         let caption = "سورة: مريم 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/019.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/019.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_020', async (ctx) => {
 
         let caption = "سورة: طه 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/020.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/020.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_021', async (ctx) => {
 
         let caption = "سورة: الأنبياء 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/021.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/021.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_022', async (ctx) => {
 
         let caption = "سورة: الحج 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/022.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/022.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_023', async (ctx) => {
 
         let caption = "سورة: المؤمنون 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/023.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/023.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_024', async (ctx) => {
 
         let caption = "سورة: النور 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/024.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/024.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_025', async (ctx) => {
 
         let caption = "سورة: الفرقان 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/025.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/025.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_026', async (ctx) => {
 
         let caption = "سورة: الشعراء 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/026.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/026.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_027', async (ctx) => {
 
         let caption = "سورة: النمل 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/027.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/027.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_028', async (ctx) => {
 
         let caption = "سورة: القصص 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/028.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/028.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_029', async (ctx) => {
 
         let caption = "سورة: العنكبوت 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/029.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/029.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_030', async (ctx) => {
 
         let caption = "سورة: الروم 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/030.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/030.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_031', async (ctx) => {
 
         let caption = "سورة: لقمان 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/031.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/031.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_032', async (ctx) => {
 
         let caption = "سورة: السجدة 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/032.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/032.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_033', async (ctx) => {
 
         let caption = "سورة: الأحزاب 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/033.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/033.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_034', async (ctx) => {
 
         let caption = "سورة: سبأ 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/034.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/034.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_035', async (ctx) => {
 
         let caption = "سورة: فاطر 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/035.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/035.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_036', async (ctx) => {
 
         let caption = "سورة: يس 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/036.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/036.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_037', async (ctx) => {
 
         let caption = "سورة: الصافات 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/037.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/037.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_038', async (ctx) => {
 
         let caption = "سورة: ص 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/038.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/038.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_039', async (ctx) => {
 
         let caption = "سورة: الزمر 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/039.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/039.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_040', async (ctx) => {
 
         let caption = "سورة: غافر 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/040.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/040.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_041', async (ctx) => {
 
         let caption = "سورة: فصلت 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/041.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/041.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_042', async (ctx) => {
 
         let caption = "سورة: الشورى 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/042.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/042.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_043', async (ctx) => {
 
         let caption = "سورة: الزخرف 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/043.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/043.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_044', async (ctx) => {
 
         let caption = "سورة: الدخان 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/044.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/044.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_045', async (ctx) => {
 
         let caption = "سورة: الجاثية 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/045.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/045.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_046', async (ctx) => {
 
         let caption = "سورة: الأحقاف 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/046.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/046.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_047', async (ctx) => {
 
         let caption = "سورة: محمد 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/047.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/047.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_048', async (ctx) => {
 
         let caption = "سورة: الفتح 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/048.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/048.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_049', async (ctx) => {
 
         let caption = "سورة: الحجرات 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/049.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/049.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_050', async (ctx) => {
 
         let caption = "سورة: ق 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/050.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/050.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_051', async (ctx) => {
 
         let caption = "سورة: الذاريات 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/051.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/051.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_052', async (ctx) => {
 
         let caption = "سورة: الطور 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/052.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/052.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_053', async (ctx) => {
 
         let caption = "سورة: النجم 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/053.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/053.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_054', async (ctx) => {
 
         let caption = "سورة: القمر 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/054.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/054.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_055', async (ctx) => {
 
         let caption = "سورة: الرحمن 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/055.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/055.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_056', async (ctx) => {
 
         let caption = "سورة: الواقعة 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/056.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/056.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_057', async (ctx) => {
 
         let caption = "سورة: الحديد 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/057.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/057.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_058', async (ctx) => {
 
         let caption = "سورة: المجادلة 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/058.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/058.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_059', async (ctx) => {
 
         let caption = "سورة: الحشر 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/059.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/059.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_060', async (ctx) => {
 
         let caption = "سورة: الممتحنة 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/060.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/060.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_061', async (ctx) => {
 
         let caption = "سورة: الصف 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/061.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/061.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_062', async (ctx) => {
 
         let caption = "سورة: الجمعة 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/062.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/062.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_063', async (ctx) => {
 
         let caption = "سورة: المنافقون 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/063.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/063.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_064', async (ctx) => {
 
         let caption = "سورة: التغابن 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/064.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/064.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_065', async (ctx) => {
 
         let caption = "سورة: الطلاق 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/065.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/065.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_066', async (ctx) => {
 
         let caption = "سورة: التحريم 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/066.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/066.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_067', async (ctx) => {
 
         let caption = "سورة: الملك 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/067.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/067.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_068', async (ctx) => {
 
         let caption = "سورة: القلم 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/068.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/068.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_069', async (ctx) => {
 
         let caption = "سورة: الحاقة 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/069.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/069.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_070', async (ctx) => {
 
         let caption = "سورة: المعارج 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/070.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/070.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_071', async (ctx) => {
 
         let caption = "سورة: نوح 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/071.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/071.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_072', async (ctx) => {
 
         let caption = "سورة: الجن 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/072.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/072.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_073', async (ctx) => {
 
         let caption = "سورة: المزمل 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/073.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/073.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_074', async (ctx) => {
 
         let caption = "سورة: المدثر 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/074.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/074.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_075', async (ctx) => {
 
         let caption = "سورة: القيامة 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/075.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/075.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_076', async (ctx) => {
 
         let caption = "سورة: الإنسان 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/076.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/076.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_077', async (ctx) => {
 
         let caption = "سورة: المرسلات 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/077.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/077.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_078', async (ctx) => {
 
         let caption = "سورة: النبأ 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/078.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/078.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_079', async (ctx) => {
 
         let caption = "سورة: النازعات 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/079.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/079.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_080', async (ctx) => {
 
         let caption = "سورة: عبس 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/080.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/080.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_081', async (ctx) => {
 
         let caption = "سورة: التكوير 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/081.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/081.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_082', async (ctx) => {
 
         let caption = "سورة: الانفطار 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/082.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/082.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_083', async (ctx) => {
 
         let caption = "سورة: المطففين 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/083.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/083.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_084', async (ctx) => {
 
         let caption = "سورة: الانشقاق 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/084.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/084.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_085', async (ctx) => {
 
         let caption = "سورة: البروج 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/085.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/085.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_086', async (ctx) => {
 
         let caption = "سورة: الطارق 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/086.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/086.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_087', async (ctx) => {
 
         let caption = "سورة: الأعلى 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/087.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/087.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_088', async (ctx) => {
 
         let caption = "سورة: الغاشية 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/088.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/088.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_089', async (ctx) => {
 
         let caption = "سورة: الفجر 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/089.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/089.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_090', async (ctx) => {
 
         let caption = "سورة: البلد 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/090.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/090.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_091', async (ctx) => {
 
         let caption = "سورة: الشمس 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/091.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/091.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_092', async (ctx) => {
 
         let caption = "سورة: الليل 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/092.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/092.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_093', async (ctx) => {
 
         let caption = "سورة: الضحى 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/093.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/093.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_094', async (ctx) => {
 
         let caption = "سورة: الشرح 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/094.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/094.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_095', async (ctx) => {
 
         let caption = "سورة: التين 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/095.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/095.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_096', async (ctx) => {
 
         let caption = "سورة: العلق 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/096.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/096.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_097', async (ctx) => {
 
         let caption = "سورة: القدر 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/097.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/097.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_098', async (ctx) => {
 
         let caption = "سورة: البينة 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/098.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/098.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_099', async (ctx) => {
 
         let caption = "سورة: الزلزلة 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/099.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/099.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_100', async (ctx) => {
 
         let caption = "سورة: العاديات 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/100.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/100.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_101', async (ctx) => {
 
         let caption = "سورة: القارعة 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/101.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/101.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_102', async (ctx) => {
 
         let caption = "سورة: التكاثر 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/102.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/102.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_103', async (ctx) => {
 
         let caption = "سورة: العصر 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/103.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/103.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_104', async (ctx) => {
 
         let caption = "سورة: الهمزة 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/104.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/104.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_105', async (ctx) => {
 
         let caption = "سورة: الفيل 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/105.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/105.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_106', async (ctx) => {
 
         let caption = "سورة: قريش 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/106.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/106.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_107', async (ctx) => {
 
         let caption = "سورة: الماعون 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/107.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/107.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_108', async (ctx) => {
 
         let caption = "سورة: الكوثر 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/108.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/108.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_109', async (ctx) => {
 
         let caption = "سورة: الكافرون 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/109.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/109.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_110', async (ctx) => {
 
         let caption = "سورة: النصر 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/110.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/110.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_111', async (ctx) => {
 
         let caption = "سورة: المسد 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/111.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/111.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_112', async (ctx) => {
 
         let caption = "سورة: الإخلاص 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/112.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/112.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_113', async (ctx) => {
 
         let caption = "سورة: الفلق 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/113.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/113.mp3' }, { caption: caption })
 
     });
 
     bot.action('Musa_Bilal_114', async (ctx) => {
 
         let caption = "سورة: الناس 📖\nالقارئ: موسى بلال 🔊"
-        ctx.replyWithAudio({ url: 'https://server11.mp3quran.net/bilal/114.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server11.mp3quran.net/bilal/114.mp3' }, { caption: caption })
 
     });
 

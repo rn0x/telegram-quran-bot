@@ -417,7 +417,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
 
         let caption = "سورة: الفاتحة 📖\nالقارئ: بندر بيليه 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server6.mp3quran.net/balilah/001.mp3"
+        caption += "http://server6.mp3quran.net/balilah/001.mp3"
         ctx.reply(caption)
 
     });
@@ -426,7 +426,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
 
         let caption = "سورة: البقرة 📖\nالقارئ: بندر بيليه 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server6.mp3quran.net/balilah/002.mp3"
+        caption += "http://server6.mp3quran.net/balilah/002.mp3"
         ctx.reply(caption)
 
     });
@@ -435,7 +435,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
 
         let caption = "سورة: آل عمران 📖\nالقارئ: بندر بيليه 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server6.mp3quran.net/balilah/003.mp3"
+        caption += "http://server6.mp3quran.net/balilah/003.mp3"
         ctx.reply(caption)
 
     });
@@ -444,7 +444,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
 
         let caption = "سورة: النساء 📖\nالقارئ: بندر بيليه 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server6.mp3quran.net/balilah/004.mp3"
+        caption += "http://server6.mp3quran.net/balilah/004.mp3"
         ctx.reply(caption)
 
     });
@@ -453,7 +453,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
 
         let caption = "سورة: المائدة 📖\nالقارئ: بندر بيليه 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server6.mp3quran.net/balilah/005.mp3"
+        caption += "http://server6.mp3quran.net/balilah/005.mp3"
         ctx.reply(caption)
 
     });
@@ -462,7 +462,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
 
         let caption = "سورة: الأنعام 📖\nالقارئ: بندر بيليه 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server6.mp3quran.net/balilah/006.mp3"
+        caption += "http://server6.mp3quran.net/balilah/006.mp3"
         ctx.reply(caption)
 
     });
@@ -471,7 +471,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
 
         let caption = "سورة: الأعراف 📖\nالقارئ: بندر بيليه 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server6.mp3quran.net/balilah/007.mp3"
+        caption += "http://server6.mp3quran.net/balilah/007.mp3"
         ctx.reply(caption)
 
     });
@@ -480,7 +480,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
 
         let caption = "سورة: الأنفال 📖\nالقارئ: بندر بيليه 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server6.mp3quran.net/balilah/008.mp3"
+        caption += "http://server6.mp3quran.net/balilah/008.mp3"
         ctx.reply(caption)
 
     });
@@ -489,7 +489,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
 
         let caption = "سورة: التوبة 📖\nالقارئ: بندر بيليه 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server6.mp3quran.net/balilah/009.mp3"
+        caption += "http://server6.mp3quran.net/balilah/009.mp3"
         ctx.reply(caption)
 
     });
@@ -497,7 +497,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
     bot.action('Bandar_Balila_010', async (ctx) => {
 
         let caption = "سورة: يونس 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/010.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/010.mp3' }, { caption: caption })
 
     });
 
@@ -505,7 +505,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
 
         let caption = "سورة: هود 📖\nالقارئ: بندر بيليه 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server6.mp3quran.net/balilah/011.mp3"
+        caption += "http://server6.mp3quran.net/balilah/011.mp3"
         ctx.reply(caption)
 
     });
@@ -513,714 +513,714 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
     bot.action('Bandar_Balila_012', async (ctx) => {
 
         let caption = "سورة: يوسف 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/012.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/012.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_013', async (ctx) => {
 
         let caption = "سورة: الرعد 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/013.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/013.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_014', async (ctx) => {
 
         let caption = "سورة: إبراهيم 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/014.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/014.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_015', async (ctx) => {
 
         let caption = "سورة: الحجر 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/015.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/015.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_016', async (ctx) => {
 
         let caption = "سورة: النحل 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/016.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/016.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_017', async (ctx) => {
 
         let caption = "سورة: الإسراء 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/017.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/017.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_018', async (ctx) => {
 
         let caption = "سورة: الكهف 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/018.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/018.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_019', async (ctx) => {
 
         let caption = "سورة: مريم 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/019.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/019.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_020', async (ctx) => {
 
         let caption = "سورة: طه 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/020.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/020.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_021', async (ctx) => {
 
         let caption = "سورة: الأنبياء 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/021.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/021.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_022', async (ctx) => {
 
         let caption = "سورة: الحج 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/022.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/022.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_023', async (ctx) => {
 
         let caption = "سورة: المؤمنون 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/023.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/023.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_024', async (ctx) => {
 
         let caption = "سورة: النور 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/024.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/024.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_025', async (ctx) => {
 
         let caption = "سورة: الفرقان 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/025.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/025.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_026', async (ctx) => {
 
         let caption = "سورة: الشعراء 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/026.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/026.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_027', async (ctx) => {
 
         let caption = "سورة: النمل 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/027.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/027.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_028', async (ctx) => {
 
         let caption = "سورة: القصص 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/028.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/028.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_029', async (ctx) => {
 
         let caption = "سورة: العنكبوت 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/029.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/029.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_030', async (ctx) => {
 
         let caption = "سورة: الروم 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/030.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/030.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_031', async (ctx) => {
 
         let caption = "سورة: لقمان 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/031.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/031.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_032', async (ctx) => {
 
         let caption = "سورة: السجدة 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/032.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/032.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_033', async (ctx) => {
 
         let caption = "سورة: الأحزاب 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/033.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/033.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_034', async (ctx) => {
 
         let caption = "سورة: سبأ 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/034.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/034.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_035', async (ctx) => {
 
         let caption = "سورة: فاطر 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/035.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/035.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_036', async (ctx) => {
 
         let caption = "سورة: يس 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/036.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/036.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_037', async (ctx) => {
 
         let caption = "سورة: الصافات 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/037.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/037.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_038', async (ctx) => {
 
         let caption = "سورة: ص 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/038.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/038.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_039', async (ctx) => {
 
         let caption = "سورة: الزمر 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/039.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/039.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_040', async (ctx) => {
 
         let caption = "سورة: غافر 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/040.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/040.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_041', async (ctx) => {
 
         let caption = "سورة: فصلت 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/041.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/041.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_042', async (ctx) => {
 
         let caption = "سورة: الشورى 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/042.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/042.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_043', async (ctx) => {
 
         let caption = "سورة: الزخرف 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/043.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/043.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_044', async (ctx) => {
 
         let caption = "سورة: الدخان 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/044.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/044.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_045', async (ctx) => {
 
         let caption = "سورة: الجاثية 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/045.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/045.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_046', async (ctx) => {
 
         let caption = "سورة: الأحقاف 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/046.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/046.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_047', async (ctx) => {
 
         let caption = "سورة: محمد 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/047.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/047.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_048', async (ctx) => {
 
         let caption = "سورة: الفتح 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/048.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/048.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_049', async (ctx) => {
 
         let caption = "سورة: الحجرات 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/049.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/049.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_050', async (ctx) => {
 
         let caption = "سورة: ق 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/050.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/050.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_051', async (ctx) => {
 
         let caption = "سورة: الذاريات 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/051.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/051.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_052', async (ctx) => {
 
         let caption = "سورة: الطور 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/052.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/052.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_053', async (ctx) => {
 
         let caption = "سورة: النجم 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/053.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/053.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_054', async (ctx) => {
 
         let caption = "سورة: القمر 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/054.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/054.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_055', async (ctx) => {
 
         let caption = "سورة: الرحمن 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/055.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/055.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_056', async (ctx) => {
 
         let caption = "سورة: الواقعة 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/056.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/056.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_057', async (ctx) => {
 
         let caption = "سورة: الحديد 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/057.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/057.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_058', async (ctx) => {
 
         let caption = "سورة: المجادلة 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/058.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/058.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_059', async (ctx) => {
 
         let caption = "سورة: الحشر 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/059.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/059.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_060', async (ctx) => {
 
         let caption = "سورة: الممتحنة 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/060.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/060.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_061', async (ctx) => {
 
         let caption = "سورة: الصف 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/061.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/061.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_062', async (ctx) => {
 
         let caption = "سورة: الجمعة 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/062.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/062.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_063', async (ctx) => {
 
         let caption = "سورة: المنافقون 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/063.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/063.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_064', async (ctx) => {
 
         let caption = "سورة: التغابن 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/064.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/064.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_065', async (ctx) => {
 
         let caption = "سورة: الطلاق 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/065.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/065.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_066', async (ctx) => {
 
         let caption = "سورة: التحريم 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/066.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/066.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_067', async (ctx) => {
 
         let caption = "سورة: الملك 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/067.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/067.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_068', async (ctx) => {
 
         let caption = "سورة: القلم 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/068.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/068.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_069', async (ctx) => {
 
         let caption = "سورة: الحاقة 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/069.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/069.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_070', async (ctx) => {
 
         let caption = "سورة: المعارج 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/070.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/070.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_071', async (ctx) => {
 
         let caption = "سورة: نوح 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/071.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/071.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_072', async (ctx) => {
 
         let caption = "سورة: الجن 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/072.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/072.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_073', async (ctx) => {
 
         let caption = "سورة: المزمل 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/073.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/073.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_074', async (ctx) => {
 
         let caption = "سورة: المدثر 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/074.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/074.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_075', async (ctx) => {
 
         let caption = "سورة: القيامة 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/075.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/075.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_077', async (ctx) => {
 
         let caption = "سورة: المرسلات 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/077.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/077.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_078', async (ctx) => {
 
         let caption = "سورة: النبأ 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/078.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/078.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_079', async (ctx) => {
 
         let caption = "سورة: النازعات 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/079.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/079.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_080', async (ctx) => {
 
         let caption = "سورة: عبس 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/080.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/080.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_081', async (ctx) => {
 
         let caption = "سورة: التكوير 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/081.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/081.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_082', async (ctx) => {
 
         let caption = "سورة: الانفطار 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/082.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/082.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_083', async (ctx) => {
 
         let caption = "سورة: المطففين 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/083.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/083.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_084', async (ctx) => {
 
         let caption = "سورة: الانشقاق 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/084.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/084.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_085', async (ctx) => {
 
         let caption = "سورة: البروج 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/085.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/085.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_086', async (ctx) => {
 
         let caption = "سورة: الطارق 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/086.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/086.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_087', async (ctx) => {
 
         let caption = "سورة: الأعلى 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/087.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/087.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_088', async (ctx) => {
 
         let caption = "سورة: الغاشية 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/088.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/088.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_089', async (ctx) => {
 
         let caption = "سورة: الفجر 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/089.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/089.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_090', async (ctx) => {
 
         let caption = "سورة: البلد 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/090.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/090.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_091', async (ctx) => {
 
         let caption = "سورة: الشمس 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/091.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/091.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_092', async (ctx) => {
 
         let caption = "سورة: الليل 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/092.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/092.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_093', async (ctx) => {
 
         let caption = "سورة: الضحى 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/093.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/093.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_094', async (ctx) => {
 
         let caption = "سورة: الشرح 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/094.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/094.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_095', async (ctx) => {
 
         let caption = "سورة: التين 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/095.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/095.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_096', async (ctx) => {
 
         let caption = "سورة: العلق 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/096.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/096.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_097', async (ctx) => {
 
         let caption = "سورة: القدر 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/097.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/097.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_098', async (ctx) => {
 
         let caption = "سورة: البينة 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/098.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/098.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_099', async (ctx) => {
 
         let caption = "سورة: الزلزلة 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/099.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/099.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_100', async (ctx) => {
 
         let caption = "سورة: العاديات 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/100.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/100.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_101', async (ctx) => {
 
         let caption = "سورة: القارعة 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/101.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/101.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_102', async (ctx) => {
 
         let caption = "سورة: التكاثر 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/102.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/102.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_103', async (ctx) => {
 
         let caption = "سورة: العصر 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/103.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/103.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_104', async (ctx) => {
 
         let caption = "سورة: الهمزة 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/104.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/104.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_105', async (ctx) => {
 
         let caption = "سورة: الفيل 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/105.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/105.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_106', async (ctx) => {
 
         let caption = "سورة: قريش 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/106.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/106.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_107', async (ctx) => {
 
         let caption = "سورة: الماعون 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/107.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/107.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_108', async (ctx) => {
 
         let caption = "سورة: الكوثر 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/108.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/108.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_109', async (ctx) => {
 
         let caption = "سورة: الكافرون 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/109.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/109.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_110', async (ctx) => {
 
         let caption = "سورة: النصر 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/110.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/110.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_111', async (ctx) => {
 
         let caption = "سورة: المسد 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/111.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/111.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_112', async (ctx) => {
 
         let caption = "سورة: الإخلاص 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/112.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/112.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_113', async (ctx) => {
 
         let caption = "سورة: الفلق 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/113.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/113.mp3' }, { caption: caption })
 
     });
 
     bot.action('Bandar_Balila_114', async (ctx) => {
 
         let caption = "سورة: الناس 📖\nالقارئ: بندر بيليه 🔊"
-        ctx.replyWithAudio({ url: 'https://server6.mp3quran.net/balilah/114.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server6.mp3quran.net/balilah/114.mp3' }, { caption: caption })
 
     });
 

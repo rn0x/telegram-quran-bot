@@ -418,7 +418,7 @@ module.exports = async function Khalid_Galilee(bot, Path_appDate, Markup) {
 
         let caption = "سورة: الفاتحة 📖\nالقارئ: خالد الجليل 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server10.mp3quran.net/jleel/001.mp3"
+        caption += "http://server10.mp3quran.net/jleel/001.mp3"
         ctx.reply(caption)
 
     });
@@ -427,7 +427,7 @@ module.exports = async function Khalid_Galilee(bot, Path_appDate, Markup) {
 
         let caption = "سورة: البقرة 📖\nالقارئ: خالد الجليل 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server10.mp3quran.net/jleel/002.mp3"
+        caption += "http://server10.mp3quran.net/jleel/002.mp3"
         ctx.reply(caption)
 
     });
@@ -436,7 +436,7 @@ module.exports = async function Khalid_Galilee(bot, Path_appDate, Markup) {
 
         let caption = "سورة: آل عمران 📖\nالقارئ: خالد الجليل 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server10.mp3quran.net/jleel/003.mp3"
+        caption += "http://server10.mp3quran.net/jleel/003.mp3"
         ctx.reply(caption)
 
     });
@@ -445,7 +445,7 @@ module.exports = async function Khalid_Galilee(bot, Path_appDate, Markup) {
 
         let caption = "سورة: النساء 📖\nالقارئ: خالد الجليل 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server10.mp3quran.net/jleel/004.mp3"
+        caption += "http://server10.mp3quran.net/jleel/004.mp3"
         ctx.reply(caption)
 
     });
@@ -454,7 +454,7 @@ module.exports = async function Khalid_Galilee(bot, Path_appDate, Markup) {
 
         let caption = "سورة: المائدة 📖\nالقارئ: خالد الجليل 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server10.mp3quran.net/jleel/005.mp3"
+        caption += "http://server10.mp3quran.net/jleel/005.mp3"
         ctx.reply(caption)
 
     });
@@ -463,7 +463,7 @@ module.exports = async function Khalid_Galilee(bot, Path_appDate, Markup) {
 
         let caption = "سورة: الأنعام 📖\nالقارئ: خالد الجليل 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server10.mp3quran.net/jleel/006.mp3"
+        caption += "http://server10.mp3quran.net/jleel/006.mp3"
         ctx.reply(caption)
 
     });
@@ -472,7 +472,7 @@ module.exports = async function Khalid_Galilee(bot, Path_appDate, Markup) {
 
         let caption = "سورة: الأعراف 📖\nالقارئ: خالد الجليل 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server10.mp3quran.net/jleel/007.mp3"
+        caption += "http://server10.mp3quran.net/jleel/007.mp3"
         ctx.reply(caption)
 
     });
@@ -481,7 +481,7 @@ module.exports = async function Khalid_Galilee(bot, Path_appDate, Markup) {
 
         let caption = "سورة: الأنفال 📖\nالقارئ: خالد الجليل 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server10.mp3quran.net/jleel/008.mp3"
+        caption += "http://server10.mp3quran.net/jleel/008.mp3"
         ctx.reply(caption)
 
     });
@@ -490,7 +490,7 @@ module.exports = async function Khalid_Galilee(bot, Path_appDate, Markup) {
 
         let caption = "سورة: التوبة 📖\nالقارئ: خالد الجليل 🔊\n\n"
         caption += "عذراً لايمكن إرسال الملف كصوت لان الحجم اكبر من 50 ميغابايت\n"
-        caption += "https://server10.mp3quran.net/jleel/009.mp3"
+        caption += "http://server10.mp3quran.net/jleel/009.mp3"
         ctx.reply(caption)
 
     });
@@ -498,735 +498,735 @@ module.exports = async function Khalid_Galilee(bot, Path_appDate, Markup) {
     bot.action('Khalid_Galilee_010', async (ctx) => {
 
         let caption = "سورة: يونس 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/010.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/010.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_011', async (ctx) => {
 
         let caption = "سورة: هود 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/011.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/011.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_012', async (ctx) => {
 
         let caption = "سورة: يوسف 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/012.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/012.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_013', async (ctx) => {
 
         let caption = "سورة: الرعد 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/013.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/013.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_014', async (ctx) => {
 
         let caption = "سورة: إبراهيم 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/014.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/014.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_015', async (ctx) => {
 
         let caption = "سورة: الحجر 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/015.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/015.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_016', async (ctx) => {
 
         let caption = "سورة: النحل 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/016.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/016.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_017', async (ctx) => {
 
         let caption = "سورة: الإسراء 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/017.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/017.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_018', async (ctx) => {
 
         let caption = "سورة: الكهف 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/018.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/018.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_019', async (ctx) => {
 
         let caption = "سورة: مريم 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/019.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/019.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_020', async (ctx) => {
 
         let caption = "سورة: طه 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/020.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/020.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_021', async (ctx) => {
 
         let caption = "سورة: الأنبياء 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/021.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/021.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_022', async (ctx) => {
 
         let caption = "سورة: الحج 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/022.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/022.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_023', async (ctx) => {
 
         let caption = "سورة: المؤمنون 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/023.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/023.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_024', async (ctx) => {
 
         let caption = "سورة: النور 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/024.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/024.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_025', async (ctx) => {
 
         let caption = "سورة: الفرقان 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/025.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/025.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_026', async (ctx) => {
 
         let caption = "سورة: الشعراء 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/026.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/026.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_027', async (ctx) => {
 
         let caption = "سورة: النمل 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/027.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/027.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_028', async (ctx) => {
 
         let caption = "سورة: القصص 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/028.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/028.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_029', async (ctx) => {
 
         let caption = "سورة: العنكبوت 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/029.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/029.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_030', async (ctx) => {
 
         let caption = "سورة: الروم 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/030.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/030.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_031', async (ctx) => {
 
         let caption = "سورة: لقمان 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/031.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/031.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_032', async (ctx) => {
 
         let caption = "سورة: السجدة 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/032.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/032.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_033', async (ctx) => {
 
         let caption = "سورة: الأحزاب 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/033.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/033.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_034', async (ctx) => {
 
         let caption = "سورة: سبأ 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/034.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/034.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_035', async (ctx) => {
 
         let caption = "سورة: فاطر 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/035.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/035.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_036', async (ctx) => {
 
         let caption = "سورة: يس 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/036.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/036.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_037', async (ctx) => {
 
         let caption = "سورة: الصافات 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/037.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/037.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_038', async (ctx) => {
 
         let caption = "سورة: ص 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/038.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/038.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_039', async (ctx) => {
 
         let caption = "سورة: الزمر 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/039.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/039.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_040', async (ctx) => {
 
         let caption = "سورة: غافر 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/040.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/040.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_041', async (ctx) => {
 
         let caption = "سورة: فصلت 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/041.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/041.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_042', async (ctx) => {
 
         let caption = "سورة: الشورى 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/042.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/042.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_043', async (ctx) => {
 
         let caption = "سورة: الزخرف 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/043.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/043.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_044', async (ctx) => {
 
         let caption = "سورة: الدخان 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/044.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/044.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_045', async (ctx) => {
 
         let caption = "سورة: الجاثية 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/045.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/045.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_046', async (ctx) => {
 
         let caption = "سورة: الأحقاف 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/046.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/046.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_047', async (ctx) => {
 
         let caption = "سورة: محمد 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/047.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/047.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_048', async (ctx) => {
 
         let caption = "سورة: الفتح 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/048.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/048.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_049', async (ctx) => {
 
         let caption = "سورة: الحجرات 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/049.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/049.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_050', async (ctx) => {
 
         let caption = "سورة: ق 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/050.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/050.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_051', async (ctx) => {
 
         let caption = "سورة: الذاريات 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/051.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/051.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_052', async (ctx) => {
 
         let caption = "سورة: الطور 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/052.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/052.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_053', async (ctx) => {
 
         let caption = "سورة: النجم 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/053.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/053.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_054', async (ctx) => {
 
         let caption = "سورة: القمر 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/054.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/054.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_055', async (ctx) => {
 
         let caption = "سورة: الرحمن 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/055.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/055.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_056', async (ctx) => {
 
         let caption = "سورة: الواقعة 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/056.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/056.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_057', async (ctx) => {
 
         let caption = "سورة: الحديد 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/057.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/057.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_058', async (ctx) => {
 
         let caption = "سورة: المجادلة 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/058.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/058.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_059', async (ctx) => {
 
         let caption = "سورة: الحشر 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/059.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/059.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_060', async (ctx) => {
 
         let caption = "سورة: الممتحنة 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/060.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/060.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_061', async (ctx) => {
 
         let caption = "سورة: الصف 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/061.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/061.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_062', async (ctx) => {
 
         let caption = "سورة: الجمعة 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/062.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/062.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_063', async (ctx) => {
 
         let caption = "سورة: المنافقون 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/063.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/063.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_064', async (ctx) => {
 
         let caption = "سورة: التغابن 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/064.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/064.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_065', async (ctx) => {
 
         let caption = "سورة: الطلاق 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/065.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/065.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_066', async (ctx) => {
 
         let caption = "سورة: التحريم 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/066.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/066.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_067', async (ctx) => {
 
         let caption = "سورة: الملك 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/067.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/067.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_068', async (ctx) => {
 
         let caption = "سورة: القلم 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/068.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/068.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_069', async (ctx) => {
 
         let caption = "سورة: الحاقة 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/069.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/069.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_070', async (ctx) => {
 
         let caption = "سورة: المعارج 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/070.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/070.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_071', async (ctx) => {
 
         let caption = "سورة: نوح 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/071.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/071.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_072', async (ctx) => {
 
         let caption = "سورة: الجن 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/072.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/072.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_073', async (ctx) => {
 
         let caption = "سورة: المزمل 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/073.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/073.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_074', async (ctx) => {
 
         let caption = "سورة: المدثر 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/074.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/074.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_075', async (ctx) => {
 
         let caption = "سورة: القيامة 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/075.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/075.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_076', async (ctx) => {
 
         let caption = "سورة: الإنسان 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/076.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/076.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_077', async (ctx) => {
 
         let caption = "سورة: المرسلات 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/077.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/077.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_078', async (ctx) => {
 
         let caption = "سورة: النبأ 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/078.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/078.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_079', async (ctx) => {
 
         let caption = "سورة: النازعات 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/079.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/079.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_080', async (ctx) => {
 
         let caption = "سورة: عبس 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/080.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/080.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_081', async (ctx) => {
 
         let caption = "سورة: التكوير 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/081.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/081.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_082', async (ctx) => {
 
         let caption = "سورة: الانفطار 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/082.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/082.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_083', async (ctx) => {
 
         let caption = "سورة: المطففين 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/083.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/083.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_084', async (ctx) => {
 
         let caption = "سورة: الانشقاق 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/084.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/084.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_085', async (ctx) => {
 
         let caption = "سورة: البروج 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/085.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/085.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_086', async (ctx) => {
 
         let caption = "سورة: الطارق 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/086.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/086.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_087', async (ctx) => {
 
         let caption = "سورة: الأعلى 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/087.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/087.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_088', async (ctx) => {
 
         let caption = "سورة: الغاشية 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/088.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/088.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_089', async (ctx) => {
 
         let caption = "سورة: الفجر 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/089.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/089.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_090', async (ctx) => {
 
         let caption = "سورة: البلد 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/090.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/090.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_091', async (ctx) => {
 
         let caption = "سورة: الشمس 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/091.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/091.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_092', async (ctx) => {
 
         let caption = "سورة: الليل 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/092.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/092.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_093', async (ctx) => {
 
         let caption = "سورة: الضحى 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/093.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/093.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_094', async (ctx) => {
 
         let caption = "سورة: الشرح 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/094.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/094.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_095', async (ctx) => {
 
         let caption = "سورة: التين 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/095.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/095.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_096', async (ctx) => {
 
         let caption = "سورة: العلق 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/096.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/096.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_097', async (ctx) => {
 
         let caption = "سورة: القدر 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/097.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/097.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_098', async (ctx) => {
 
         let caption = "سورة: البينة 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/098.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/098.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_099', async (ctx) => {
 
         let caption = "سورة: الزلزلة 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/099.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/099.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_100', async (ctx) => {
 
         let caption = "سورة: العاديات 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/100.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/100.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_101', async (ctx) => {
 
         let caption = "سورة: القارعة 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/101.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/101.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_102', async (ctx) => {
 
         let caption = "سورة: التكاثر 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/102.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/102.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_103', async (ctx) => {
 
         let caption = "سورة: العصر 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/103.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/103.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_104', async (ctx) => {
 
         let caption = "سورة: الهمزة 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/104.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/104.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_105', async (ctx) => {
 
         let caption = "سورة: الفيل 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/105.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/105.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_106', async (ctx) => {
 
         let caption = "سورة: قريش 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/106.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/106.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_107', async (ctx) => {
 
         let caption = "سورة: الماعون 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/107.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/107.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_108', async (ctx) => {
 
         let caption = "سورة: الكوثر 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/108.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/108.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_109', async (ctx) => {
 
         let caption = "سورة: الكافرون 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/109.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/109.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_110', async (ctx) => {
 
         let caption = "سورة: النصر 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/110.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/110.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_111', async (ctx) => {
 
         let caption = "سورة: المسد 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/111.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/111.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_112', async (ctx) => {
 
         let caption = "سورة: الإخلاص 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/112.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/112.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_113', async (ctx) => {
 
         let caption = "سورة: الفلق 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/113.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/113.mp3' }, { caption: caption })
 
     });
 
     bot.action('Khalid_Galilee_114', async (ctx) => {
 
         let caption = "سورة: الناس 📖\nالقارئ: خالد الجليل 🔊"
-        ctx.replyWithAudio({ url: 'https://server10.mp3quran.net/jleel/114.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server10.mp3quran.net/jleel/114.mp3' }, { caption: caption })
 
     });
 

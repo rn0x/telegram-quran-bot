@@ -417,798 +417,798 @@ module.exports = async function Maher_Almaikulai(bot, Path_appDate, Markup) {
     bot.action('Maher_Almaikulai_001', async (ctx) => {
 
         let caption = "سورة: الفاتحة 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/001.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/001.mp3' }, { caption: caption })
     
     });
     
     bot.action('Maher_Almaikulai_002', async (ctx) => {
     
         let caption = "سورة: البقرة 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/002.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/002.mp3' }, { caption: caption })
     
     });
     
     bot.action('Maher_Almaikulai_003', async (ctx) => {
     
         let caption = "سورة: آل عمران 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/003.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/003.mp3' }, { caption: caption })
     
     });
     
     bot.action('Maher_Almaikulai_004', async (ctx) => {
     
         let caption = "سورة: النساء 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/004.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/004.mp3' }, { caption: caption })
     
     });
     
     bot.action('Maher_Almaikulai_005', async (ctx) => {
     
         let caption = "سورة: المائدة 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/005.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/005.mp3' }, { caption: caption })
     
     });
     
     bot.action('Maher_Almaikulai_006', async (ctx) => {
     
         let caption = "سورة: الأنعام 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/006.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/006.mp3' }, { caption: caption })
     
     });
     
     bot.action('Maher_Almaikulai_007', async (ctx) => {
     
         let caption = "سورة: الأعراف 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/007.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/007.mp3' }, { caption: caption })
     
     });
     
     bot.action('Maher_Almaikulai_008', async (ctx) => {
     
         let caption = "سورة: الأنفال 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/008.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/008.mp3' }, { caption: caption })
     
     });
     
     bot.action('Maher_Almaikulai_009', async (ctx) => {
     
         let caption = "سورة: التوبة 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/009.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/009.mp3' }, { caption: caption })
     
     });
 
     bot.action('Maher_Almaikulai_010', async (ctx) => {
 
         let caption = "سورة: يونس 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/010.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/010.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_011', async (ctx) => {
 
         let caption = "سورة: هود 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/011.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/011.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_012', async (ctx) => {
 
         let caption = "سورة: يوسف 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/012.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/012.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_013', async (ctx) => {
 
         let caption = "سورة: الرعد 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/013.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/013.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_014', async (ctx) => {
 
         let caption = "سورة: إبراهيم 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/014.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/014.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_015', async (ctx) => {
 
         let caption = "سورة: الحجر 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/015.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/015.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_016', async (ctx) => {
 
         let caption = "سورة: النحل 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/016.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/016.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_017', async (ctx) => {
 
         let caption = "سورة: الإسراء 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/017.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/017.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_018', async (ctx) => {
 
         let caption = "سورة: الكهف 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/018.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/018.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_019', async (ctx) => {
 
         let caption = "سورة: مريم 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/019.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/019.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_020', async (ctx) => {
 
         let caption = "سورة: طه 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/020.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/020.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_021', async (ctx) => {
 
         let caption = "سورة: الأنبياء 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/021.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/021.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_022', async (ctx) => {
 
         let caption = "سورة: الحج 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/022.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/022.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_023', async (ctx) => {
 
         let caption = "سورة: المؤمنون 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/023.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/023.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_024', async (ctx) => {
 
         let caption = "سورة: النور 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/024.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/024.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_025', async (ctx) => {
 
         let caption = "سورة: الفرقان 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/025.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/025.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_026', async (ctx) => {
 
         let caption = "سورة: الشعراء 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/026.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/026.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_027', async (ctx) => {
 
         let caption = "سورة: النمل 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/027.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/027.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_028', async (ctx) => {
 
         let caption = "سورة: القصص 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/028.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/028.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_029', async (ctx) => {
 
         let caption = "سورة: العنكبوت 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/029.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/029.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_030', async (ctx) => {
 
         let caption = "سورة: الروم 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/030.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/030.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_031', async (ctx) => {
 
         let caption = "سورة: لقمان 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/031.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/031.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_032', async (ctx) => {
 
         let caption = "سورة: السجدة 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/032.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/032.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_033', async (ctx) => {
 
         let caption = "سورة: الأحزاب 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/033.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/033.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_034', async (ctx) => {
 
         let caption = "سورة: سبأ 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/034.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/034.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_035', async (ctx) => {
 
         let caption = "سورة: فاطر 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/035.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/035.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_036', async (ctx) => {
 
         let caption = "سورة: يس 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/036.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/036.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_037', async (ctx) => {
 
         let caption = "سورة: الصافات 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/037.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/037.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_038', async (ctx) => {
 
         let caption = "سورة: ص 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/038.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/038.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_039', async (ctx) => {
 
         let caption = "سورة: الزمر 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/039.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/039.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_040', async (ctx) => {
 
         let caption = "سورة: غافر 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/040.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/040.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_041', async (ctx) => {
 
         let caption = "سورة: فصلت 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/041.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/041.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_042', async (ctx) => {
 
         let caption = "سورة: الشورى 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/042.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/042.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_043', async (ctx) => {
 
         let caption = "سورة: الزخرف 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/043.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/043.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_044', async (ctx) => {
 
         let caption = "سورة: الدخان 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/044.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/044.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_045', async (ctx) => {
 
         let caption = "سورة: الجاثية 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/045.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/045.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_046', async (ctx) => {
 
         let caption = "سورة: الأحقاف 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/046.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/046.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_047', async (ctx) => {
 
         let caption = "سورة: محمد 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/047.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/047.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_048', async (ctx) => {
 
         let caption = "سورة: الفتح 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/048.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/048.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_049', async (ctx) => {
 
         let caption = "سورة: الحجرات 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/049.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/049.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_050', async (ctx) => {
 
         let caption = "سورة: ق 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/050.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/050.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_051', async (ctx) => {
 
         let caption = "سورة: الذاريات 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/051.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/051.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_052', async (ctx) => {
 
         let caption = "سورة: الطور 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/052.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/052.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_053', async (ctx) => {
 
         let caption = "سورة: النجم 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/053.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/053.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_054', async (ctx) => {
 
         let caption = "سورة: القمر 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/054.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/054.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_055', async (ctx) => {
 
         let caption = "سورة: الرحمن 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/055.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/055.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_056', async (ctx) => {
 
         let caption = "سورة: الواقعة 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/056.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/056.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_057', async (ctx) => {
 
         let caption = "سورة: الحديد 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/057.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/057.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_058', async (ctx) => {
 
         let caption = "سورة: المجادلة 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/058.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/058.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_059', async (ctx) => {
 
         let caption = "سورة: الحشر 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/059.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/059.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_060', async (ctx) => {
 
         let caption = "سورة: الممتحنة 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/060.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/060.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_061', async (ctx) => {
 
         let caption = "سورة: الصف 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/061.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/061.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_062', async (ctx) => {
 
         let caption = "سورة: الجمعة 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/062.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/062.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_063', async (ctx) => {
 
         let caption = "سورة: المنافقون 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/063.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/063.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_064', async (ctx) => {
 
         let caption = "سورة: التغابن 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/064.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/064.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_065', async (ctx) => {
 
         let caption = "سورة: الطلاق 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/065.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/065.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_066', async (ctx) => {
 
         let caption = "سورة: التحريم 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/066.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/066.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_067', async (ctx) => {
 
         let caption = "سورة: الملك 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/067.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/067.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_068', async (ctx) => {
 
         let caption = "سورة: القلم 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/068.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/068.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_069', async (ctx) => {
 
         let caption = "سورة: الحاقة 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/069.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/069.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_070', async (ctx) => {
 
         let caption = "سورة: المعارج 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/070.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/070.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_071', async (ctx) => {
 
         let caption = "سورة: نوح 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/071.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/071.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_072', async (ctx) => {
 
         let caption = "سورة: الجن 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/072.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/072.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_073', async (ctx) => {
 
         let caption = "سورة: المزمل 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/073.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/073.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_074', async (ctx) => {
 
         let caption = "سورة: المدثر 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/074.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/074.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_075', async (ctx) => {
 
         let caption = "سورة: القيامة 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/075.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/075.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_076', async (ctx) => {
 
         let caption = "سورة: الإنسان 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/076.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/076.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_077', async (ctx) => {
 
         let caption = "سورة: المرسلات 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/077.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/077.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_078', async (ctx) => {
 
         let caption = "سورة: النبأ 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/078.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/078.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_079', async (ctx) => {
 
         let caption = "سورة: النازعات 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/079.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/079.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_080', async (ctx) => {
 
         let caption = "سورة: عبس 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/080.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/080.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_081', async (ctx) => {
 
         let caption = "سورة: التكوير 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/081.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/081.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_082', async (ctx) => {
 
         let caption = "سورة: الانفطار 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/082.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/082.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_083', async (ctx) => {
 
         let caption = "سورة: المطففين 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/083.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/083.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_084', async (ctx) => {
 
         let caption = "سورة: الانشقاق 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/084.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/084.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_085', async (ctx) => {
 
         let caption = "سورة: البروج 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/085.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/085.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_086', async (ctx) => {
 
         let caption = "سورة: الطارق 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/086.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/086.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_087', async (ctx) => {
 
         let caption = "سورة: الأعلى 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/087.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/087.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_088', async (ctx) => {
 
         let caption = "سورة: الغاشية 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/088.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/088.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_089', async (ctx) => {
 
         let caption = "سورة: الفجر 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/089.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/089.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_090', async (ctx) => {
 
         let caption = "سورة: البلد 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/090.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/090.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_091', async (ctx) => {
 
         let caption = "سورة: الشمس 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/091.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/091.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_092', async (ctx) => {
 
         let caption = "سورة: الليل 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/092.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/092.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_093', async (ctx) => {
 
         let caption = "سورة: الضحى 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/093.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/093.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_094', async (ctx) => {
 
         let caption = "سورة: الشرح 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/094.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/094.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_095', async (ctx) => {
 
         let caption = "سورة: التين 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/095.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/095.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_096', async (ctx) => {
 
         let caption = "سورة: العلق 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/096.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/096.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_097', async (ctx) => {
 
         let caption = "سورة: القدر 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/097.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/097.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_098', async (ctx) => {
 
         let caption = "سورة: البينة 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/098.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/098.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_099', async (ctx) => {
 
         let caption = "سورة: الزلزلة 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/099.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/099.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_100', async (ctx) => {
 
         let caption = "سورة: العاديات 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/100.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/100.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_101', async (ctx) => {
 
         let caption = "سورة: القارعة 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/101.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/101.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_102', async (ctx) => {
 
         let caption = "سورة: التكاثر 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/102.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/102.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_103', async (ctx) => {
 
         let caption = "سورة: العصر 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/103.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/103.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_104', async (ctx) => {
 
         let caption = "سورة: الهمزة 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/104.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/104.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_105', async (ctx) => {
 
         let caption = "سورة: الفيل 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/105.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/105.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_106', async (ctx) => {
 
         let caption = "سورة: قريش 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/106.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/106.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_107', async (ctx) => {
 
         let caption = "سورة: الماعون 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/107.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/107.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_108', async (ctx) => {
 
         let caption = "سورة: الكوثر 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/108.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/108.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_109', async (ctx) => {
 
         let caption = "سورة: الكافرون 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/109.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/109.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_110', async (ctx) => {
 
         let caption = "سورة: النصر 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/110.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/110.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_111', async (ctx) => {
 
         let caption = "سورة: المسد 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/111.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/111.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_112', async (ctx) => {
 
         let caption = "سورة: الإخلاص 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/112.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/112.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_113', async (ctx) => {
 
         let caption = "سورة: الفلق 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/113.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/113.mp3' }, { caption: caption })
 
     });
 
     bot.action('Maher_Almaikulai_114', async (ctx) => {
 
         let caption = "سورة: الناس 📖\nالقارئ: ماهر المعيقلي 🔊"
-        ctx.replyWithAudio({ url: 'https://server12.mp3quran.net/maher/114.mp3' }, { caption: caption })
+        ctx.replyWithAudio({ url: 'http://server12.mp3quran.net/maher/114.mp3' }, { caption: caption })
 
     });
 
