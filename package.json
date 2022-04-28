@@ -2,7 +2,7 @@
   "name": "islam-bot",
   "version": "1.0.7",
   "homepage": "https://github.com/rn0x",
-  "description": "islam-bot - publishes adhkar and the Qur’an ..",
+  "description": "islam_bot - publishes adhkar and the Qur’an ..",
   "main": "index.js",
   "type": "commonjs",
   "author": {
@@ -31,9 +31,9 @@
     "telegraf": "^4.7.0"
   },
   "build": {
-    "productName": "islam-bot",
+    "productName": "islam_bot",
     "appId": "org.IslamBot.rn0x",
-    "copyright": "Copyright © 2022 islam-bot",
+    "copyright": "Copyright © 2022 islam_bot",
     "extraFiles": [
       {
         "from": "./",
@@ -75,8 +75,8 @@
       "installerIcon": "build/icon.ico",
       "uninstallerIcon": "build/icon.ico",
       "license": "build/LICENSE.txt",
-      "shortcutName": "islam-bot",
-      "uninstallDisplayName": "islam-bot",
+      "shortcutName": "islam_bot",
+      "uninstallDisplayName": "islam_bot",
       "installerSidebar": "build/installerSidebar.bmp",
       "uninstallerSidebar": "build/installerSidebar.bmp",
       "installerHeader": "build/installerHeader.bmp"
@@ -85,7 +85,7 @@
       "category": "Education",
       "icon": "build/icons/icon.icns",
       "vendor": "Ryan Almalki",
-      "description": "islam-bot - publishes adhkar and the Qur’an ..",
+      "description": "islam_bot - publishes adhkar and the Qur’an ..",
       "synopsis": "publishes adhkar and the Qur’an",
       "target": [
         "AppImage",

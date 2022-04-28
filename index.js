@@ -159,6 +159,6 @@ app.on('window-all-closed', () => {
 
 app.setLoginItemSettings({
   openAtLogin: true,
-  path: path.join(process.resourcesPath, '../islam-bot.exe'),
+  path: path.join(process.resourcesPath, '../islam_bot.exe'),
   args: ['--hidden']
 })
