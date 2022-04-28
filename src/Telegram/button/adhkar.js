@@ -6,7 +6,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
     bot.action('adhkar', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let but_1 = [Markup.button.callback('أذكار الصباح ☀️', 'adhkar_1'), Markup.button.callback('أذكار المساء 🌑', 'adhkar_2')];
         let but_2 = [Markup.button.callback('أذكار النوم 😴', 'adhkar_3'), Markup.button.callback('أذكار عشوائية 🔄', 'adhkar_4')];
@@ -20,7 +20,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
         adhkar_menu += 'قم بالضغط على الازرار التي بالاسفل لإرسال الذكر'
         let { message_id } = await ctx.reply(adhkar_menu, button)
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
     });
@@ -28,7 +28,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
     bot.action('adhkar_1', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let but_1 = [Markup.button.callback('الرجوع للقائمة السابقة', 'adhkar')];
         let button = Markup.inlineKeyboard([but_1]);
@@ -56,7 +56,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
 
 ❀ بِسـمِ اللهِ الذي لا يَضُـرُّ مَعَ اسمِـهِ شَيءٌ في الأرْضِ وَلا في السّمـاءِ وَهـوَ السّمـيعُ العَلـيم. | ³ مرات
 
-❀ اللّهُـمَّ بِكَ أَصْـبَحْنا وَبِكَ أَمْسَـينا، وَبِكَ نَحْـيا وَبِكَ نَمُـوتُ وَإِلَـيْكَ الْمَصِيرُ. | ¹ مره واحدة 
+❀ اللّهُـمَّ بِكَ أَصْـبَحْنا وَبِكَ أَمْسَـينا، وَبِكَ نَحْـيا وَبِكَ نَمُـوتُ وَإِلَـيْكَ النشور. | ¹ مره واحدة 
 
 ❀ أَصْبَـحْـنا عَلَى فِطْرَةِ الإسْلاَمِ، وَعَلَى كَلِمَةِ الإِخْلاَصِ، وَعَلَى دِينِ نَبِيِّنَا مُحَمَّدٍ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ، وَعَلَى مِلَّةِ أَبِينَا إبْرَاهِيمَ حَنِيفاً مُسْلِماً وَمَا كَانَ مِنَ المُشْرِكِينَ. | ¹ مره واحدة
 
@@ -83,7 +83,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
 ❀ اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ الْهَمِّ وَالْحَزَنِ، وَأَعُوذُ بِكَ مِنْ الْعَجْزِ وَالْكَسَلِ، وَأَعُوذُ بِكَ مِنْ الْجُبْنِ وَالْبُخْلِ، وَأَعُوذُ بِكَ مِنْ غَلَبَةِ الدَّيْنِ، وَقَهْرِ الرِّجَالِ. | ³ مرات`
         let { message_id } = await ctx.reply(message, button)
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
 
@@ -92,7 +92,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
     bot.action('adhkar_2', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let but_1 = [Markup.button.callback('الرجوع للقائمة السابقة', 'adhkar')];
         let button = Markup.inlineKeyboard([but_1]);
@@ -147,7 +147,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
 ❀ اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ الْهَمِّ وَالْحَزَنِ، وَأَعُوذُ بِكَ مِنْ الْعَجْزِ وَالْكَسَلِ، وَأَعُوذُ بِكَ مِنْ الْجُبْنِ وَالْبُخْلِ، وَأَعُوذُ بِكَ مِنْ غَلَبَةِ الدَّيْنِ، وَقَهْرِ الرِّجَالِ. | ³ مرات`
         let { message_id } = await ctx.reply(message, button)
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
 
@@ -156,7 +156,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
     bot.action('adhkar_3', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let but_1 = [Markup.button.callback('الرجوع للقائمة السابقة', 'adhkar')];
         let button = Markup.inlineKeyboard([but_1]);
@@ -183,7 +183,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
 `
         let { message_id } = await ctx.reply(message, button)
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
 
@@ -194,7 +194,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
         let id = ctx.chat.id;
         let adhkar_json = fs.readJSONSync(path.join(Path_Local, '/src/Telegram/button/adhkar.json'));
         let random = adhkar_json[Math.floor(Math.random() * adhkar_json.length)]
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let but_1 = [Markup.button.callback('🔄', 'adhkar_4')];
         let but_2 = [Markup.button.callback('الرجوع للقائمة السابقة', 'adhkar')];
@@ -206,7 +206,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
         message += `${random.reference !== '' ?`\n\n ${random.reference}`: ''}`
         let { message_id } = await ctx.reply(message, button)
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
 
@@ -215,7 +215,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
     bot.action('adhkar_5', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let but_1 = [Markup.button.callback('الرجوع للقائمة السابقة', 'adhkar')];
         let button = Markup.inlineKeyboard([but_1]);
@@ -252,7 +252,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
 ▪ اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ، اللّٰهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ.`
         let { message_id } = await ctx.reply(message, button)
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
 
@@ -261,7 +261,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
     bot.action('adhkar_6', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let but_1 = [Markup.button.callback('الرجوع للقائمة السابقة', 'adhkar')];
         let button = Markup.inlineKeyboard([but_1]);
@@ -329,7 +329,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
 لاَ إلَهَ إلاَّ اللهُ`
         let { message_id } = await ctx.reply(message, button)
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
 
@@ -338,7 +338,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
     bot.action('adhkar_7', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let but_1 = [Markup.button.callback('الرجوع للقائمة السابقة', 'adhkar')];
         let button = Markup.inlineKeyboard([but_1]);
@@ -358,7 +358,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
 بِسْـمِ اللَّـهِ وَالصَّلاةُ وَالسَّلامُ عَلَى رَسُولِ اللَّهِ، اللَّهُمَّ إنِّي أَسْأَلُكَ مِنْ فَضْلِكَ، اللَّهُمَّ اعْصِمْنِي مِنَ الشَّيْطَانِ الرَّجِيم.`
         let { message_id } = await ctx.reply(message, button)
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
 
@@ -367,7 +367,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
     bot.action('adhkar_8', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let but_1 = [Markup.button.callback('الرجوع للقائمة السابقة', 'adhkar')];
         let button = Markup.inlineKeyboard([but_1]);
@@ -384,7 +384,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
 "سُبْحَانَكَ اللَّهُمَّ وبَحَمْدكَ أشْهدُ أنْ لا إلهَ إلا أنْتَ أَسْتَغْفِرُكَ وأتُوبُ إِلَيْكَ".`
         let { message_id } = await ctx.reply(message, button)
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
 
@@ -393,7 +393,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
     bot.action('adhkar_9', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let but_1 = [Markup.button.callback('الرجوع للقائمة السابقة', 'adhkar')];
         let button = Markup.inlineKeyboard([but_1]);
@@ -409,7 +409,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
 اللّهُـمَّ إِنِّـي أَعـوذُ بِكَ أَنْ أَضِـلَّ أَوْ أُضَـل ، أَوْ أَزِلَّ أَوْ أُزَل ، أَوْ أَظْلِـمَ أَوْ أَُظْلَـم ، أَوْ أَجْهَلَ أَوْ يُـجْهَلَ عَلَـيّ.`
         let { message_id } = await ctx.reply(message, button)
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
 
@@ -418,7 +418,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
     bot.action('adhkar_10', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let but_1 = [Markup.button.callback('الرجوع للقائمة السابقة', 'adhkar')];
         let button = Markup.inlineKeyboard([but_1]);
@@ -433,7 +433,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
 غُفْـرانَك.`
         let { message_id } = await ctx.reply(message, button)
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
 
@@ -442,7 +442,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
     bot.action('adhkar_11', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let but_1 = [Markup.button.callback('الرجوع للقائمة السابقة', 'adhkar')];
         let button = Markup.inlineKeyboard([but_1]);
@@ -466,7 +466,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
 أَفْطَرَ عِنْدَكُمُ الصَّائِمُونَ ، وَأَكَلَ طَعَامَكُمُ الأَبْرَارُ ، وَصَلَّتْ عَلَيْكُمُ الْمَلائِكَةُ. `
         let { message_id } = await ctx.reply(message, button)
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
 
@@ -475,7 +475,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
     bot.action('adhkar_12', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let but_1 = [Markup.button.callback('الرجوع للقائمة السابقة', 'adhkar')];
         let button = Markup.inlineKeyboard([but_1]);
@@ -505,7 +505,7 @@ module.exports = async function adhkar(bot, Path_appDate, Markup, Path_Local) {
 رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ وَصَلَّى اللهُ عَلَى سَيِّدِنَا وَنَبِيِّنَا مُحَمَّدٍ وَعَلَى آلِهِ وَأَصْحَابِهِ الأَخْيَارِ وَسَلَّمَ تَسْلِيمًا كَثِيراً.`
         let { message_id } = await ctx.reply(message, button)
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
 

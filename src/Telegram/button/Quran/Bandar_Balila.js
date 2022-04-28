@@ -6,7 +6,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
     bot.action('Bandar_Balila', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Bandar_Balila_Message = 'القارئ بندر بيليه 🔊 \n\n'
         Bandar_Balila_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -30,7 +30,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4, but_5]);
         let { message_id } = await ctx.reply(Bandar_Balila_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
     });
@@ -38,7 +38,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
     bot.action('Bandar_Balila_Menu_1', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Bandar_Balila_Message = 'القارئ بندر بيليه 🔊 \n\n'
         Bandar_Balila_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -62,7 +62,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4, but_5]);
         let { message_id } = await ctx.reply(Bandar_Balila_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
     });
@@ -70,7 +70,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
     bot.action('Bandar_Balila_Menu_2', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Bandar_Balila_Message = 'القارئ بندر بيليه 🔊 \n\n'
         Bandar_Balila_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -94,7 +94,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4, but_5]);
         let { message_id } = await ctx.reply(Bandar_Balila_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
     });
@@ -102,7 +102,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
     bot.action('Bandar_Balila_Menu_3', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Bandar_Balila_Message = 'القارئ بندر بيليه 🔊 \n\n'
         Bandar_Balila_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -126,7 +126,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4, but_5]);
         let { message_id } = await ctx.reply(Bandar_Balila_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
     });
@@ -134,7 +134,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
     bot.action('Bandar_Balila_Menu_4', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Bandar_Balila_Message = 'القارئ بندر بيليه 🔊 \n\n'
         Bandar_Balila_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -158,7 +158,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4, but_5]);
         let { message_id } = await ctx.reply(Bandar_Balila_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
     });
@@ -166,7 +166,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
     bot.action('Bandar_Balila_Menu_5', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Bandar_Balila_Message = 'القارئ بندر بيليه 🔊 \n\n'
         Bandar_Balila_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -190,7 +190,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4, but_5]);
         let { message_id } = await ctx.reply(Bandar_Balila_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
     });
@@ -198,7 +198,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
     bot.action('Bandar_Balila_Menu_6', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Bandar_Balila_Message = 'القارئ بندر بيليه 🔊 \n\n'
         Bandar_Balila_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -222,7 +222,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4, but_5]);
         let { message_id } = await ctx.reply(Bandar_Balila_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
     });
@@ -230,7 +230,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
     bot.action('Bandar_Balila_Menu_7', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Bandar_Balila_Message = 'القارئ بندر بيليه 🔊 \n\n'
         Bandar_Balila_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -254,7 +254,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4, but_5]);
         let { message_id } = await ctx.reply(Bandar_Balila_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
     });
@@ -262,7 +262,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
     bot.action('Bandar_Balila_Menu_8', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Bandar_Balila_Message = 'القارئ بندر بيليه 🔊 \n\n'
         Bandar_Balila_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -285,7 +285,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4, but_5]);
         let { message_id } = await ctx.reply(Bandar_Balila_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
     });
@@ -293,7 +293,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
     bot.action('Bandar_Balila_Menu_9', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Bandar_Balila_Message = 'القارئ بندر بيليه 🔊 \n\n'
         Bandar_Balila_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -317,7 +317,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4, but_5]);
         let { message_id } = await ctx.reply(Bandar_Balila_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
     });
@@ -325,7 +325,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
     bot.action('Bandar_Balila_Menu_10', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Bandar_Balila_Message = 'القارئ بندر بيليه 🔊 \n\n'
         Bandar_Balila_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -349,7 +349,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4, but_5]);
         let { message_id } = await ctx.reply(Bandar_Balila_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
     });
@@ -357,7 +357,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
     bot.action('Bandar_Balila_Menu_11', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Bandar_Balila_Message = 'القارئ بندر بيليه 🔊 \n\n'
         Bandar_Balila_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -381,7 +381,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4, but_5]);
         let { message_id } = await ctx.reply(Bandar_Balila_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
     });
@@ -389,7 +389,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
     bot.action('Bandar_Balila_Menu_12', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Bandar_Balila_Message = 'القارئ بندر بيليه 🔊 \n\n'
         Bandar_Balila_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -408,7 +408,7 @@ module.exports = async function Bandar_Balila(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4]);
         let { message_id } = await ctx.reply(Bandar_Balila_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
         
 
     });

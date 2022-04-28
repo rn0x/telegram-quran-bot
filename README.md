@@ -42,6 +42,20 @@
 
 ## تنزيل التطبيق
 
+<br><br>
+
+<p align="center">
+  <a href="https://snapcraft.io/islam-bot">
+     <img alt="احصل عليه من Snap Store" src="https://snapcraft.io/static/images/badges/ar/snap-store-black.svg"/>
+  </a>
+
+  ```bash
+  
+  sudo snap install islam-bot 
+  
+  ```
+</p>
+
 - **Linux**: [Download the .AppImage, .deb, or .rpm file](https://github.com/rn0x/islam_bot/releases/latest)
 - **Windows**: [Download the .exe file](https://github.com/rn0x/islam_bot/releases/latest)
 
