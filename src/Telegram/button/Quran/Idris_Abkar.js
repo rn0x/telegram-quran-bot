@@ -6,7 +6,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
     bot.action('Idris_Abkar', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Idris_Abkar_Message = 'القارئ ادريس ابكر 🔊 \n\n'
         Idris_Abkar_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -30,7 +30,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4, but_5]);
         let { message_id } = await ctx.reply(Idris_Abkar_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
         
 
     });
@@ -38,7 +38,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
     bot.action('Idris_Abkar_Menu_1', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Idris_Abkar_Message = 'القارئ ادريس ابكر 🔊 \n\n'
         Idris_Abkar_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -62,7 +62,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4, but_5]);
         let { message_id } = await ctx.reply(Idris_Abkar_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
         
 
     });
@@ -70,7 +70,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
     bot.action('Idris_Abkar_Menu_2', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Idris_Abkar_Message = 'القارئ ادريس ابكر 🔊 \n\n'
         Idris_Abkar_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -94,7 +94,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4, but_5]);
         let { message_id } = await ctx.reply(Idris_Abkar_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
         
 
     });
@@ -102,7 +102,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
     bot.action('Idris_Abkar_Menu_3', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Idris_Abkar_Message = 'القارئ ادريس ابكر 🔊 \n\n'
         Idris_Abkar_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -126,7 +126,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4, but_5]);
         let { message_id } = await ctx.reply(Idris_Abkar_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
         
 
     });
@@ -134,7 +134,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
     bot.action('Idris_Abkar_Menu_4', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Idris_Abkar_Message = 'القارئ ادريس ابكر 🔊 \n\n'
         Idris_Abkar_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -158,7 +158,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4, but_5]);
         let { message_id } = await ctx.reply(Idris_Abkar_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
         
 
     });
@@ -166,7 +166,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
     bot.action('Idris_Abkar_Menu_5', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Idris_Abkar_Message = 'القارئ ادريس ابكر 🔊 \n\n'
         Idris_Abkar_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -190,7 +190,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4, but_5]);
         let { message_id } = await ctx.reply(Idris_Abkar_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
         
 
     });
@@ -198,7 +198,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
     bot.action('Idris_Abkar_Menu_6', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Idris_Abkar_Message = 'القارئ ادريس ابكر 🔊 \n\n'
         Idris_Abkar_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -222,7 +222,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4, but_5]);
         let { message_id } = await ctx.reply(Idris_Abkar_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
         
 
     });
@@ -230,7 +230,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
     bot.action('Idris_Abkar_Menu_7', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Idris_Abkar_Message = 'القارئ ادريس ابكر 🔊 \n\n'
         Idris_Abkar_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -254,7 +254,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4, but_5]);
         let { message_id } = await ctx.reply(Idris_Abkar_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
         
 
     });
@@ -262,7 +262,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
     bot.action('Idris_Abkar_Menu_8', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Idris_Abkar_Message = 'القارئ ادريس ابكر 🔊 \n\n'
         Idris_Abkar_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -286,7 +286,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4, but_5]);
         let { message_id } = await ctx.reply(Idris_Abkar_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
         
 
     });
@@ -294,7 +294,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
     bot.action('Idris_Abkar_Menu_9', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Idris_Abkar_Message = 'القارئ ادريس ابكر 🔊 \n\n'
         Idris_Abkar_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -318,7 +318,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4, but_5]);
         let { message_id } = await ctx.reply(Idris_Abkar_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
         
 
     });
@@ -326,7 +326,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
     bot.action('Idris_Abkar_Menu_10', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Idris_Abkar_Message = 'القارئ ادريس ابكر 🔊 \n\n'
         Idris_Abkar_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -350,7 +350,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4, but_5]);
         let { message_id } = await ctx.reply(Idris_Abkar_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
         
 
     });
@@ -358,7 +358,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
     bot.action('Idris_Abkar_Menu_11', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Idris_Abkar_Message = 'القارئ ادريس ابكر 🔊 \n\n'
         Idris_Abkar_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -382,7 +382,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4, but_5]);
         let { message_id } = await ctx.reply(Idris_Abkar_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
         
 
     });
@@ -390,7 +390,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
     bot.action('Idris_Abkar_Menu_12', async (ctx) => {
 
         let id = ctx.chat.id;
-        let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
+        let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
         json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
         let Idris_Abkar_Message = 'القارئ ادريس ابكر 🔊 \n\n'
         Idris_Abkar_Message += 'قم بالضغط على اسم السورة الإرسالها'
@@ -409,7 +409,7 @@ module.exports = async function Idris_Abkar(bot, Path_appDate, Markup) {
         let button = Markup.inlineKeyboard([but_1, but_2, but_3, but_4]);
         let { message_id } = await ctx.reply(Idris_Abkar_Message, button);
         json[id].message_id = message_id
-        fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
+        fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
         
 
     });

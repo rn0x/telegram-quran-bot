@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = async function Error(error, Path_appDate) {
 
-    let json = fs.readJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'));
+    let json = fs.readJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'));
 
     if (error.response !== undefined) {
 
@@ -16,7 +16,7 @@ module.exports = async function Error(error, Path_appDate) {
                 [id_new]: json[id_old]
             })[id_old]
             json[id_new].id = id_new
-            fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json, { spaces: '\t' });
+            fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json, { spaces: '\t' });
 
         }
 
@@ -25,7 +25,7 @@ module.exports = async function Error(error, Path_appDate) {
             let id_user = error.on.payload.chat_id
 
             delete json[id_user]
-            fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json, { spaces: '\t' });
+            fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json, { spaces: '\t' });
 
         }
 
@@ -34,7 +34,7 @@ module.exports = async function Error(error, Path_appDate) {
             let id_user = error.on.payload.chat_id
 
             delete json[id_user]
-            fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json, { spaces: '\t' });
+            fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json, { spaces: '\t' });
 
         }
 
@@ -43,7 +43,7 @@ module.exports = async function Error(error, Path_appDate) {
             let id_user = error.on.payload.chat_id
 
             delete json[id_user]
-            fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json, { spaces: '\t' });
+            fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json, { spaces: '\t' });
 
         }
 
@@ -52,7 +52,7 @@ module.exports = async function Error(error, Path_appDate) {
             let id_user = error.on.payload.chat_id
 
             delete json[id_user]
-            fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json, { spaces: '\t' });
+            fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json, { spaces: '\t' });
 
         }
 
@@ -61,7 +61,7 @@ module.exports = async function Error(error, Path_appDate) {
             let id_user = error.on.payload.chat_id
 
             delete json[id_user]
-            fs.writeJsonSync(join(Path_appDate, '/islam-bot/Users.json'), json, { spaces: '\t' });
+            fs.writeJsonSync(join(Path_appDate, '/islam_bot/Users.json'), json, { spaces: '\t' });
 
         }
 

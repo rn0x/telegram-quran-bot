@@ -22,7 +22,7 @@ module.exports = async function broadcast(bot, Path_appDate, Path_Local) {
         const photo = fs.readJSONSync(path.join(Path_Local, '/src/Telegram/button/Photo_Json.json'));
         const video = fs.readJSONSync(path.join(Path_Local, '/src/Telegram/button/Video_json.json'));
         const QuranJson = fs.readJSONSync(path.join(Path_Local, '/src/Telegram/button/Quran.json'));
-        const json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
+        const json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
         const user = Object.keys(json);
         const me = await bot.telegram.getMe();
 

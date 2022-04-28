@@ -18,7 +18,7 @@ const createWindow = () => {
         center: true,
         resizable: false, // قابل لتكبير والتصغير
         frame: false, // ايطار البرنامج
-        title: 'islam-bot',
+        title: 'islam_bot',
         icon: path.join(Path_Local, '/build/icons/icon.png'),
         webPreferences: {
             preload: path.join(__dirname, 'preload.js')
@@ -45,13 +45,13 @@ const createWindow = () => {
         event.preventDefault();
 
 
-        if (fs.existsSync(path.join(Path_appDate, '/islam-bot/Settings.json'))) {
+        if (fs.existsSync(path.join(Path_appDate, '/islam_bot/Settings.json'))) {
 
-            let Settings = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Settings.json'));
+            let Settings = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Settings.json'));
             if (Settings.start === true) {
 
                 let data = Object.assign({}, Settings, { start: false })
-                fs.writeJSONSync(path.join(Path_appDate, '/islam-bot/Settings.json'), data, { spaces: '\t' })
+                fs.writeJSONSync(path.join(Path_appDate, '/islam_bot/Settings.json'), data, { spaces: '\t' })
 
             }
         }
@@ -78,7 +78,7 @@ const createWindow = () => {
     ]);
     tray = new Tray(path.join(Path_Local, '/build/icons/icon.png'));
     tray.setContextMenu(trayMenu);
-    tray.setToolTip("islam-bot");
+    tray.setToolTip("islam_bot");
     tray.on('click', () => {
         mainWindow.isVisible() ? mainWindow.hide() : mainWindow.show()
     });
@@ -97,9 +97,9 @@ app.whenReady().then(async () => {
 
     }
     
-    if (fs.existsSync(path.join(Path_appDate, '/islam-bot/Settings.json'))) {
+    if (fs.existsSync(path.join(Path_appDate, '/islam_bot/Settings.json'))) {
 
-        let Settings = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Settings.json'));
+        let Settings = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Settings.json'));
 
         if (Settings.start === true && Settings.off_on === 'on') {
 
@@ -111,14 +111,14 @@ app.whenReady().then(async () => {
 
     setInterval(async () => {
 
-        if (fs.existsSync(path.join(Path_appDate, '/islam-bot/Settings.json'))) {
+        if (fs.existsSync(path.join(Path_appDate, '/islam_bot/Settings.json'))) {
 
-            let Settings = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Settings.json'));
+            let Settings = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Settings.json'));
             if (Settings.start === false && Settings.off_on === 'on') {
 
                 islam_bot(app.getPath("appData"), Path_Local, Notification);
                 let data = Object.assign({}, Settings, { start: true })
-                fs.writeJSONSync(path.join(Path_appDate, '/islam-bot/Settings.json'), data, { spaces: '\t' });
+                fs.writeJSONSync(path.join(Path_appDate, '/islam_bot/Settings.json'), data, { spaces: '\t' });
 
             }
         }

@@ -8,7 +8,7 @@ const Error = require('./Error.js');
 
 module.exports = async function islam_bot(Path_appDate, Path_Local, Notification) {
 
-    let Settings = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Settings.json'));
+    let Settings = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Settings.json'));
     let options = { channelMode: true, polling: true }
     let bot = new Telegraf(Settings.token, options)
 
@@ -18,8 +18,8 @@ module.exports = async function islam_bot(Path_appDate, Path_Local, Notification
         let username = ctx.chat.username ? ctx.chat.username : null;
         let first_name = ctx.chat.first_name ? ctx.chat.first_name : ctx.chat.last_name ? ctx.chat.last_name : ctx.chat.title ? ctx.chat.title : null;
         let type = ctx.chat.type
-        let json_true = fs.existsSync(path.join(Path_appDate, '/islam-bot/Users.json'));
-        let json = json_true ? fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json')) : undefined;
+        let json_true = fs.existsSync(path.join(Path_appDate, '/islam_bot/Users.json'));
+        let json = json_true ? fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json')) : undefined;
         if (json_true && json[id] && json[id].message_id !== undefined) {
 
             ctx.deleteMessage(json[id].message_id);
@@ -65,7 +65,7 @@ module.exports = async function islam_bot(Path_appDate, Path_Local, Notification
         if (json_true && json[id]) {
 
             json[id].message_id = message_id
-            fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
+            fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
 
         }
 
@@ -75,16 +75,16 @@ module.exports = async function islam_bot(Path_appDate, Path_Local, Notification
 
     bot.on("my_chat_member", async (ctx) => {
 
-        if (fs.existsSync(path.join(Path_appDate, '/islam-bot/Users.json')) === false) {
+        if (fs.existsSync(path.join(Path_appDate, '/islam_bot/Users.json')) === false) {
 
-            fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), {});
+            fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), {});
 
 
         }
 
-        else if (fs.existsSync(path.join(Path_appDate, '/islam-bot/Users.json'))) {
+        else if (fs.existsSync(path.join(Path_appDate, '/islam_bot/Users.json'))) {
 
-            let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
+            let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
             let id = ctx.chat.id;
             let username = ctx.chat.username ? ctx.chat.username : null;
             let first_name = ctx.chat.first_name ? ctx.chat.first_name : ctx.chat.last_name ? ctx.chat.last_name : ctx.chat.title ? ctx.chat.title : null;
@@ -128,7 +128,7 @@ module.exports = async function islam_bot(Path_appDate, Path_Local, Notification
                 if (Object.keys(json).includes(id.toString())) {
 
                     delete json[id]
-                    fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
+                    fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
                 }
 
                 let notification = new Notification({
@@ -215,9 +215,9 @@ module.exports = async function islam_bot(Path_appDate, Path_Local, Notification
         let first_name = ctx.chat.first_name ? ctx.chat.first_name : ctx.chat.last_name ? ctx.chat.last_name : ctx.chat.title ? ctx.chat.title : null;
         let type = ctx.chat.type
 
-        if (fs.existsSync(path.join(Path_appDate, '/islam-bot/Users.json'))) {
+        if (fs.existsSync(path.join(Path_appDate, '/islam_bot/Users.json'))) {
 
-            let json = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Users.json'));
+            let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
 
             if (body === 'تعطيل') {
 
@@ -225,7 +225,7 @@ module.exports = async function islam_bot(Path_appDate, Path_Local, Notification
 
                     let message = 'لقد تم تعطيل الخدمة \nلإعادة التفعيل ارسل كلمة تفعيل'
                     json[id].broadcast = false
-                    fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
+                    fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
                     await ctx.reply(message);
 
                 }
@@ -247,7 +247,7 @@ module.exports = async function islam_bot(Path_appDate, Path_Local, Notification
 
                     let message = 'لقد تم تفعيل خدمة إرسال الرسائل بشكل تلقائي'
                     json[id].broadcast = undefined
-                    fs.writeJsonSync(path.join(Path_appDate, '/islam-bot/Users.json'), json);
+                    fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json);
                     await ctx.reply(message);
 
                 }
@@ -285,13 +285,13 @@ module.exports = async function islam_bot(Path_appDate, Path_Local, Notification
 
     setInterval(async () => {
 
-        if (fs.existsSync(path.join(Path_appDate, '/islam-bot/Settings.json')) === false) {
+        if (fs.existsSync(path.join(Path_appDate, '/islam_bot/Settings.json')) === false) {
             bot.stop()
         }
 
-        else if (fs.existsSync(path.join(Path_appDate, '/islam-bot/Settings.json'))) {
+        else if (fs.existsSync(path.join(Path_appDate, '/islam_bot/Settings.json'))) {
 
-            let Settings = fs.readJSONSync(path.join(Path_appDate, '/islam-bot/Settings.json'));
+            let Settings = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Settings.json'));
 
             if (Settings.start === true && Settings.off_on === 'off') {
                 bot.stop()
