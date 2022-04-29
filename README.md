@@ -45,7 +45,7 @@
 <br><br>
 
 <p align="center">
-  <a href="https://snapcraft.io/islam_bot">
+  <a href="https://snapcraft.io/islam-bot">
      <img alt="احصل عليه من Snap Store" src="https://snapcraft.io/static/images/badges/ar/snap-store-black.svg"/>
   </a>
 
