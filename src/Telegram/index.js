@@ -22,7 +22,7 @@ module.exports = async function islam_bot(Path_appDate, Path_Local, Notification
         let json = json_true ? fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json')) : undefined;
         if (json_true && json[id] && json[id].message_id !== undefined) {
 
-            ctx.deleteMessage(json[id].message_id);
+            await ctx.deleteMessage(json[id].message_id);
             
         }
         let name_bot = ctx.botInfo.first_name

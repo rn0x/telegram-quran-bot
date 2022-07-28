@@ -70,7 +70,10 @@ const createWindow = () => {
         },
         {
             label: 'إغلاق', click: function () {
-                mainWindow.destroy();
+                if (mainWindow !== null) {
+                    mainWindow.close();
+                }
+                else if (mainWindow === null) createWindow()
                 app.isQuiting = true;
                 app.quit();
             }
@@ -96,7 +99,7 @@ app.whenReady().then(async () => {
         mainWindow.hide()
 
     }
-    
+
     if (fs.existsSync(path.join(Path_appDate, '/islam_bot/Settings.json'))) {
 
         let Settings = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Settings.json'));
@@ -158,7 +161,7 @@ app.on('window-all-closed', () => {
 });
 
 app.setLoginItemSettings({
-  openAtLogin: true,
-  path: path.join(process.resourcesPath, '../islam_bot.exe'),
-  args: ['--hidden']
+    openAtLogin: true,
+    path: path.join(process.resourcesPath, '../islam_bot.exe'),
+    args: ['--hidden']
 })

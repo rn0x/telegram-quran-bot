@@ -9,7 +9,7 @@ module.exports = async function start(bot, Path_appDate, Markup) {
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
         if (json[id].message_id !== undefined) {
 
-            ctx.deleteMessage(json[id].message_id);
+            await ctx.deleteMessage(json[id].message_id);
             
         }
         let username = ctx.chat.username ? ctx.chat.username : null;

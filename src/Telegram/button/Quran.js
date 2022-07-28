@@ -7,7 +7,7 @@ module.exports = async function quran(bot, Path_appDate, Markup) {
 
         let id = ctx.chat.id;
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let quran_menu = 'قم بإختيار القارئ 🔊 \n\n'
         quran_menu += '1- أدريس أبكر \n'
         quran_menu += '2- ماهر المعيقلي \n'

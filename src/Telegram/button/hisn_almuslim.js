@@ -10,7 +10,7 @@ module.exports = async function hisn_almuslim(bot, Path_appDate, Markup, Path_Lo
         let hisn_almuslim_json = fs.readJsonSync(path.join(Path_Local, '/src/Telegram/button/hisn_almuslim.json'));
         let key = Object.keys(hisn_almuslim_json);
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let hisn_almuslim_Message = 'حصن المسلم 🏰\n\n'
         hisn_almuslim_Message += ' كتاب أدعية تأليف سعيد بن علي بن وهف القحطاني حرر في شهر صفر 1409هـ والكتاب يحتوي على أذكار النبي محمد صلى الله عليه وسلم في مختلف مواضع الحياة اليومية وهو من أكثر الكتب الإسلامية انتشارا لسهولة أسلوبه والتزامه بالصحيح من الأحاديث. '
         let but_1 = [Markup.button.callback('⬆', 'start')];
@@ -36,7 +36,7 @@ module.exports = async function hisn_almuslim(bot, Path_appDate, Markup, Path_Lo
         let hisn_almuslim_json = fs.readJsonSync(path.join(Path_Local, '/src/Telegram/button/hisn_almuslim.json'));
         let key = Object.keys(hisn_almuslim_json);
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let hisn_almuslim_Message = 'حصن المسلم 🏰\n\n'
         hisn_almuslim_Message += ' كتاب أدعية تأليف سعيد بن علي بن وهف القحطاني حرر في شهر صفر 1409هـ والكتاب يحتوي على أذكار النبي محمد صلى الله عليه وسلم في مختلف مواضع الحياة اليومية وهو من أكثر الكتب الإسلامية انتشارا لسهولة أسلوبه والتزامه بالصحيح من الأحاديث. '
         let but_1 = [Markup.button.callback('⬆', 'hisn_almuslim')];
@@ -62,7 +62,7 @@ module.exports = async function hisn_almuslim(bot, Path_appDate, Markup, Path_Lo
         let hisn_almuslim_json = fs.readJsonSync(path.join(Path_Local, '/src/Telegram/button/hisn_almuslim.json'));
         let key = Object.keys(hisn_almuslim_json);
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let hisn_almuslim_Message = 'حصن المسلم 🏰\n\n'
         hisn_almuslim_Message += ' كتاب أدعية تأليف سعيد بن علي بن وهف القحطاني حرر في شهر صفر 1409هـ والكتاب يحتوي على أذكار النبي محمد صلى الله عليه وسلم في مختلف مواضع الحياة اليومية وهو من أكثر الكتب الإسلامية انتشارا لسهولة أسلوبه والتزامه بالصحيح من الأحاديث. '
         let but_1 = [Markup.button.callback('⬆', 'hisn_almuslim_Menu_1')];
@@ -88,7 +88,7 @@ module.exports = async function hisn_almuslim(bot, Path_appDate, Markup, Path_Lo
         let hisn_almuslim_json = fs.readJsonSync(path.join(Path_Local, '/src/Telegram/button/hisn_almuslim.json'));
         let key = Object.keys(hisn_almuslim_json);
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let hisn_almuslim_Message = 'حصن المسلم 🏰\n\n'
         hisn_almuslim_Message += ' كتاب أدعية تأليف سعيد بن علي بن وهف القحطاني حرر في شهر صفر 1409هـ والكتاب يحتوي على أذكار النبي محمد صلى الله عليه وسلم في مختلف مواضع الحياة اليومية وهو من أكثر الكتب الإسلامية انتشارا لسهولة أسلوبه والتزامه بالصحيح من الأحاديث. '
         let but_1 = [Markup.button.callback('⬆', 'hisn_almuslim_Menu_2')];
@@ -114,7 +114,7 @@ module.exports = async function hisn_almuslim(bot, Path_appDate, Markup, Path_Lo
         let hisn_almuslim_json = fs.readJsonSync(path.join(Path_Local, '/src/Telegram/button/hisn_almuslim.json'));
         let key = Object.keys(hisn_almuslim_json);
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let hisn_almuslim_Message = 'حصن المسلم 🏰\n\n'
         hisn_almuslim_Message += ' كتاب أدعية تأليف سعيد بن علي بن وهف القحطاني حرر في شهر صفر 1409هـ والكتاب يحتوي على أذكار النبي محمد صلى الله عليه وسلم في مختلف مواضع الحياة اليومية وهو من أكثر الكتب الإسلامية انتشارا لسهولة أسلوبه والتزامه بالصحيح من الأحاديث. '
         let but_1 = [Markup.button.callback('⬆', 'hisn_almuslim_Menu_3')];
@@ -140,7 +140,7 @@ module.exports = async function hisn_almuslim(bot, Path_appDate, Markup, Path_Lo
         let hisn_almuslim_json = fs.readJsonSync(path.join(Path_Local, '/src/Telegram/button/hisn_almuslim.json'));
         let key = Object.keys(hisn_almuslim_json);
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let hisn_almuslim_Message = 'حصن المسلم 🏰\n\n'
         hisn_almuslim_Message += ' كتاب أدعية تأليف سعيد بن علي بن وهف القحطاني حرر في شهر صفر 1409هـ والكتاب يحتوي على أذكار النبي محمد صلى الله عليه وسلم في مختلف مواضع الحياة اليومية وهو من أكثر الكتب الإسلامية انتشارا لسهولة أسلوبه والتزامه بالصحيح من الأحاديث. '
         let but_1 = [Markup.button.callback('⬆', 'hisn_almuslim_Menu_4')];
@@ -166,7 +166,7 @@ module.exports = async function hisn_almuslim(bot, Path_appDate, Markup, Path_Lo
         let hisn_almuslim_json = fs.readJsonSync(path.join(Path_Local, '/src/Telegram/button/hisn_almuslim.json'));
         let key = Object.keys(hisn_almuslim_json);
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let hisn_almuslim_Message = 'حصن المسلم 🏰\n\n'
         hisn_almuslim_Message += ' كتاب أدعية تأليف سعيد بن علي بن وهف القحطاني حرر في شهر صفر 1409هـ والكتاب يحتوي على أذكار النبي محمد صلى الله عليه وسلم في مختلف مواضع الحياة اليومية وهو من أكثر الكتب الإسلامية انتشارا لسهولة أسلوبه والتزامه بالصحيح من الأحاديث. '
         let but_1 = [Markup.button.callback('⬆', 'hisn_almuslim_Menu_5')];
@@ -192,7 +192,7 @@ module.exports = async function hisn_almuslim(bot, Path_appDate, Markup, Path_Lo
         let hisn_almuslim_json = fs.readJsonSync(path.join(Path_Local, '/src/Telegram/button/hisn_almuslim.json'));
         let key = Object.keys(hisn_almuslim_json);
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let hisn_almuslim_Message = 'حصن المسلم 🏰\n\n'
         hisn_almuslim_Message += ' كتاب أدعية تأليف سعيد بن علي بن وهف القحطاني حرر في شهر صفر 1409هـ والكتاب يحتوي على أذكار النبي محمد صلى الله عليه وسلم في مختلف مواضع الحياة اليومية وهو من أكثر الكتب الإسلامية انتشارا لسهولة أسلوبه والتزامه بالصحيح من الأحاديث. '
         let but_1 = [Markup.button.callback('⬆', 'hisn_almuslim_Menu_6')];
@@ -218,7 +218,7 @@ module.exports = async function hisn_almuslim(bot, Path_appDate, Markup, Path_Lo
         let hisn_almuslim_json = fs.readJsonSync(path.join(Path_Local, '/src/Telegram/button/hisn_almuslim.json'));
         let key = Object.keys(hisn_almuslim_json);
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let hisn_almuslim_Message = 'حصن المسلم 🏰\n\n'
         hisn_almuslim_Message += ' كتاب أدعية تأليف سعيد بن علي بن وهف القحطاني حرر في شهر صفر 1409هـ والكتاب يحتوي على أذكار النبي محمد صلى الله عليه وسلم في مختلف مواضع الحياة اليومية وهو من أكثر الكتب الإسلامية انتشارا لسهولة أسلوبه والتزامه بالصحيح من الأحاديث. '
         let but_1 = [Markup.button.callback('⬆', 'hisn_almuslim_Menu_7')];
@@ -244,7 +244,7 @@ module.exports = async function hisn_almuslim(bot, Path_appDate, Markup, Path_Lo
         let hisn_almuslim_json = fs.readJsonSync(path.join(Path_Local, '/src/Telegram/button/hisn_almuslim.json'));
         let key = Object.keys(hisn_almuslim_json);
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let hisn_almuslim_Message = 'حصن المسلم 🏰\n\n'
         hisn_almuslim_Message += ' كتاب أدعية تأليف سعيد بن علي بن وهف القحطاني حرر في شهر صفر 1409هـ والكتاب يحتوي على أذكار النبي محمد صلى الله عليه وسلم في مختلف مواضع الحياة اليومية وهو من أكثر الكتب الإسلامية انتشارا لسهولة أسلوبه والتزامه بالصحيح من الأحاديث. '
         let but_1 = [Markup.button.callback('⬆', 'hisn_almuslim_Menu_8')];
@@ -270,7 +270,7 @@ module.exports = async function hisn_almuslim(bot, Path_appDate, Markup, Path_Lo
         let hisn_almuslim_json = fs.readJsonSync(path.join(Path_Local, '/src/Telegram/button/hisn_almuslim.json'));
         let key = Object.keys(hisn_almuslim_json);
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let hisn_almuslim_Message = 'حصن المسلم 🏰\n\n'
         hisn_almuslim_Message += ' كتاب أدعية تأليف سعيد بن علي بن وهف القحطاني حرر في شهر صفر 1409هـ والكتاب يحتوي على أذكار النبي محمد صلى الله عليه وسلم في مختلف مواضع الحياة اليومية وهو من أكثر الكتب الإسلامية انتشارا لسهولة أسلوبه والتزامه بالصحيح من الأحاديث. '
         let but_1 = [Markup.button.callback('⬆', 'hisn_almuslim_Menu_9')];
@@ -296,7 +296,7 @@ module.exports = async function hisn_almuslim(bot, Path_appDate, Markup, Path_Lo
         let hisn_almuslim_json = fs.readJsonSync(path.join(Path_Local, '/src/Telegram/button/hisn_almuslim.json'));
         let key = Object.keys(hisn_almuslim_json);
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let hisn_almuslim_Message = 'حصن المسلم 🏰\n\n'
         hisn_almuslim_Message += ' كتاب أدعية تأليف سعيد بن علي بن وهف القحطاني حرر في شهر صفر 1409هـ والكتاب يحتوي على أذكار النبي محمد صلى الله عليه وسلم في مختلف مواضع الحياة اليومية وهو من أكثر الكتب الإسلامية انتشارا لسهولة أسلوبه والتزامه بالصحيح من الأحاديث. '
         let but_1 = [Markup.button.callback('⬆', 'hisn_almuslim_Menu_10')];
@@ -322,7 +322,7 @@ module.exports = async function hisn_almuslim(bot, Path_appDate, Markup, Path_Lo
         let hisn_almuslim_json = fs.readJsonSync(path.join(Path_Local, '/src/Telegram/button/hisn_almuslim.json'));
         let key = Object.keys(hisn_almuslim_json);
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let hisn_almuslim_Message = 'حصن المسلم 🏰\n\n'
         hisn_almuslim_Message += ' كتاب أدعية تأليف سعيد بن علي بن وهف القحطاني حرر في شهر صفر 1409هـ والكتاب يحتوي على أذكار النبي محمد صلى الله عليه وسلم في مختلف مواضع الحياة اليومية وهو من أكثر الكتب الإسلامية انتشارا لسهولة أسلوبه والتزامه بالصحيح من الأحاديث. '
         let but_1 = [Markup.button.callback('⬆', 'hisn_almuslim_Menu_11')];
@@ -348,7 +348,7 @@ module.exports = async function hisn_almuslim(bot, Path_appDate, Markup, Path_Lo
         let hisn_almuslim_json = fs.readJsonSync(path.join(Path_Local, '/src/Telegram/button/hisn_almuslim.json'));
         let key = Object.keys(hisn_almuslim_json);
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let hisn_almuslim_Message = 'حصن المسلم 🏰\n\n'
         hisn_almuslim_Message += ' كتاب أدعية تأليف سعيد بن علي بن وهف القحطاني حرر في شهر صفر 1409هـ والكتاب يحتوي على أذكار النبي محمد صلى الله عليه وسلم في مختلف مواضع الحياة اليومية وهو من أكثر الكتب الإسلامية انتشارا لسهولة أسلوبه والتزامه بالصحيح من الأحاديث. '
         let but_1 = [Markup.button.callback('⬆', 'hisn_almuslim_Menu_12')];
@@ -374,7 +374,7 @@ module.exports = async function hisn_almuslim(bot, Path_appDate, Markup, Path_Lo
         let hisn_almuslim_json = fs.readJsonSync(path.join(Path_Local, '/src/Telegram/button/hisn_almuslim.json'));
         let key = Object.keys(hisn_almuslim_json);
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let hisn_almuslim_Message = 'حصن المسلم 🏰\n\n'
         hisn_almuslim_Message += ' كتاب أدعية تأليف سعيد بن علي بن وهف القحطاني حرر في شهر صفر 1409هـ والكتاب يحتوي على أذكار النبي محمد صلى الله عليه وسلم في مختلف مواضع الحياة اليومية وهو من أكثر الكتب الإسلامية انتشارا لسهولة أسلوبه والتزامه بالصحيح من الأحاديث. '
         let but_1 = [Markup.button.callback('⬆', 'hisn_almuslim_Menu_13')];
@@ -400,7 +400,7 @@ module.exports = async function hisn_almuslim(bot, Path_appDate, Markup, Path_Lo
         let hisn_almuslim_json = fs.readJsonSync(path.join(Path_Local, '/src/Telegram/button/hisn_almuslim.json'));
         let key = Object.keys(hisn_almuslim_json);
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let hisn_almuslim_Message = 'حصن المسلم 🏰\n\n'
         hisn_almuslim_Message += ' كتاب أدعية تأليف سعيد بن علي بن وهف القحطاني حرر في شهر صفر 1409هـ والكتاب يحتوي على أذكار النبي محمد صلى الله عليه وسلم في مختلف مواضع الحياة اليومية وهو من أكثر الكتب الإسلامية انتشارا لسهولة أسلوبه والتزامه بالصحيح من الأحاديث. '
         let but_1 = [Markup.button.callback('⬆', 'hisn_almuslim_Menu_14')];
@@ -426,7 +426,7 @@ module.exports = async function hisn_almuslim(bot, Path_appDate, Markup, Path_Lo
         let hisn_almuslim_json = fs.readJsonSync(path.join(Path_Local, '/src/Telegram/button/hisn_almuslim.json'));
         let key = Object.keys(hisn_almuslim_json);
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let hisn_almuslim_Message = 'حصن المسلم 🏰\n\n'
         hisn_almuslim_Message += ' كتاب أدعية تأليف سعيد بن علي بن وهف القحطاني حرر في شهر صفر 1409هـ والكتاب يحتوي على أذكار النبي محمد صلى الله عليه وسلم في مختلف مواضع الحياة اليومية وهو من أكثر الكتب الإسلامية انتشارا لسهولة أسلوبه والتزامه بالصحيح من الأحاديث. '
         let but_1 = [Markup.button.callback('⬆', 'hisn_almuslim_Menu_15')];
@@ -452,7 +452,7 @@ module.exports = async function hisn_almuslim(bot, Path_appDate, Markup, Path_Lo
         let hisn_almuslim_json = fs.readJsonSync(path.join(Path_Local, '/src/Telegram/button/hisn_almuslim.json'));
         let key = Object.keys(hisn_almuslim_json);
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let hisn_almuslim_Message = 'حصن المسلم 🏰\n\n'
         hisn_almuslim_Message += ' كتاب أدعية تأليف سعيد بن علي بن وهف القحطاني حرر في شهر صفر 1409هـ والكتاب يحتوي على أذكار النبي محمد صلى الله عليه وسلم في مختلف مواضع الحياة اليومية وهو من أكثر الكتب الإسلامية انتشارا لسهولة أسلوبه والتزامه بالصحيح من الأحاديث. '
         let but_1 = [Markup.button.callback('⬆', 'hisn_almuslim_Menu_16')];
@@ -478,7 +478,7 @@ module.exports = async function hisn_almuslim(bot, Path_appDate, Markup, Path_Lo
         let hisn_almuslim_json = fs.readJsonSync(path.join(Path_Local, '/src/Telegram/button/hisn_almuslim.json'));
         let key = Object.keys(hisn_almuslim_json);
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let hisn_almuslim_Message = 'حصن المسلم 🏰\n\n'
         hisn_almuslim_Message += ' كتاب أدعية تأليف سعيد بن علي بن وهف القحطاني حرر في شهر صفر 1409هـ والكتاب يحتوي على أذكار النبي محمد صلى الله عليه وسلم في مختلف مواضع الحياة اليومية وهو من أكثر الكتب الإسلامية انتشارا لسهولة أسلوبه والتزامه بالصحيح من الأحاديث. '
         let but_1 = [Markup.button.callback('⬆', 'hisn_almuslim_Menu_17')];

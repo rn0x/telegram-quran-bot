@@ -9,7 +9,7 @@ module.exports = async function Names_Of_Allah(bot, Path_appDate, Markup, Path_L
         let Names_Of_Allah_json = fs.readJSONSync(path.join(Path_Local, '/src/Telegram/button/Names_Of_Allah.json'));
         let random = Names_Of_Allah_json[Math.floor(Math.random() * Names_Of_Allah_json.length)]
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let message = `<b>الإسم: ${random.name}</b>\n\n`
         message += `المعنى: ${random.text}\n\n`
         let but_1 = [Markup.button.callback('🔄', 'Names_Of_Allah'), Markup.button.callback('الرجوع للقائمة الرئيسية', 'start')];

@@ -5,7 +5,7 @@ module.exports = async function Error(error, Path_appDate) {
 
     let json = fs.readJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'));
 
-    if (error.response !== undefined) {
+    if (error?.response !== undefined) {
 
         if (error.response.description === "Bad Request: group chat was upgraded to a supergroup chat") {
 
@@ -62,6 +62,34 @@ module.exports = async function Error(error, Path_appDate) {
 
             delete json[id_user]
             fs.writeJsonSync(join(Path_appDate, '/islam_bot/Users.json'), json, { spaces: '\t' });
+
+        }
+
+        else if (error.response.description === "Bad Request: message to delete not found") {
+
+            let id_user = error.on.payload.chat_id
+            let message_id = error.on.payload.message_id
+
+            if (json[id_user]?.message_id !== undefined || json[id_user]?.message_id !== message_id) {
+
+                delete json[id_user].message_id
+                fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json, { spaces: '\t' });
+
+            }
+
+        }
+
+        else if (error.response.description === "Bad Request: message can't be deleted for everyone") {
+
+            let id_user = error.on.payload.chat_id
+            let message_id = error.on.payload.message_id
+
+            if (json[id_user]?.message_id !== undefined || json[id_user]?.message_id !== message_id) {
+
+                delete json[id_user].message_id
+                fs.writeJsonSync(path.join(Path_appDate, '/islam_bot/Users.json'), json, { spaces: '\t' });
+
+            }
 
         }
 

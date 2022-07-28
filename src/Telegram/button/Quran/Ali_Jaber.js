@@ -7,7 +7,7 @@ module.exports = async function Ali_Jaber(bot, Path_appDate, Markup) {
 
         let id = ctx.chat.id;
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let Ali_Jaber_Message = 'القارئ علي جابر 🔊 \n\n'
         Ali_Jaber_Message += 'قم بالضغط على اسم السورة الإرسالها'
         let but_1 = [Markup.button.callback('⬆', 'quran')];
@@ -39,7 +39,7 @@ module.exports = async function Ali_Jaber(bot, Path_appDate, Markup) {
 
         let id = ctx.chat.id;
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let Ali_Jaber_Message = 'القارئ علي جابر 🔊 \n\n'
         Ali_Jaber_Message += 'قم بالضغط على اسم السورة الإرسالها'
         let but_1 = [Markup.button.callback('⬆', 'Ali_Jaber')];
@@ -71,7 +71,7 @@ module.exports = async function Ali_Jaber(bot, Path_appDate, Markup) {
 
         let id = ctx.chat.id;
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let Ali_Jaber_Message = 'القارئ علي جابر 🔊 \n\n'
         Ali_Jaber_Message += 'قم بالضغط على اسم السورة الإرسالها'
         let but_1 = [Markup.button.callback('⬆', 'Ali_Jaber_Menu_1')];
@@ -103,7 +103,7 @@ module.exports = async function Ali_Jaber(bot, Path_appDate, Markup) {
 
         let id = ctx.chat.id;
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let Ali_Jaber_Message = 'القارئ علي جابر 🔊 \n\n'
         Ali_Jaber_Message += 'قم بالضغط على اسم السورة الإرسالها'
         let but_1 = [Markup.button.callback('⬆', 'Ali_Jaber_Menu_2')];
@@ -135,7 +135,7 @@ module.exports = async function Ali_Jaber(bot, Path_appDate, Markup) {
 
         let id = ctx.chat.id;
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let Ali_Jaber_Message = 'القارئ علي جابر 🔊 \n\n'
         Ali_Jaber_Message += 'قم بالضغط على اسم السورة الإرسالها'
         let but_1 = [Markup.button.callback('⬆', 'Ali_Jaber_Menu_3')];
@@ -167,7 +167,7 @@ module.exports = async function Ali_Jaber(bot, Path_appDate, Markup) {
 
         let id = ctx.chat.id;
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let Ali_Jaber_Message = 'القارئ علي جابر 🔊 \n\n'
         Ali_Jaber_Message += 'قم بالضغط على اسم السورة الإرسالها'
         let but_1 = [Markup.button.callback('⬆', 'Ali_Jaber_Menu_4')];
@@ -199,7 +199,7 @@ module.exports = async function Ali_Jaber(bot, Path_appDate, Markup) {
 
         let id = ctx.chat.id;
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let Ali_Jaber_Message = 'القارئ علي جابر 🔊 \n\n'
         Ali_Jaber_Message += 'قم بالضغط على اسم السورة الإرسالها'
         let but_1 = [Markup.button.callback('⬆', 'Ali_Jaber_Menu_5')];
@@ -231,7 +231,7 @@ module.exports = async function Ali_Jaber(bot, Path_appDate, Markup) {
 
         let id = ctx.chat.id;
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let Ali_Jaber_Message = 'القارئ علي جابر 🔊 \n\n'
         Ali_Jaber_Message += 'قم بالضغط على اسم السورة الإرسالها'
         let but_1 = [Markup.button.callback('⬆', 'Ali_Jaber_Menu_6')];
@@ -263,7 +263,7 @@ module.exports = async function Ali_Jaber(bot, Path_appDate, Markup) {
 
         let id = ctx.chat.id;
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let Ali_Jaber_Message = 'القارئ علي جابر 🔊 \n\n'
         Ali_Jaber_Message += 'قم بالضغط على اسم السورة الإرسالها'
         let but_1 = [Markup.button.callback('⬆', 'Ali_Jaber_Menu_7')];
@@ -295,7 +295,7 @@ module.exports = async function Ali_Jaber(bot, Path_appDate, Markup) {
 
         let id = ctx.chat.id;
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let Ali_Jaber_Message = 'القارئ علي جابر 🔊 \n\n'
         Ali_Jaber_Message += 'قم بالضغط على اسم السورة الإرسالها'
         let but_1 = [Markup.button.callback('⬆', 'Ali_Jaber_Menu_8')];
@@ -327,7 +327,7 @@ module.exports = async function Ali_Jaber(bot, Path_appDate, Markup) {
 
         let id = ctx.chat.id;
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let Ali_Jaber_Message = 'القارئ علي جابر 🔊 \n\n'
         Ali_Jaber_Message += 'قم بالضغط على اسم السورة الإرسالها'
         let but_1 = [Markup.button.callback('⬆', 'Ali_Jaber_Menu_9')];
@@ -359,7 +359,7 @@ module.exports = async function Ali_Jaber(bot, Path_appDate, Markup) {
 
         let id = ctx.chat.id;
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let Ali_Jaber_Message = 'القارئ علي جابر 🔊 \n\n'
         Ali_Jaber_Message += 'قم بالضغط على اسم السورة الإرسالها'
         let but_1 = [Markup.button.callback('⬆', 'Ali_Jaber_Menu_10')];
@@ -391,7 +391,7 @@ module.exports = async function Ali_Jaber(bot, Path_appDate, Markup) {
 
         let id = ctx.chat.id;
         let json = fs.readJSONSync(path.join(Path_appDate, '/islam_bot/Users.json'));
-        json[id].message_id !== undefined ? ctx.deleteMessage(json[id].message_id) : ''
+        json[id].message_id !== undefined ? await ctx.deleteMessage(json[id].message_id) : ''
         let Ali_Jaber_Message = 'القارئ علي جابر 🔊 \n\n'
         Ali_Jaber_Message += 'قم بالضغط على اسم السورة الإرسالها'
         let but_1 = [Markup.button.callback('⬆', 'Ali_Jaber_Menu_11')];
