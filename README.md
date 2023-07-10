@@ -56,8 +56,8 @@
   ```
 </p>
 
-- **Linux**: [Download the .AppImage, .deb, or .rpm file](https://github.com/rn0x/islam_bot/releases/latest)
-- **Windows**: [Download the .exe file](https://github.com/rn0x/islam_bot/releases/latest)
+- **Linux**: [Download the .AppImage, .deb, or .rpm file](https://github.com/Alsarmad/islam_bot/releases/latest)
+- **Windows**: [Download the .exe file](https://github.com/Alsarmad/islam_bot/releases/latest)
 
 ### قم  بتشغيل التطبيق في وضع التطوير 
 
@@ -69,7 +69,7 @@
 
 ```bash
 
-git clone https://github.com/rn0x/islam_bot
+git clone https://github.com/Alsarmad/islam_bot
 cd islam_bot
 yarn install
 yarn run dev
